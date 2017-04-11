@@ -1,0 +1,59 @@
+POST http://10.252.150.157/nguniteview/layoutAction.do?method=showView&ownerType=1&viewId=200 HTTP/1.1
+x-requested-with: XMLHttpRequest
+Accept-Language: zh-CN
+Referer: http://10.252.150.157/nguniteview/bossviewhome.jsp
+Accept: */*
+Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)
+Host: 10.252.150.157
+Content-Length: 20
+DNT: 1
+Connection: Keep-Alive
+Pragma: no-cache
+Cookie:
+		sna_cookie=2AB424E68DB0ED612248662A642D9C855EE98D0C0C37498FA8A09DC6C8E853DF98E568DADEA58DB4E92FD9B19C3C60341FF2B1E7AE9D84CF;
+		 JSESSIONID=0000UQMa-KQmQuWmZt4r9hAvLyI:1ar31o9r5:1ar35079l:1arakp0jb;
+		 rootTicket=78AB9D34D65A0B67DAE58572EC3799C5A761D9F8096B82A91E5BF1C67AC98B6CDC353E8D6DC9819AB1089F4E8328D7C734C5E3C3A6A893DCEB1DA4B80EFDD92E;
+		 loginCookie=3708EDDFABC18AC271C4D2E8AD54FA511D6FDC59A343D88915908E66EEC26C4E86CD7B9540EC759F5D5EBE86428CC6FC1A88F36909A76ECE970FC95A5FF024B85CFE92D870833ACC63ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9B7D7C70F99DB7E581A6180F400C5507128245E753F7FC715CE158EA4BE15F4AC639636A970947AB8;
+		 staffInfoCookie=Blixinda@@@BBSZ22161213048@@@755;
+		 IPAddr=10.252.126.194;
+		 BIGipServercrm_portal_sz=2627140618.14340.0000;
+		 loginTicketCookie=C707EC8AFEB12E93D27D44B6464CAAAF6A6CCFC200F1C476;
+		 LOGIN_OUT_USE_LOGINID=4B9E199D936CC09B1E2B3B05C72DE9F9A2D336A2EE24F6969D8EB6120397294A812FA1446CA242DEBE4404803E2CC34FFF08F99E6508B66F8C9E1EC1E5D6B60B9C8F8ABB539EF48FEB1DA4B80EFDD92E;
+		 dtcqsyslocation=FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975;
+		 LIFE_TIME=1488908480781_120;
+		 com.huawei.boss.CURRENT_MENUID=100110121062;
+		 com.huawei.boss.CURRENT_TAB=BOSS%5E13602565600%5E100110121062%7E13602565600;
+		 com.huawei.boss.CURRENT_USER=13602565600;
+		 com.huawei.boss.CONTACTID=undefined;
+		 bsacKF=NGCRM_BOSS;
+		 BIGipServercrm_crm_sz=2627140618.14596.0000;
+		 MACAddr=00-FF-98-BC-7F-89;
+		 sDNSName=SZ-20160715MMML;
+		 BIGipServercrm_comm_sz=2610363402.40452.0000;
+		 compareCookie=89129798D8D8617E8D9125B39388FC1A
+
+width=1258&height=14
+------------------------------------------------------------
+
+HTTP/1.1 200 OK
+Date: Tue, 07 Mar 2017 15:48:07 GMT
+X-Powered-By: Servlet/3.0
+Connection: Keep-Alive
+Content-Type: text/html; charset=GBK
+Content-Language: zh-CN
+Content-Length: 125
+>>	8
+
+Keep-Alive: timeout=10, max=9
+>>	7
+
+
+<table width=100%  class="fv_tb" cellspacing=0 cellpadding=0> 
+<tr class=fv_tb_tr><th width=9%>用户姓名</th><td width=15%><span >王*若</span></td><th width=9%>服务号码</th><td width=15%><span >13602565600</span></td><th width=9%>品牌</th><td width=15%><span >全球通</span></td><th width=9%>用户状态</th><td width=15%><span >正使用</span></td></tr> 
+<tr class=fv_tb_tr><th width=9%>所属地域</th><td width=15%><span >********</span></td><th width=9%>客户类型</th><td width=15%><span >个人客户</span></td><th width=9%>服务等级</th><td width=15%><span >普通用户</span></td><th width=9%>服务方式</th><td width=15%><span >用户凭密码</span></td></tr> 
+<tr class=fv_tb_tr><th width=9%>入网时间</th><td width=15%><span >********</span></td><th width=9%>状态时间</th><td width=15%><span >********</span></td><th width=9%>用机类型</th><td width=15%><span >普通机</span></td><th width=9%>证件类型</th><td width=15%><span >********</span></td></tr> 
+<tr class=fv_tb_tr><th width=9%>是否集团关键人</th><td width=15%><span >否</span></td><th width=9%>停机锁</th><td width=15%><span >正常使用</span></td><th width=9%></th><td width=15%><span >&nbsp;</span></td><th width=9%></th><td width=15%><span >&nbsp;</span></td></tr> 
+<tr><td colspan="8"></td></tr> 
+</table> 
