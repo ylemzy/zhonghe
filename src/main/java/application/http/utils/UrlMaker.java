@@ -76,4 +76,8 @@ public class UrlMaker {
             }
         }
     }
+
+    public Map params(){
+        return params;
+    }
 }

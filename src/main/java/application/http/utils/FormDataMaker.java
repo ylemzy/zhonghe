@@ -9,7 +9,7 @@ import java.util.Map;
  * Created by Administrator on 2017/3/6.
  */
 public class FormDataMaker {
-    Map<String, String> datas = new HashMap<>();
+    private Map<String, String> datas = new HashMap<>();
 
     public static FormDataMaker make(String rawFormData){
         return new FormDataMaker(rawFormData);

@@ -1,7 +1,8 @@
-package application.uil;
+package application.http.utils;
 
 import application.http.HttpHeaders;
 import application.http.utils.CookieMaker;
+import application.uil.JsonHelper;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.logging.log4j.LogManager;
@@ -24,7 +25,7 @@ public class ParseRequest {
 
     private Connection connection;
 
-    void parseFrom(String filename) throws Exception {
+    public Connection parseFrom(String filename) throws Exception {
         List<String> strings = FileUtils.readLines(new File(filename), "utf-8");
         parseRequest(strings.get(0));
 
@@ -39,6 +40,8 @@ public class ParseRequest {
         logger.info("Headers :{}", JsonHelper.toJSON(connection.request().headers()));
         logger.info("Cookie :{}", JsonHelper.toJSON(connection.request().cookies()));
         logger.info("Body :{}", JsonHelper.toJSON(connection.request().requestBody()));
+
+        return connection;
     }
 
     Connection.Method parseMethod(String method) {
@@ -79,4 +82,7 @@ public class ParseRequest {
         connection.requestBody(content);
     }
 
+    public Connection getConnection() {
+        return connection;
+    }
 }
