@@ -1,9 +1,11 @@
 package application.http.utils;
 
+import application.fetch.Request;
 import application.http.HttpHeaders;
 import application.http.utils.CookieMaker;
 import application.uil.JsonHelper;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -15,18 +17,49 @@ import org.springframework.util.Assert;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.Charset;
 import java.util.List;
 
 /**
  * Created by J on 4/11/2017.
  */
-public class ParseRequest {
+public class RequestLoader {
     private static final Logger logger = LogManager.getLogger();
 
     private Connection connection;
 
-    public Connection parseFrom(String filename) throws Exception {
-        List<String> strings = FileUtils.readLines(new File(filename), "utf-8");
+    private String resourceName;
+
+    private Type type;
+
+    enum Type{
+        RESOURCE,
+        FILE
+    }
+
+    public RequestLoader(String resourceName, Type type) {
+        this.resourceName = resourceName;
+        this.type = type;
+    }
+
+    public static RequestLoader make(String resourceName) throws IOException {
+        return new RequestLoader(resourceName, Type.RESOURCE);
+    }
+
+    public static RequestLoader makeByFile(String fileName) throws IOException {
+        return new RequestLoader(fileName, Type.FILE);
+    }
+
+    public Connection parse() throws Exception {
+        List<String> strings;
+        if (type == Type.RESOURCE){
+            InputStream stream = RequestLoader.class.getResourceAsStream("/" + resourceName);
+            strings = IOUtils.readLines(stream, "utf-8");
+        }else{
+            strings = FileUtils.readLines(new File(resourceName), "utf-8");
+        }
+
         parseRequest(strings.get(0));
 
         for (int i = 1; i < strings.size(); ++i) {
@@ -36,10 +69,11 @@ public class ParseRequest {
         }
 
         logger.info("URL:{}", JsonHelper.toJSON(connection.request().url()));
-        logger.info("Method:{}", JsonHelper.toJSON(connection.request().method()));
+        logger.info("URI:{}", UrlMaker.make(connection.request().url().toString()).getUri());
+        /* logger.info("Method:{}", JsonHelper.toJSON(connection.request().method()));
         logger.info("Headers :{}", JsonHelper.toJSON(connection.request().headers()));
         logger.info("Cookie :{}", JsonHelper.toJSON(connection.request().cookies()));
-        logger.info("Body :{}", JsonHelper.toJSON(connection.request().requestBody()));
+        logger.info("Body :{}", JsonHelper.toJSON(connection.request().requestBody()));*/
 
         return connection;
     }
@@ -84,5 +118,9 @@ public class ParseRequest {
 
     public Connection getConnection() {
         return connection;
+    }
+
+    public String getUrl(){
+        return UrlMaker.make(connection.request().url().toString()).getUri();
     }
 }

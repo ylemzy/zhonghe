@@ -111,21 +111,26 @@ public class RequestCompare {
 
 
 
-    public void compare(){
+    public String compare(){
         compareHeaders();
         compareCookies();
         compareParams();
         compareBody();
-        log();
+        return log();
     }
 
-    public void log(){
+    public String log(){
         logger.info("--------------------compare request------------------------");
-        logger.info("Diff headers {}", JsonHelper.toJSON(diffHeaders));
-        logger.info("Diff cookies {}", JsonHelper.toJSON(diffCookies));
-        logger.info("Diff body {}", JsonHelper.toJSON(diffBody));
-        logger.info("Diff params {}", JsonHelper.toJSON(diffParams));
-        logger.info("Same all {}", JsonHelper.toJSON(theSame));
+        StringBuffer buffer = new StringBuffer();
+        buffer.append("Diff headers " + JsonHelper.toJSON(diffHeaders)).append("\n");
+        buffer.append("Diff cookies " + JsonHelper.toJSON(diffCookies)).append("\n");
+        buffer.append("Diff body " + JsonHelper.toJSON(diffBody)).append("\n");
+        buffer.append("Diff params " + JsonHelper.toJSON(diffParams)).append("\n");
+        buffer.append("Same all " + JsonHelper.toJSON(theSame)).append("\n");
 
+        String s = buffer.toString();
+        logger.info(s);
+
+        return s;
     }
 }

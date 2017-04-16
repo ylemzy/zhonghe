@@ -48,6 +48,11 @@ public class FormDataMaker {
         return this;
     }
 
+    public FormDataMaker data(Map<String, String> datas){
+        this.datas.putAll(datas);
+        return this;
+    }
+
     public Map<String, String> data(){
         return datas;
     }

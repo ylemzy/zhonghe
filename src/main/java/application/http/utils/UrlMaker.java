@@ -35,6 +35,10 @@ public class UrlMaker {
         return url + buffer.toString();
     }
 
+    public String getUri() {
+        return uri;
+    }
+
     public UrlMaker param(String key, String value){
         if (this.params == null){
             this.params = new HashMap<>();
