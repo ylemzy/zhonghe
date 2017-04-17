@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Date: Mon, 17 Apr 2017 13:37:07 GMT
+X-Powered-By: Servlet/3.0
+Content-Length: 166
+Set-Cookie: LIFE_TIME=1492443427382_120; Path=/
+Set-Cookie: compareCookie=89129798D8D8617E8D9125B39388FC1A; Path=/
+Expires: Thu, 01 Dec 1994 16:00:00 GMT
+Cache-Control: no-cache="set-cookie, set-cookie2"
+Keep-Alive: timeout=10, max=96
+Connection: Keep-Alive
+Content-Type: text/html;charset=UTF-8
+Content-Language: zh-CN
+
+{"producess":'pass',"curCustId":"7554051594511","domainType":"1","userSessionKey":"13602565600","servNumbers":['13602565600',['13602565600']],"simpPasswordPrompt":""}

@@ -8,8 +8,8 @@ import static org.junit.Assert.*;
  * Created by Administrator on 2017/4/15.
  */
 public class ZhongheRequestTest {
-    ZhongheRequest r = new ZhongheRequest("13602565600", "460027198811272037");
-    //ZhongheRequest r = new ZhongheRequest("13510033371", "441402198702260434");
+    //ZhongheRequest r = new ZhongheRequest("13602565600", "460027198811272037");
+    ZhongheRequest r = new ZhongheRequest("13510033371", "441402198702260434");
 
     @Test
     public void qryCustInfo() throws Exception {

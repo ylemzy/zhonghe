@@ -1,0 +1,25 @@
+HTTP/1.1 200 OK
+Date: Mon, 17 Apr 2017 13:37:12 GMT
+X-Powered-By: Servlet/3.0
+Content-Length: 2193
+Keep-Alive: timeout=10, max=99
+Connection: Keep-Alive
+Content-Type: text/html; charset=GBK
+Content-Language: zh-CN
+
+<table width=100%  class="fv_tb" cellspacing=0 cellpadding=0> 
+<tr class=fv_tb_tr><th width=20%>客户姓名</th><td width=31%><span >王*若</span></td><th width=20%>证件号码</th><td width=31%><span >********</span></td></tr> 
+<tr class=fv_tb_tr><th width=20%>证件类型</th><td width=31%><span >********</span></td><th width=20%>证件地址</th><td width=31%><span >********</span></td></tr> 
+<tr class=fv_tb_tr><th width=20%>客户类型</th><td width=31%><span >个人客户</span></td><th width=20%>服务等级</th><td width=31%><span >普通用户</span></td></tr> 
+<tr class=fv_tb_tr><th width=20%>客户分类1</th><td width=31%><span >中高端客户</span></td><th width=20%>客户分类2</th><td width=31%><span >普通客户</span></td></tr> 
+<tr class=fv_tb_tr><th width=20%>联系人</th><td width=31%><span >王*若</span></td><th width=20%>联系电话</th><td width=31%><span >********</span></td></tr> 
+<tr class=fv_tb_tr><th width=20%>联系地址</th><td width=31%><span >********</span></td><th width=20%>邮政编号</th><td width=31%><span >518002</span></td></tr> 
+<tr class=fv_tb_tr><th width=20%>是否集团关键人</th><td width=31%><span >否</span></td><th width=20%>所属地域</th><td width=31%><span >********</span></td></tr> 
+<tr class=fv_tb_tr><th width=20%>服务方式</th><td width=31%><span >用户凭密码</span></td><th width=20%>实名状态</th><td width=31%><span >已核实</span></td></tr> 
+<tr class=fv_tb_tr><th width=20%>用户名称</th><td width=31%><span >王*若</span></td><th width=20%>家庭电话</th><td width=31%><span >********</span></td></tr> 
+<tr class=fv_tb_tr><th width=20%>办公电话</th><td width=31%><span >********</span></td><th width=20%>移动电话</th><td width=31%><span >********</span></td></tr> 
+<tr class=fv_tb_tr><th width=20%>国籍</th><td width=31%><span >中国</span></td><th width=20%>所属集团</th><td width=31%><span >所属集团</span></td></tr> 
+<tr class=fv_tb_tr><th width=20%>客户ID</th><td width=31%><span >7554051594511</span></td><th width=20%>信用额度</th><td width=31%><span >0</span></td></tr> 
+<tr class=fv_tb_tr><th width=20%>客户星级</th><td width=31%><span >4星级</span></td><th width=20%></th><td width=31%><span >&nbsp;</span></td></tr> 
+<tr><td colspan="4"></td></tr> 
+</table> 

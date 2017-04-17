@@ -51,7 +51,17 @@ public class ZhongheRequest {
         cookies = connection.request().cookies();
     }
 
-    private void addFormData(Connection connection) {
+    private ZhongheRequest clearFormData(){
+        formData.clear();
+        return this;
+    }
+
+    private ZhongheRequest putFormData(String key, String data){
+        formData.put(key, data);
+        return this;
+    }
+
+    private void addFormDataTo(Connection connection) {
         String s = connection.request().requestBody();
         FormDataMaker data = FormDataMaker.make(s).data(formData);
         connection.requestBody(data.rawData());
@@ -86,6 +96,24 @@ public class ZhongheRequest {
         updateAndLog(connection.request(), response);
     }
 
+    public void idCardActionCheck() throws Exception{
+        Connection connection = RequestLoader.make("idCardActionCheck").parse();
+        updateCookies(connection);
+        clearFormData().putFormData("certId", certID).addFormDataTo(connection);
+        Connection.Response response = connection.execute();
+        updateAndLog(connection.request(), response);
+    }
+
+    public void clearUserSession() throws Exception{
+        Connection connection = RequestLoader.make("clearUserSession").parse();
+        String url = UrlMaker.make(connection.request().url().toString()).param("tabid", this.currentTabID).getUrl();
+        connection.url(url);
+        updateCookies(connection);
+        Connection.Response response = connection.execute();
+        updateAndLog(connection.request(), response);
+    }
+
+
     /**
      * @param serveNumber 13602565600
      * @param certID     460027198811272037
@@ -95,10 +123,8 @@ public class ZhongheRequest {
         Connection connection = RequestLoader.make("qryCustInfo").parse();
         updateCookies(connection);
 
-        formData.put("serveNumber", serveNumber);
-        formData.put("certID", certID);
+        clearFormData().putFormData("serveNumber", serveNumber).putFormData("certID", certID).addFormDataTo(connection);
 
-        addFormData(connection);
         Connection.Response response = connection.execute();
         updateAndLog(connection.request(), response);
 
@@ -127,7 +153,7 @@ public class ZhongheRequest {
     public void bossviewhome() throws Exception {
         Connection connection = RequestLoader.make("bossviewhome").parse();
         updateCookies(connection);
-        addFormData(connection);
+        addFormDataTo(connection);
         Connection.Response response = connection.execute();
         updateAndLog(connection.request(), response);
     }
@@ -164,6 +190,8 @@ public class ZhongheRequest {
 
     public void sequentially() throws Exception {
         getMainProID();
+        idCardActionCheck();
+        clearUserSession();
         qryCustInfo(serveNumber, certID);
         uvDisper();
         bossviewhome();

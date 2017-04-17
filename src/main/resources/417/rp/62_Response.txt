@@ -1,0 +1,668 @@
+HTTP/1.1 200 OK
+Date: Mon, 17 Apr 2017 13:37:12 GMT
+X-Powered-By: Servlet/3.0
+Content-Length: 17825
+Keep-Alive: timeout=10, max=97
+Connection: Keep-Alive
+Content-Type: text/html; charset=GBK
+Content-Language: zh-CN
+
+
+
+
+
+
+
+
+
+<table bTitlePage=1 width=100%  cellspacing=0 cellpadding=0 border=0>
+                <tr >
+                  <td  class=win_title_border_left   nowrap ></td> 
+                  <td  nowrap class=tt_title_text >
+                      基本资料
+                  </td>    
+                   
+                  <td   nowrap  class=tt_title >
+                  		<img src="skin/default/tt_split_v.gif">
+                  </td>
+                  <td   nowrap onmouseover="showDesktopList(this)" onmouseleave="hideDesktopList(this)" class=tt_title style="position:relative;padding:0 10 0 10">
+                  		<a bGroupNameLink=1 class="tt_title_a" href="javascript:void(0)">系统默认桌面</a>&nbsp;<img align="absmiddle" src="skin/default/tt_list_arrow.gif">
+                  		<div class="tt_div" style="display:none">
+                  			<table  cellpadding="0" cellspacing="0" class="tt_tb">
+							  <tr>
+							    <td height="10" colspan="2"></td>
+							  </tr>
+							  
+							  <tr layoutId='1' groupId='' onclick="desktopSelect(this , '1', '')">
+							    <td class="tt_tb_td_chk">&nbsp;<input type=checkbox disabled value=''  checked></td>
+							    <td  onmouseover="listOver(this)" onmouseout="listOut(this)" class="tt_tb_td" nowrap>系统默认桌面</td>
+							  </tr>
+							  
+							  <tr>
+							    <td  colspan="2" class="tt_tb_td_split"></td>
+							  </tr>
+							  <tr bSave=1>
+							    <td class="tt_tb_td_chk">&nbsp;</td>
+							    <td  onclick="saveDesktop(this,'1')"   onmouseover="listOver(this)" onmouseout="listOut(this)" class="tt_tb_td_disabled" nowrap>保存为当前桌面</td>
+							  </tr>
+							  <tr bDelete=1>
+							    <td class="tt_tb_td_chk">&nbsp;</td>
+							    <td onclick="delDesktop(this,'1')"  onmouseover="listOver(this)" onmouseout="listOut(this)" class="tt_tb_td_disabled"  nowrap>删除当前桌面</td>
+							  </tr>
+							  <tr bSaveAS=1>
+							    <td class="tt_tb_td_chk">&nbsp;</td>
+							    <td onclick="saveAsDesktop(this,'1')"  onmouseover="listOver(this)" onmouseout="listOut(this)" class="tt_tb_td" nowrap>桌面另存为...</td>
+							  </tr>
+							  <tr>
+							    <td height="5" colspan="2"></td>
+							  </tr> 
+							</table>
+                  		</div>
+                  </td>
+                  <td  class=win_title_border_right     nowrap ></td> 
+                </tr>    
+</table>
+
+<script language="javascript">
+
+function toCSMenu(orderid,rectype)
+{
+	var dispath = 'http://10.252.150.157';
+	var openMenu = top.publicObject["openMenu"];
+	//var url=dispath+"9080/ngcustcare/custsvc/preBussinessInstall/mainInit.action";
+	var url=dispath+"/ngcustcare/custsvc/preBussinessInstall/bussForward/businessConstruct.action?orderid="+orderid+"&rectype="+rectype;
+	var  recName="产品开户";				 
+    var  menuId ="CS_100010021005";
+	openMenu(menuId, recName, url);
+}
+
+function showLink_View(serviceid,subsprodoid,viewid,domObj)
+{
+    var pObj = domObj;
+	while(pObj != null && pObj.bPanel != 1 )
+		pObj = pObj.parentNode;
+	if(pObj && pObj.bPanel == 1)
+	{
+		var panelObj = pObj.panelObj;
+		var url = panelObj.urlPrefix + viewid +"&serviceoid="+serviceid+"&subsprodoid="+subsprodoid;
+
+		DLG.tip(domObj, url);
+	}
+}
+
+
+
+function saveTempDesktop() {
+  var tables = document.getElementsByTagName("TABLE");
+  var titleTable = null;
+  for (var i = 0 ; i < tables.length; i++) {
+    var to = tables[i];
+    if (to && to.bTitlePage == 1) {
+      titleTable = to;
+      break;
+    }
+  }
+  if (titleTable) {
+    var trs = titleTable.getElementsByTagName("TR");
+    var currentTr = null;
+    for (var i = 0; i < trs.length; i++) {
+      if (trs[i].bSave == "1") {
+        currentTr = trs[i];
+        break;
+      }
+    }
+    if (currentTr) {
+      saveDesktop(currentTr.cells[1], "1", "session");
+    }
+  }
+}
+$(window).unload(saveTempDesktop);
+
+
+function bldMoveView(td, data, pre, wObj, seatName) {
+  if (td.bCustom) {
+    var moveWin = PLCLSID.getDomObj4ClsId(td, PLCLSID.WIN);
+    
+    if (moveWin) {
+      data[pre + "isMoveWin"] = 1;
+      var ismin = 0;
+      ismin = wObj.contentObj.domObj.style.display == "none" ? 1 : 0;
+      data[pre + "isMin"]     = ismin;
+      data[pre + "showstyle"] = wObj.domObj.layoutClsId;
+      data[pre + "mainseat"]  = seatName.substr(0, seatName.indexOf("_"));
+      
+      var thePanel = wObj.panelObj;
+      var panelTrs = thePanel.domObj.rows;
+      var offsetIndex = -1;
+      for (var j = 0; j < panelTrs.length; j++) {
+        var tempTd = panelTrs[j].cells[0];
+        if (tempTd.winObj == wObj) {
+          offsetIndex = j;
+        }
+      }
+      data[pre + "offset"]  = offsetIndex;
+    }
+  }
+} 
+
+	function delDesktop(tdobj, layoutId)
+	{
+		var pobj = tdobj.parentNode;
+		if(pobj && pobj.tagName != "TABLE")
+			pobj = pobj.parentNode;
+		
+		var chks = pobj.getElementsByTagName("INPUT");
+		var chk = null;
+		for(var i=0; i<chks.length; i++)
+		{
+			var obj = chks[i];
+			if(obj.type.toLowerCase() == "checkbox")
+			{
+				chk = obj;
+				break;
+			}
+		}	
+		if(chk == null)
+			return;
+		
+		var groupId = chk.value;
+		if(isEmpty(groupId))
+			return;
+		VIEWCONFIRM.tip("确实要删除吗！",delDesk,null,[tdobj, layoutId], null, tdobj);
+	}
+	
+	function delDesk(tdobj, layoutId)
+	{
+		var pobj = tdobj.parentNode;
+		if(pobj && pobj.tagName != "TABLE")
+			pobj = pobj.parentNode;
+		
+		var chks = pobj.getElementsByTagName("INPUT");
+		var chk = null;
+		for(var i=0; i<chks.length; i++)
+		{
+			var obj = chks[i];
+			if(obj.type.toLowerCase() == "checkbox")
+			{
+				chk = obj;
+				break;
+			}
+		}	
+		if(chk == null)
+			return;
+		
+		var groupId = chk.value;
+		var tr = chk.parentNode.parentNode;
+		var data = {groupId:groupId, layoutId:layoutId};
+		var delAjaxObj = new ViewAjax();
+		delAjaxObj.url = "http://10.252.150.157/nguniteview/layoutAction.do?method=deleteDesktop" ;
+		delAjaxObj.handleAjax = ajaxHandleDel(tr, chk);
+		delAjaxObj.request(null, false, data);	
+	}
+	
+	function ajaxHandleDel(trobj,chk)
+	{
+		return function(data, domObj, div, url)
+		{
+			var ret = toJson(data);
+			if(RETMSG.isFail(ret))
+			{
+				VIEWALERT.tip(RETMSG.getErrMsgHTML(ret, false), null,null,null,null,trobj);
+				return ;
+			}
+			else
+			{
+			
+				var ptb = trobj.parentNode;
+				if(ptb && ptb.tagName != "TABLE")
+					ptb = ptb.parentNode;
+				if(!ptb || ptb.tagName != "TABLE")
+					return;
+				
+				for(var i=0; i<ptb.rows.length; i++)
+				{
+					var tr = ptb.rows[i];
+					if(tr.layoutId && tr != trobj )
+					{
+						chk.value = tr.groupId;
+						tr.click();
+						tr.cells[0].appendChild(chk);
+						break;
+					}
+				}
+				
+				
+				ptb.deleteRow(trobj.rowIndex);
+			}
+		}
+	}
+	
+	function changeSaveDelTr(trobj, groupId, groupName)
+	{
+		var pobj = trobj.parentNode;
+		if(pobj && pobj.tagName != "TABLE")
+			pobj = pobj.parentNode;
+		
+		if(!pobj || pobj.tagName != "TABLE")
+			return null;
+		var trs = pobj.rows;
+		var trsave = null;
+		var trdel = null;
+		for(var i=0; i<trs.length; i++)
+		{
+			var tr = trs[i];
+			if(tr.bSave == "1")
+			{
+				trsave = tr;
+			}
+			if(tr.bDelete == "1")
+			{
+				trdel = tr;
+			}
+		}
+		var td = trsave.cells[1];
+		td.className = isEmpty(groupId) ? "tt_tb_td_disabled" : "tt_tb_td";
+		td = trdel.cells[1];
+		td.className = isEmpty(groupId) ? "tt_tb_td_disabled" : "tt_tb_td";
+		
+		
+		while(pobj && pobj.tagName != "TD")
+			pobj = pobj.parentNode;
+		
+		if(pobj && pobj.tagName == "TD")
+		{
+			var alinks = pobj.getElementsByTagName("A");
+			for(var i=0; i<alinks.length; i++)
+			{
+				var alink = alinks[i];
+				if(alink.bGroupNameLink == "1")
+				{
+					alink.innerText = groupName;
+					break;
+				}
+			}
+		}	
+		return null;
+	}
+
+	function saveDesktop(tdobj, layoutId, scope)
+	{
+	  
+		if(scope != "session" && (tdobj.className == "tt_tb_td_disabled" || tdobj.className == "tt_tb_td_hot_disabled") )
+			return;
+
+		var pobj = tdobj;
+		while(pobj && pobj.bPanel != 1)
+			pobj = pobj.parentNode;
+		
+		var tbobj = tdobj.parentNode;
+		if(tbobj && tbobj.tagName != "TABLE")
+			tbobj = tbobj.parentNode;
+		
+		var chks = tbobj.getElementsByTagName("INPUT");
+		var chk = null;
+		for(var i=0; i<chks.length; i++)
+		{
+			var obj = chks[i];
+			if(obj.type.toLowerCase() == "checkbox")
+			{
+				chk = obj;
+				break;
+			}
+		}	
+		if(chk == null)
+			return;
+		
+		var groupId = chk.value;
+		if(isEmpty(groupId) && scope != "session")
+			return;
+		
+		var data = {isSelected:1};
+		var seatNames = [];
+		if(pobj && pobj.bPanel == 1)
+		{
+			var panelObj = pobj.panelObj;
+			var rootPanelObj = panelObj.getRootPanel();
+			var skinId = rootPanelObj.skinJsName.skinId;
+			
+			var tds = rootPanelObj.getAllFillTd();
+			
+			data.layoutId = layoutId;
+			data.groupId = groupId;
+			data.skinId = skinId;
+			data.modelId = rootPanelObj.skinJsName.modelId;
+			
+			for(var i=0; i<tds.length; i++)
+			{
+				var td = tds[i];
+				if(!td)continue;
+				var wObj = td.winObj;
+				if(!wObj)
+					continue;
+
+				var seatName = trim(td.fillId);
+				if(isEmpty(seatName))
+					continue;
+				seatNames.push(seatName);					
+				var tagObj = PLCLSID.getDomObj4ClsId(td, PLCLSID.VTAG);
+				
+				if(tagObj)
+				{
+					tagObj = PLCLSID.getObj4DomObj(tagObj);
+					var tr = tagObj.containObj;
+					var tmptds = tr.cells;
+					for(var k=0; k<tmptds.length; k++)
+					{
+						var tmptd = tmptds[k];
+						var tagtb = tmptd.tagTb;
+						if(tagtb == null)
+							continue;
+						
+						var pre = seatName+"["+ k +"].";
+						data[pre + "viewId"] = tagtb.viewId || '';
+						data[pre + "seatName"] = seatName || '';
+						data[pre + "tagPos"] = (1+k);
+						data[pre + "isSelected"] = (tagObj.selectedIndex == tagtb.tagIndex) ? "1" : "0";
+					}
+				}
+				else
+				{
+					var pre = seatName+"[0].";
+					data[pre + "viewId"] = wObj.domObj.viewId || '';
+					data[pre + "tagPos"] = 1;
+					data[pre + "seatName"] = seatName || '';
+					data[pre + "isSelected"] = 1;
+  				
+  				bldMoveView(td, data, pre, wObj, seatName);
+  
+				}
+				
+			}
+			
+			
+			data.seatName = seatNames;
+			var saveAjaxObj = new ViewAjax();
+			var scopeParam = "";
+			if ("session" == scope) {
+			  scopeParam = "&scope=session";
+			}
+			saveAjaxObj.url = "http://10.252.150.157/nguniteview/layoutAction.do?method=saveDesktop" + scopeParam;
+			saveAjaxObj.handleAjax = function(data, domObj, div, url)
+				{
+					var ret = toJson(data);
+					if(RETMSG.isFail(ret))
+					{
+						VIEWALERT.tip(RETMSG.getErrMsgHTML(ret, false), null,null,null,null,tdobj);
+					}
+					else
+					{
+						VIEWALERT.tip("我的桌面保存完毕！数据在一分钟后生效",null,null,null,null, tdobj);
+					}
+				}
+			
+			saveAjaxObj.request(null, false, data);	
+		}	
+					
+	}
+	
+	function saveAsDesktop(tdobj, layoutId)
+	{
+		VIEWPROMPT.setMaxLength(30);
+		VIEWPROMPT.tip(saveAs,null,[tdobj, layoutId],null,"请输入桌面名称<font color=red> 名称最多30个字符</font>", tdobj);
+	}
+	
+	function saveAs(tdobj, layoutId, name)
+	{
+		var pobj = tdobj;
+		while(pobj && pobj.bPanel != 1)
+			pobj = pobj.parentNode;
+			
+		name = trim(name);
+		if (!/^[a-zA-Z0-9\u4e00-\u9fa5]+$/.test(name)) {
+		  VIEWALERT.tip("桌面名称只允许汉字、数字和字母，请重试！",null,null,null,null, tdobj);
+			return;
+		}
+		if(isEmpty(name))
+		{
+			VIEWALERT.tip("没有录入桌面名称，取消桌面另存为操作！",null,null,null,null, tdobj);
+			return;
+		}	
+		var data = {isSelected:0};
+		var seatNames = [];
+		if(pobj && pobj.bPanel == 1)
+		{
+			var panelObj = pobj.panelObj;
+			var rootPanelObj = panelObj.getRootPanel();
+			var skinId = rootPanelObj.skinJsName.skinId;
+			
+			var tds = rootPanelObj.getAllFillTd();
+			
+			var groupName = encodeURI(name);
+			data.groupName = groupName;
+			data.layoutId = layoutId;
+			data.skinId = skinId;
+			
+			var layoutId = null;
+			var groupId = null;
+			
+			for(var i=0; i<tds.length; i++)
+			{
+				var td = tds[i];
+				if(!td)continue;
+				var wObj = td.winObj;
+				if(!wObj)
+					continue;
+				
+				var seatName = trim(td.fillId);
+				if(isEmpty(seatName))
+					continue;
+				seatNames.push(seatName);					
+				var tagObj = PLCLSID.getDomObj4ClsId(td, PLCLSID.VTAG);
+				if(tagObj)
+				{
+					tagObj = PLCLSID.getObj4DomObj(tagObj);
+					var tr = tagObj.containObj;
+					var tmptds = tr.cells;
+					for(var k=0; k<tmptds.length; k++)
+					{
+						var tmptd = tmptds[k];
+						var tagtb = tmptd.tagTb;
+						if(tagtb == null)
+							continue;
+						
+						var pre = seatName+"["+ k +"].";
+						data[pre + "viewId"] = tagtb.viewId || '';
+						data[pre + "seatName"] = seatName || '';
+						data[pre + "tagPos"] = (1+k);
+						data[pre + "isSelected"] = (tagObj.selectedIndex == tagtb.tagIndex) ? "1" : "0";
+					}
+				}
+				else
+				{
+					var pre = seatName+"[0].";
+					data[pre + "viewId"] = wObj.domObj.viewId || '';
+					data[pre + "tagPos"] = 1;
+					data[pre + "seatName"] = seatName || '';
+					data[pre + "isSelected"] = 1;
+          
+  				bldMoveView(td, data, pre, wObj, seatName);
+
+				}
+				
+			} 
+			
+			data.seatName = seatNames;
+			var saveAjaxObj = new ViewAjax();
+			saveAjaxObj.url = "http://10.252.150.157/nguniteview/layoutAction.do?method=saveAsDesktop" ;
+			saveAjaxObj.handleAjax= function(data, domObj, div, url)
+			{
+				var ret = toJson(data);
+				if(RETMSG.isFail(ret))
+				{
+					
+					VIEWALERT.tip(RETMSG.getErrMsgHTML(ret, false), null, null, null, null, tdobj);
+				}
+				else
+				{
+					VIEWALERT.tip("保存成功，数据在重新鉴权后生效！", null, null, null, null, tdobj);
+				}
+			}
+
+			saveAjaxObj.request(null, false, data);
+		}
+		
+	}
+
+	function showDesktopList(tdobj)
+	{
+		var div = tdobj.getElementsByTagName("DIV")[0];
+		if(div.style.display != "none")
+			return;
+		var alink = tdobj.getElementsByTagName("A")[0];
+		var right = tdobj.clientWidth;	
+		div.style.display = "";
+		var divw = div.clientWidth;
+		var x = right - divw - 5;
+		div.style.posLeft = x;
+	}
+	
+	function hideDesktopList(tdobj)
+	{
+		var div = tdobj.getElementsByTagName("DIV")[0];
+		div.style.display = "none";
+		div.style.posLeft = 0;
+		
+	}
+	
+	function listOver(tdobj)
+	{	
+		if(tdobj.className == "tt_tb_td")
+		{
+			tdobj.className = "tt_tb_td_hot";
+			tdobj.previousSibling.className = "tt_tb_td_chk_hot";
+		}
+		else
+		{
+			tdobj.className = "tt_tb_td_hot_disabled";
+			tdobj.previousSibling.className = "tt_tb_td_chk_hot";
+		}
+	}
+	function listOut(tdobj)
+	{
+		if(tdobj.className == "tt_tb_td_hot")
+		{
+			tdobj.className = "tt_tb_td";
+			tdobj.previousSibling.className = "tt_tb_td_chk";
+		}
+		else
+		{
+			tdobj.className = "tt_tb_td_disabled";
+			tdobj.previousSibling.className = "tt_tb_td_chk";
+		}
+	}
+	
+	function desktopSelect(trobj, layoutid,groupid)
+	{
+		var tbobj = trobj.parentNode;
+		if(tbobj && tbobj.tagName != "TABLE")
+			tbobj = tbobj.parentNode;
+		
+		groupid = trim(groupid);
+		var groupName = null;
+		for(var i=0; i<tbobj.rows.length; i++)
+		{
+			var tr = tbobj.rows[i];
+			var td = tr.cells[0];
+			var chk = td.getElementsByTagName("INPUT");
+			if(chk != null && chk.length > 0)
+			{
+				var td2 = trobj.cells[0];
+				chk[0].value = groupid;
+				td2.appendChild(chk[0]);
+				
+				if (td == td2) return;
+				groupName = trobj.cells[1].innerText;
+				break;
+			}
+		}
+
+		var pobj = trobj;
+		while(pobj && pobj.bPanel != 1)
+			pobj = pobj.parentNode;
+			
+		var panelObj = pobj.panelObj;
+		var rootPanelObj = panelObj.getRootPanel();
+		
+		var queryAjaxObj = new ViewAjax();
+		queryAjaxObj.url = "http://10.252.150.157/nguniteview/layoutAction.do?method=queryGroup&layoutId="+layoutid+"&groupId=" + groupid;
+		queryAjaxObj.handleAjax = ajaxHandle(rootPanelObj, trobj);
+		queryAjaxObj.request(null, false);	
+		changeSaveDelTr(trobj, groupid, groupName);
+		hideDesktopList(tbobj.parentNode.parentNode);	
+	}
+	
+	function ajaxHandle(rootPanelObj, trobj)
+	{
+		return function(data, domObj, div, url)
+		{
+			
+			var ret = toJson(data);
+			if(RETMSG.isSuccess(ret))
+			{
+				var data = RETMSG.getDetail(ret);
+				var fillJs = toJson(data.fillJsName);
+				var skinJs = toJson(data.skinJsName);
+				var arrTdObj = DLG.getLinkFillTdDomObj(trobj);
+				for(var i=0; i<arrTdObj.length; i++ )
+				{
+					var tdf3 = arrTdObj[i];
+					tdf3.divDomObj.innerHTML = "";
+					VIEWCACHE.clearCache(tdf3.winObj.id);
+					var panelObjf3 = tdf3.panelObj;
+					var wObjf3 = panelObjf3.createTitle(fillJs[tdf3.fillId], tdf3.divDomObj);
+					panelObjf3.createContent(wObjf3, (tdf3.divDomObj.className == panelObjf3.specDiv));
+					wObjf3 = new ViewWin(wObjf3, tdf3);
+                	tdf3.winObj = wObjf3;
+				}
+				
+				var movedata = data.moveviews;
+				rootPanelObj.autoBuildMoveView(movedata, true);
+				
+			}
+			else 
+			{
+				VIEWALERT.tip(RETMSG.getErrMsgHTML(ret, false), null, null, null, null, trobj);
+			}
+		}			
+		
+	} 
+	
+</script>
+<script language="javascript">
+	function showPaperList(tdobj)
+	{
+		var div = tdobj.getElementsByTagName("DIV")[0];
+		if(div.style.display != "none")
+			return;
+		var alink = tdobj.getElementsByTagName("A")[0];
+		var right = tdobj.clientWidth;	
+		div.style.display = "";
+		var divw = div.clientWidth;
+		var x = right - divw - 5;
+		div.style.posLeft = x;
+	}
+	
+	function hidePaperList(tdobj)
+	{
+		var div = tdobj.getElementsByTagName("DIV")[0];
+		div.style.display = "none";
+		div.style.posLeft = 0;
+		
+	}	
+	function showSurvey(domObj, paperId, paperName)
+	{
+		var url = "http://10.252.150.157/nguniteview/feedback/survey.jsp?ownerType=1&paperId="+paperId;
+		
+		VIEWMODEL.tip(domObj, url, {width:700,height:400,title:'用户感知',iscroll:'no'});
+	}
+</script>

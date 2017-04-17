@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Date: Mon, 17 Apr 2017 13:37:14 GMT
+X-Powered-By: Servlet/3.0
+Content-Length: 0
+Set-Cookie: LIFE_TIME=1492443434882_120; Path=/
+Expires: Thu, 01 Dec 1994 16:00:00 GMT
+Cache-Control: no-cache="set-cookie, set-cookie2"
+Keep-Alive: timeout=10, max=100
+Connection: Keep-Alive
+Content-Type: text/plain
+Content-Language: zh-CN
+

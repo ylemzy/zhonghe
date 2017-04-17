@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Date: Mon, 17 Apr 2017 13:37:12 GMT
+X-Powered-By: Servlet/3.0
+Content-Length: 1258
+Keep-Alive: timeout=10, max=99
+Connection: Keep-Alive
+Content-Type: text/html; charset=GBK
+Content-Language: zh-CN
+
+<table width=100%  class="fv_tb" cellspacing=0 cellpadding=0> 
+<tr class=fv_tb_tr><th width=9%>用户姓名</th><td width=15%><span >王*若</span></td><th width=9%>服务号码</th><td width=15%><span >13602565600</span></td><th width=9%>品牌</th><td width=15%><span >全球通</span></td><th width=9%>用户状态</th><td width=15%><span >正使用</span></td></tr> 
+<tr class=fv_tb_tr><th width=9%>所属地域</th><td width=15%><span >********</span></td><th width=9%>客户类型</th><td width=15%><span >个人客户</span></td><th width=9%>服务等级</th><td width=15%><span >普通用户</span></td><th width=9%>服务方式</th><td width=15%><span >用户凭密码</span></td></tr> 
+<tr class=fv_tb_tr><th width=9%>入网时间</th><td width=15%><span >********</span></td><th width=9%>状态时间</th><td width=15%><span >********</span></td><th width=9%>用机类型</th><td width=15%><span >普通机</span></td><th width=9%>证件类型</th><td width=15%><span >********</span></td></tr> 
+<tr class=fv_tb_tr><th width=9%>是否集团关键人</th><td width=15%><span >否</span></td><th width=9%>停机锁</th><td width=15%><span >正常使用</span></td><th width=9%></th><td width=15%><span >&nbsp;</span></td><th width=9%></th><td width=15%><span >&nbsp;</span></td></tr> 
+<tr><td colspan="8"></td></tr> 
+</table> 

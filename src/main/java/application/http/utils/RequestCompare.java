@@ -109,8 +109,6 @@ public class RequestCompare {
                 theSame);
     }
 
-
-
     public String compare(){
         compareHeaders();
         compareCookies();
@@ -120,8 +118,10 @@ public class RequestCompare {
     }
 
     public String log(){
-        logger.info("--------------------compare request------------------------");
+
         StringBuffer buffer = new StringBuffer();
+        buffer.append("--------------------compare request------------------------\n");
+        buffer.append("Diff between:\n" + a.request().url() + "\n" +  b.request().url()).append("\n");
         buffer.append("Diff headers " + JsonHelper.toJSON(diffHeaders)).append("\n");
         buffer.append("Diff cookies " + JsonHelper.toJSON(diffCookies)).append("\n");
         buffer.append("Diff body " + JsonHelper.toJSON(diffBody)).append("\n");
@@ -129,7 +129,7 @@ public class RequestCompare {
         buffer.append("Same all " + JsonHelper.toJSON(theSame)).append("\n");
 
         String s = buffer.toString();
-        logger.info(s);
+        //logger.info(s);
 
         return s;
     }

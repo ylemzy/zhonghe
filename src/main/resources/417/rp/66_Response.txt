@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Date: Mon, 17 Apr 2017 13:37:12 GMT
+X-Powered-By: Servlet/3.0
+Content-Length: 1780
+Set-Cookie: LIFE_TIME=1492443432711_120; Path=/
+Expires: Thu, 01 Dec 1994 16:00:00 GMT
+Cache-Control: no-cache="set-cookie, set-cookie2"
+Keep-Alive: timeout=10, max=96
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+Content-Language: zh-CN
+
+[{"view":[{"ispic":"0","viewId":"","viewName":"深圳 TOP 5","url":""},{"ispic":"0","viewId":"39","viewName":"客户基本信息","url":""},{"ispic":"0","viewId":"78","viewName":"帐户基本信息","url":""},{"ispic":"0","viewId":"20067","viewName":"客户星级得分明细","url":""},{"ispic":"0","viewId":"21","viewName":"实时话费信息","url":""},{"ispic":"0","viewId":"314","viewName":"SIM卡信息","url":""},{"ispic":"0","viewId":"","viewName":"全省 TOP 5","url":""},{"ispic":"0","viewId":"78","viewName":"帐户基本信息","url":""},{"ispic":"0","viewId":"39","viewName":"客户基本信息","url":""},{"ispic":"0","viewId":"21","viewName":"实时话费信息","url":""},{"ispic":"0","viewId":"302","viewName":"业务办理信息","url":""},{"ispic":"0","viewId":"110","viewName":"总积分信息","url":""}],"id":"VIEW_GROUP_TOP5D","name":"最多订阅","url":""},{"view":[{"ispic":"0","viewId":"","viewName":"深圳 TOP 5","url":""},{"ispic":"0","viewId":"78","viewName":"帐户基本信息","url":""},{"ispic":"0","viewId":"39","viewName":"客户基本信息","url":""},{"ispic":"1","viewId":"33","viewName":"近3个月消费情况(图)","url":""},{"ispic":"0","viewId":"128","viewName":"产品变更历史","url":""},{"ispic":"0","viewId":"73","viewName":"用户基本信息","url":""},{"ispic":"0","viewId":"","viewName":"全省 TOP 5","url":""},{"ispic":"0","viewId":"78","viewName":"帐户基本信息","url":""},{"ispic":"0","viewId":"39","viewName":"客户基本信息","url":""},{"ispic":"1","viewId":"33","viewName":"近3个月消费情况(图)","url":""},{"ispic":"0","viewId":"128","viewName":"产品变更历史","url":""},{"ispic":"0","viewId":"73","viewName":"用户基本信息","url":""}],"id":"VIEW_GROUP_TOP5V","name":"最多访问","url":""}]

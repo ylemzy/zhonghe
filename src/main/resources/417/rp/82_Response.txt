@@ -1,0 +1,140 @@
+HTTP/1.1 200 OK
+Date: Mon, 17 Apr 2017 13:37:15 GMT
+X-Powered-By: Servlet/3.0
+Set-Cookie: LIFE_TIME=1492443435012_120; Path=/
+Expires: Thu, 01 Dec 1994 16:00:00 GMT
+Cache-Control: no-cache="set-cookie, set-cookie2"
+Keep-Alive: timeout=10, max=99
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+Content-Language: zh-CN
+
+e77
+<html>
+<head>
+    <link href="/ngcustcare/skins/default/css/ngmain.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/ngcustcare/skins/default/js/util/prototype.js"></script>
+    <script type="text/javascript">
+			document.write("<script src='/ngcustcare/skins/default/js/ngcommon.js?rnd="+Math.random()+"'></s"+"cript>")
+		</script>
+<title></title>
+</head>
+<body class=ballistic_bg style="padding:0px;margin:0px;height:100%;" scroll="no" onload="init();">
+<%@ taglib uri="/pageflow-tags" prefix="pf"%>
+<div id="Div_custinfo" class="basicinfo_bg">
+<div id="Data_custinfo">
+<table class="table" id="custinfo" border="0" cellpadding="0"
+	cellspacing="0">
+	<tr>
+		<td>客户姓名：</td>
+		<td><input type="text" value="王*若" name="cust.name" readonly="true"/></td>
+		<td>证件类型：</td>
+		<td><input type="text" value="身份证" name="cust.certType" readonly="true" /></td>
+		<td>证件号码：</td>
+		<td>
+		<input size="30" type="text" value="********" name="cust.certId" readonly="true" /></td>
+		<td>当前用户：</td>
+		<td><input type="text" value="13602565600" name="cust.servNumber"  readonly="true"/></td>
+		<td>全球通
+		</td>
+	</tr>
+</table>
+</div>
+</div>
+    <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" id="tab">
+	    <tr>
+		    <td>
+		        <iframe id="selectProductFrm" src="/ngcustcare/product/productChangeAction!userProduct.action?BASEPRODID=0&RECTYPE=ChangeProduct&subsId=7554054349760&KDSubRecType=" width="100%" height="100%" FRAMEBORDER=0 SCROLLING="yes">
+		        </iframe>
+
+		        <iframe id="calRecFeeFrm" src="" width="100%" height="100%" FRAMEBORDER=0 style="display:none">
+		        </iframe>
+		
+		        <iframe id="submitFrm" src="" width="100%" height="100%" FRAMEBORDER=0 style="display:none">
+		        </iframe>
+		    </td>
+	    </tr>
+    </table>	
+</body>
+</html>
+<script>
+function init()
+{
+    var custinfoDiv = document.getElementById("Div_custinfo");
+    var custinfoHigh = 0;
+    if(custinfoDiv != null)
+    {
+        custinfoHigh = custinfoDiv.scrollHeight;
+        document.getElementById("tab").height = document.body.clientHeight - custinfoHigh - 5;
+    }
+    
+    if('13602565600'!='' && custinfoDiv != null)
+    {
+    	top.publicObject['mainTab'].removeTabByCode('CS_100010011003');
+    }
+}
+
+
+/**
+if (!commCheckRecRule("/ngcustcare", null, "recType=ChangeProduct")) 
+{
+    top.publicObject["mainTab"].closeCurrentTab();
+}
+*/
+
+/**
+function commitQueryFee()
+{
+	var url ="productTreeAction!installRecCheck.action";
+	new Ajax.Request
+	(
+		url,
+		{
+			method: 'post',
+			parameters: "random="+Math.random(),
+			onComplete: function(originalRequest)
+			{
+				var message = originalRequest.responseText;
+				if(message == "ok")
+				{
+					document.getElementById("selectProductFrm").style.display ="none";
+					var url="productChangeAction!doNext.action";
+				    window.calRecFeeFrm.location.href= url;
+				    document.getElementById("calRecFeeFrm").style.display= "block";
+				    
+				    document.getElementById("productBtn").style.display= "none";
+					document.getElementById("calRecFeeBtn").style.display= "block";
+				}
+				else
+				{
+					alert(message);
+				}
+			}
+		}
+    );
+}
+*/
+
+function closeTab()
+{
+	try
+	{
+		var TabSet = top.publicObject["mainTab"];
+    	TabSet.closeCurrentTab();
+	}
+	catch(e)
+	{
+		alert(e);
+	}
+}
+
+function commitRequest()
+{
+	calRecFeeFrm.feeFrame.commitRequest();
+    //calRecFeeFrm.document.forms(0).action="/ngcustcare/product/productChangeAction!commintSave.action";
+	//calRecFeeFrm.document.forms(0).submit();
+}
+</script>
+0
+

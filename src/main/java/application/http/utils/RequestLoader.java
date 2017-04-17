@@ -68,8 +68,8 @@ public class RequestLoader {
             }
         }
 
-        logger.info("URL:{}", JsonHelper.toJSON(connection.request().url()));
-        logger.info("URI:{}", UrlMaker.make(connection.request().url().toString()).getUri());
+        //logger.info("URL:{}", JsonHelper.toJSON(connection.request().url()));
+        //logger.info("URI:{}", UrlMaker.make(connection.request().url().toString()).getUri());
         /* logger.info("Method:{}", JsonHelper.toJSON(connection.request().method()));
         logger.info("Headers :{}", JsonHelper.toJSON(connection.request().headers()));
         logger.info("Cookie :{}", JsonHelper.toJSON(connection.request().cookies()));

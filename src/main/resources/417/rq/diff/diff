@@ -1,0 +1,2425 @@
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/custlogin/initAuthSecuityConfig.action
+http://10.252.150.157/ngcustcare/custsvc/xmlData/getServNumDictData.action
+Diff headers {
+  "Cache-Control" : "<->no-cache",
+  "x-requested-with" : "XMLHttpRequest<->",
+  "Content-Length" : "0<->28",
+  "Content-Type" : "<->application/x-www-form-urlencoded"
+}
+Diff cookies {
+  "LIFE_TIME" : "1492443332198_120<->1492443426679_120"
+}
+Diff body {
+  "groupId" : "<->CMMobileNumberDefine"
+}
+Diff params { }
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "123456",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "null",
+  "com.huawei.boss.CURRENT_TAB" : "123456",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "com.huawei.boss.NO_CURRENT_USER",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/custsvc/xmlData/getServNumDictData.action
+http://10.252.150.157/ngcustcare/custlogin/getMainProID.action?servNumber=13602565600
+Diff headers {
+  "Cache-Control" : "no-cache<->",
+  "x-requested-with" : "<->XMLHttpRequest",
+  "Content-Length" : "28<->0",
+  "Content-Type" : "application/x-www-form-urlencoded<->"
+}
+Diff cookies {
+  "LIFE_TIME" : "1492443426679_120<->1492443426803_120"
+}
+Diff body {
+  "groupId" : "CMMobileNumberDefine<->"
+}
+Diff params {
+  "servNumber" : "<->13602565600"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "123456",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "null",
+  "com.huawei.boss.CURRENT_TAB" : "123456",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "com.huawei.boss.NO_CURRENT_USER",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/custlogin/getMainProID.action?servNumber=13602565600
+http://10.252.150.157/ngcustcare/custsvc/certcheck/idCardActionCheck.action
+Diff headers {
+  "Content-Length" : "0<->25",
+  "Content-Type" : "<->application/x-www-form-urlencoded"
+}
+Diff cookies {
+  "LIFE_TIME" : "1492443426803_120<->1492443427124_120"
+}
+Diff body {
+  "certId" : "<->460027198811272037"
+}
+Diff params {
+  "servNumber" : "13602565600<->"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "123456",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "null",
+  "com.huawei.boss.CURRENT_TAB" : "123456",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "com.huawei.boss.NO_CURRENT_USER",
+  "bsacKF" : "NGCRM_BOSS",
+  "x-requested-with" : "XMLHttpRequest",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/custsvc/certcheck/idCardActionCheck.action
+http://10.252.150.157/ngcustcare/custlogin/qryCustInfo.action
+Diff headers {
+  "Content-Length" : "25<->252"
+}
+Diff cookies {
+  "LIFE_TIME" : "1492443427124_120<->1492443427246_120"
+}
+Diff body {
+  "certType" : "<->IdCard",
+  "isCert2G" : "<->",
+  "withoutPassValidate" : "<->false",
+  "verifyCode" : "<->",
+  "method" : "<->qryCustInfo",
+  "pswd" : "<->",
+  "domainType" : "<->",
+  "certId" : "460027198811272037<->",
+  "certID" : "<->460027198811272037",
+  "isUseReadIdCardWithTwo" : "<->0",
+  "custType" : "<->PersonCustomer",
+  "rndPswd" : "<->",
+  "ONLYLOGIN" : "<->onlyLogin",
+  "authCheckMode" : "<->AuthCheckD",
+  "servNumber" : "<->13602565600"
+}
+Diff params { }
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "123456",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "null",
+  "com.huawei.boss.CURRENT_TAB" : "123456",
+  "Content-Type" : "application/x-www-form-urlencoded",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "com.huawei.boss.NO_CURRENT_USER",
+  "bsacKF" : "NGCRM_BOSS",
+  "x-requested-with" : "XMLHttpRequest",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/custlogin/qryCustInfo.action
+http://10.252.150.157/ngcustcare/common/treasuryMode/checkProvFeeMenu.action?menuid=100110121062
+Diff headers {
+  "x-requested-with" : "XMLHttpRequest<->",
+  "Content-Length" : "252<->0",
+  "Content-Type" : "application/x-www-form-urlencoded<->"
+}
+Diff cookies {
+  "com.huawei.boss.CURRENT_USER" : "com.huawei.boss.NO_CURRENT_USER<->13602565600",
+  "LIFE_TIME" : "1492443427246_120<->1492443427382_120",
+  "compareCookie" : "<->89129798D8D8617E8D9125B39388FC1A",
+  "com.huawei.boss.CONTACTID" : "null<->undefined"
+}
+Diff body {
+  "certType" : "IdCard<->",
+  "isCert2G" : "<->",
+  "withoutPassValidate" : "false<->",
+  "verifyCode" : "<->",
+  "method" : "qryCustInfo<->",
+  "pswd" : "<->",
+  "domainType" : "<->",
+  "certID" : "460027198811272037<->",
+  "isUseReadIdCardWithTwo" : "0<->",
+  "custType" : "PersonCustomer<->",
+  "rndPswd" : "<->",
+  "ONLYLOGIN" : "onlyLogin<->",
+  "authCheckMode" : "AuthCheckD<->",
+  "servNumber" : "13602565600<->"
+}
+Diff params {
+  "menuid" : "<->100110121062"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "123456",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CURRENT_TAB" : "123456",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/common/treasuryMode/checkProvFeeMenu.action?menuid=100110121062
+http://10.252.150.157/ngcustcare/custlogin/chkNeedPreFacePhoto.action?menuId=100110121062
+Diff headers { }
+Diff cookies {
+  "LIFE_TIME" : "1492443427382_120<->1492443427808_120"
+}
+Diff body { }
+Diff params {
+  "menuid" : "100110121062<->",
+  "menuId" : "<->100110121062"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "123456",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "Content-Length" : "0",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "123456",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/custlogin/chkNeedPreFacePhoto.action?menuId=100110121062
+http://10.252.150.157/ngcustcare/unitequery/capesquery/capesQueryAction!recordingMenuClick.action?menuid=100110121062
+Diff headers { }
+Diff cookies {
+  "LIFE_TIME" : "1492443427808_120<->1492443427921_120"
+}
+Diff body { }
+Diff params {
+  "menuId" : "100110121062<->",
+  "menuid" : "<->100110121062"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "123456",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "Content-Length" : "0",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "123456",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/unitequery/capesquery/capesQueryAction!recordingMenuClick.action?menuid=100110121062
+http://10.252.150.157/ngcustcare/backreception/commonFunctional/commonFunctionalAction!checkLimitedMenu.action?menuid=100110121062
+Diff headers { }
+Diff cookies {
+  "LIFE_TIME" : "1492443427921_120<->1492443428188_120"
+}
+Diff body { }
+Diff params { }
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "123456",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "Content-Length" : "0",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "123456",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "menuid" : "100110121062",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/backreception/commonFunctional/commonFunctionalAction!checkLimitedMenu.action?menuid=100110121062
+http://10.252.150.157/ngcustcare/backreception/commonFunctional/commonFunctionalAction!getCurrAuthTypeMode.action?
+Diff headers { }
+Diff cookies {
+  "LIFE_TIME" : "1492443428188_120<->1492443428403_120"
+}
+Diff body { }
+Diff params {
+  "menuid" : "100110121062<->"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "123456",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "Content-Length" : "0",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "123456",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/backreception/commonFunctional/commonFunctionalAction!getCurrAuthTypeMode.action?
+http://10.252.150.157/ngcustcare/custlogin/needAuthMenu.action?menuid=100110121062
+Diff headers { }
+Diff cookies {
+  "LIFE_TIME" : "1492443428403_120<->1492443428658_120"
+}
+Diff body { }
+Diff params {
+  "menuid" : "<->100110121062"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "123456",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "Content-Length" : "0",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "123456",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/custlogin/needAuthMenu.action?menuid=100110121062
+http://10.252.150.157/csp/bsf/showMiddleSubRightForNG.action?parentTabSetId=BOSS^13602565600&sTabCode=BOSS^13602565600^100110121062~13602565600&sTabName=%25E4%25B8%25AA%25E4%25BA%25BA%25E5%25AE%25A2%25E6%2588%25B7%25E7%25BB%259F%25E4%25B8%2580%25E8%25A7%2586%25E5%259B%25BE&sTabSrc=/ngcustcare/uniteview/uviewtwo/uvDisper.action&sTabIcon=images/tag_icon_02.gif&oFlag=null&showIconFlag=null&area=13602565600&myPhoneNo=undefined&needAuth=undefined&showFlag=1&currentTabID=BOSS^13602565600
+Diff headers {
+  "Accept" : "*/*<->image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, */*",
+  "Pragma" : "no-cache<->",
+  "Content-Length" : "0<->"
+}
+Diff cookies {
+  "com.huawei.boss.CURRENT_MENUID" : "123456<->BOSS^13602565600",
+  "LIFE_TIME" : "1492443428658_120<->1492443429556_120",
+  "com.huawei.boss.CURRENT_TAB" : "123456<->BOSS%5E13602565600"
+}
+Diff body { }
+Diff params {
+  "area" : "<->13602565600",
+  "parentTabSetId" : "<->BOSS^13602565600",
+  "oFlag" : "<->null",
+  "myPhoneNo" : "<->undefined",
+  "sTabSrc" : "<->/ngcustcare/uniteview/uviewtwo/uvDisper.action",
+  "needAuth" : "<->undefined",
+  "showFlag" : "<->1",
+  "sTabName" : "<->%25E4%25B8%25AA%25E4%25BA%25BA%25E5%25AE%25A2%25E6%2588%25B7%25E7%25BB%259F%25E4%25B8%2580%25E8%25A7%2586%25E5%259B%25BE",
+  "sTabCode" : "<->BOSS^13602565600^100110121062~13602565600",
+  "showIconFlag" : "<->null",
+  "menuid" : "100110121062<->",
+  "sTabIcon" : "<->images/tag_icon_02.gif",
+  "currentTabID" : "<->BOSS^13602565600"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "IPAddr" : "10.243.213.226",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/csp/bsf/showMiddleSubRightForNG.action?parentTabSetId=BOSS^13602565600&sTabCode=BOSS^13602565600^100110121062~13602565600&sTabName=%25E4%25B8%25AA%25E4%25BA%25BA%25E5%25AE%25A2%25E6%2588%25B7%25E7%25BB%259F%25E4%25B8%2580%25E8%25A7%2586%25E5%259B%25BE&sTabSrc=/ngcustcare/uniteview/uviewtwo/uvDisper.action&sTabIcon=images/tag_icon_02.gif&oFlag=null&showIconFlag=null&area=13602565600&myPhoneNo=undefined&needAuth=undefined&showFlag=1&currentTabID=BOSS^13602565600
+http://10.252.150.157/ngcustcare/backreception/loadBatchReceptionCustom!queryCustRuleForAuthListCount.action?servnumber=13602565600
+Diff headers {
+  "Accept" : "image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, */*<->*/*",
+  "x-requested-with" : "<->XMLHttpRequest",
+  "Pragma" : "<->no-cache",
+  "Content-Length" : "<->0"
+}
+Diff cookies { }
+Diff body { }
+Diff params {
+  "area" : "13602565600<->",
+  "parentTabSetId" : "BOSS^13602565600<->",
+  "servnumber" : "<->13602565600",
+  "oFlag" : "null<->",
+  "myPhoneNo" : "undefined<->",
+  "sTabSrc" : "/ngcustcare/uniteview/uviewtwo/uvDisper.action<->",
+  "needAuth" : "undefined<->",
+  "showFlag" : "1<->",
+  "sTabName" : "%25E4%25B8%25AA%25E4%25BA%25BA%25E5%25AE%25A2%25E6%2588%25B7%25E7%25BB%259F%25E4%25B8%2580%25E8%25A7%2586%25E5%259B%25BE<->",
+  "sTabCode" : "BOSS^13602565600^100110121062~13602565600<->",
+  "showIconFlag" : "null<->",
+  "sTabIcon" : "images/tag_icon_02.gif<->",
+  "currentTabID" : "BOSS^13602565600<->"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "BOSS^13602565600",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600",
+  "IPAddr" : "10.243.213.226",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "LIFE_TIME" : "1492443429556_120",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/backreception/loadBatchReceptionCustom!queryCustRuleForAuthListCount.action?servnumber=13602565600
+http://10.252.150.157/ngcustcare/remoteCall.action
+Diff headers {
+  "Cache-Control" : "<->no-cache",
+  "x-requested-with" : "XMLHttpRequest<->",
+  "Content-Length" : "0<->261",
+  "Content-Type" : "<->application/x-www-form-urlencoded"
+}
+Diff cookies {
+  "LIFE_TIME" : "1492443429556_120<->1492443429880_120"
+}
+Diff body {
+  "remoteCallXml" : "<->@260@263xml@232version@261@2341@2460@234@232encoding@261@234UTF@2458@234@263@262@260huawei@295call@262@260i@262product@247targetcustsale@247@242@260@247i@262@260e@262getCmpPopHintMessage@260@247e@262@260p@262@260@247p@262@260@247huawei@295call@262"
+}
+Diff params {
+  "servnumber" : "13602565600<->"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "BOSS^13602565600",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/remoteCall.action
+http://10.252.150.157/ngcustcare/remoteCall.action
+Diff headers {
+  "Content-Length" : "261<->269"
+}
+Diff cookies {
+  "LIFE_TIME" : "1492443429880_120<->1492443430077_120"
+}
+Diff body {
+  "remoteCallXml" : "@260@263xml@232version@261@2341@2460@234@232encoding@261@234UTF@2458@234@263@262@260huawei@295call@262@260i@262product@247targetcustsale@247@242@260@247i@262@260e@262getCmpPopHintMessage@260@247e@262@260p@262@260@247p@262@260@247huawei@295call@262<->@260@263xml@232version@261@2341@2460@234@232encoding@261@234UTF@2458@234@263@262@260huawei@295call@262@260i@262product@247targetcustsale@247@242@260@247i@262@260e@262checkCanActivityPopUpMessage@260@247e@262@260p@262@260@247p@262@260@247huawei@295call@262"
+}
+Diff params { }
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "BOSS^13602565600",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600",
+  "Content-Type" : "application/x-www-form-urlencoded",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "Cache-Control" : "no-cache",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/remoteCall.action
+http://10.252.150.157/ngcustcare/product/custAuthAlert/custAuthAlertAction!checkAlertRule.action?random=0.23498844079537756
+Diff headers {
+  "Cache-Control" : "no-cache<->",
+  "x-requested-with" : "<->XMLHttpRequest",
+  "Content-Length" : "269<->0",
+  "Content-Type" : "application/x-www-form-urlencoded<->"
+}
+Diff cookies {
+  "LIFE_TIME" : "1492443430077_120<->1492443430190_120"
+}
+Diff body {
+  "remoteCallXml" : "@260@263xml@232version@261@2341@2460@234@232encoding@261@234UTF@2458@234@263@262@260huawei@295call@262@260i@262product@247targetcustsale@247@242@260@247i@262@260e@262checkCanActivityPopUpMessage@260@247e@262@260p@262@260@247p@262@260@247huawei@295call@262<->"
+}
+Diff params {
+  "random" : "<->0.23498844079537756"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "BOSS^13602565600",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/product/custAuthAlert/custAuthAlertAction!checkAlertRule.action?random=0.23498844079537756
+http://10.252.150.157/ngcustcare/custsvc/bookingPhone/queryBookingPhoneInfoForAuth.action?telNum=13602565600
+Diff headers { }
+Diff cookies {
+  "LIFE_TIME" : "1492443430190_120<->1492443430365_120"
+}
+Diff body { }
+Diff params {
+  "random" : "0.23498844079537756<->",
+  "telNum" : "<->13602565600"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "BOSS^13602565600",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "Content-Length" : "0",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "x-requested-with" : "XMLHttpRequest",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/custsvc/bookingPhone/queryBookingPhoneInfoForAuth.action?telNum=13602565600
+http://10.252.150.157/ngcustcare/uniteview/uviewtwo/uvDisper.action?currentTabID=BOSS^13602565600^100110121062~13602565600
+Diff headers {
+  "Accept" : "*/*<->image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, */*",
+  "x-requested-with" : "XMLHttpRequest<->",
+  "Pragma" : "no-cache<->",
+  "Content-Length" : "0<->"
+}
+Diff cookies {
+  "com.huawei.boss.CURRENT_MENUID" : "BOSS^13602565600<->100110121062",
+  "LIFE_TIME" : "1492443430365_120<->1492443430533_120",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600<->BOSS%5E13602565600%5E100110121062%7E13602565600"
+}
+Diff body { }
+Diff params {
+  "telNum" : "13602565600<->",
+  "currentTabID" : "<->BOSS^13602565600^100110121062~13602565600"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "IPAddr" : "10.243.213.226",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/uniteview/uviewtwo/uvDisper.action?currentTabID=BOSS^13602565600^100110121062~13602565600
+http://10.252.150.157/nguniteview/bossviewhome.jsp
+Diff headers {
+  "Pragma" : "<->no-cache",
+  "Content-Length" : "<->4149",
+  "Content-Type" : "<->application/x-www-form-urlencoded"
+}
+Diff cookies {
+  "LIFE_TIME" : "1492443430533_120<->1492443430817_120"
+}
+Diff body {
+  "ccm_VipTypeStateDate" : "<->",
+  "com_PriSocietyRelation" : "<->",
+  "ccnotRegister" : "<->false",
+  "com_AssessRec" : "<->",
+  "com_Status" : "<->1",
+  "com_Start_time" : "<->0",
+  "com_WorkDate" : "<->",
+  "cam_NotifyValueDisplay" : "<->0.00",
+  "com_Gprs_starttime" : "<->0",
+  "com_Sex" : "<->",
+  "com_JobLive" : "<->",
+  "ccm_IsEncrypt" : "<->1",
+  "com_Healthy" : "<->",
+  "com_InvVersion" : "<->",
+  "com_BloodType" : "<->",
+  "com_hr_status" : "<->1",
+  "cam_StatusDate" : "<->2012-04-02+17%3A30%3A00",
+  "com_Manager" : "<->0",
+  "cadirect" : "<->false",
+  "cam_SettleAccount" : "<->",
+  "csm_Brand" : "<->BrandGotone",
+  "ccm_RegStatus" : "<->1",
+  "com_OperType" : "<->OPRT10",
+  "com_Password" : "<->FEFBFF4E0D4170A9AB3ABB738F8FD841",
+  "com_RoamOrgID" : "<->",
+  "cam_Status" : "<->stcmNml",
+  "com_TouchNum" : "<->",
+  "ccm_Email" : "<->",
+  "com_BirthDay" : "<->",
+  "ccm_IsFaceChk" : "<->0",
+  "coentityID" : "<->Bpschyxs",
+  "com_NowPostID" : "<->",
+  "csdirect" : "<->false",
+  "ccm_CustType" : "<->PersonCustomer",
+  "cam_RandomNum" : "<->",
+  "cam_CustBillArray" : "<->%5B%5D",
+  "ccm_HomeTel" : "<->",
+  "csm_StopKey" : "<->00000000",
+  "com_OnDuty" : "<->0",
+  "ccm_OwnerAreaID" : "<->",
+  "cam_CustID" : "<->7554051594511",
+  "cam_InvPrintType" : "<->",
+  "ccm_ObjectID" : "<->",
+  "com_CertID" : "<->",
+  "csm_ProductID" : "<->0",
+  "csm_ServNumber" : "<->13602565600",
+  "cam_UrgeInfos" : "<->%5B%5D",
+  "com_Check_mac" : "<->0",
+  "csm_Region" : "<->755",
+  "com_areaID" : "<->",
+  "ccregister" : "<->true",
+  "com_Level" : "<->",
+  "ccm_Notes" : "<->",
+  "com_PassChangeDate" : "<->2016-10-14+15%3A26%3A31",
+  "ccm_LinkAddr" : "<->********",
+  "com_MenuID" : "<->123456",
+  "cam_AccountType" : "<->actpCmn",
+  "com_graduateDate" : "<->",
+  "ccm_StatusDate" : "<->2012-04-02+17%3A49%3A43",
+  "csm_StatusDate" : "<->******",
+  "ccm_ShortName" : "<->",
+  "ccm_CertAddr" : "<->********",
+  "servNumber" : "<->13602565600",
+  "cochecked" : "<->false",
+  "csm_ObjectID" : "<->",
+  "transmit" : "<->layoutAction.do%3Fmethod%3DshowLayout%26layoutId%3D1%26viewId%3D0",
+  "csm_SettleDay" : "<->1",
+  "ccm_IsMergeBill" : "<->0",
+  "com_Restrict_time" : "<->0",
+  "ccm_RandomNum" : "<->",
+  "csm_RegisterOrgID" : "<->BBSZ07900",
+  "csm_BelongRegion" : "<->0",
+  "com_TotalLevel" : "<->",
+  "com_End_time" : "<->24",
+  "com_StatusDate" : "<->2017-04-08+11%3A35%3A41",
+  "ccm_Address" : "<->********",
+  "ccm_LinkMan" : "<->%CD%F5*%C8%F4",
+  "csm_Enum" : "<->89860060191409808408",
+  "com_ComityLevel" : "<->",
+  "cam_EntrustTel" : "<->13602565600",
+  "com_PolityFace" : "<->",
+  "ccm_CreateDate" : "<->2012-04-02+17%3A30%3A00",
+  "cam_CreateDate" : "<->2012-04-02+17%3A30%3A00",
+  "com_FamilyDes" : "<->",
+  "ccm_LinkPhone" : "<->13602565600",
+  "csm_TargetRegion" : "<->0",
+  "ccm_EntityID" : "<->7554051594511",
+  "ccm_OrgID" : "<->BBSZ07900",
+  "com_EducationLevel" : "<->",
+  "com_Operator_type" : "<->0",
+  "cam_OrgID" : "<->BBSZ07900",
+  "com_RandomNum" : "<->",
+  "com_CreateDate" : "<->2016-01-08+09%3A46%3A15",
+  "cam_PrePayType" : "<->pptpPost",
+  "csm_MobileType" : "<->mbtpNml",
+  "conodeName" : "<->%C9%EE**%C6%BA%C9%BD%D0%C2%C7%F8%B4%B4%BA%A3%D4%B4%CD%A8%D1%B6%CF%FA%CA%DB%B5%EA",
+  "remotemac" : "<->D0-17-C2-87-32-19",
+  "stopKeyValue" : "<->%D5%FD%B3%A3%CA%B9%D3%C3",
+  "ccm_CustClass1" : "<->CustClass111",
+  "ccm_CustClass2" : "<->CustClass201",
+  "csm_InvalidDate" : "<->2037-01-01+00%3A00%3A00",
+  "ccm_CreditLevel" : "<->crdtNormal",
+  "ccm_CustBillArray" : "<->%5B%5D",
+  "com_EntityName" : "<->%C9%EE**%C6%BA%C9%BD%D0%C2%C7%F8%B4%B4%BA%A3%D4%B4%CD%A8%D1%B6%CF%FA%CA%DB%B5%EA",
+  "ccm_ResponseCustMgr" : "<->",
+  "csm_Status" : "<->US10",
+  "coendUsingTime" : "<->2099-10-11+00%3A00%3A00",
+  "ccm_CertType" : "<->IdCard",
+  "cam_PayChannelArray" : "<->%5B%5D",
+  "csm_EntityName" : "<->%CD%F5*%C8%F4",
+  "csm_IsDefaultTelNum" : "<->1",
+  "csm_Imsi" : "<->460002506614107",
+  "com_MacAddress" : "<->00-FF-D8-99-86-89",
+  "com_EditStatus" : "<->0",
+  "ccm_InLevel" : "<->1",
+  "ccm_starLevel" : "<->4",
+  "com_EntityID" : "<->Bpschyxs",
+  "costartUsingTime" : "<->1970-01-01+00%3A00%3A00",
+  "cam_OverDraft" : "<->0",
+  "com_ShareStore" : "<->",
+  "com_QueueID" : "<->",
+  "ccm_National" : "<->China",
+  "csm_CustomerOid" : "<->7554051594511",
+  "com_Note" : "<->SZ-GHQD-20170310006",
+  "cam_Notes" : "<->",
+  "com_StarLevel" : "<->",
+  "ccm_Region" : "<->755",
+  "csgotone" : "<->true",
+  "cam_EntityID" : "<->7554052430180",
+  "csm_PayMode" : "<->1010",
+  "ccm_TownID" : "<->",
+  "cam_BillInvoiceMailArray" : "<->%5B%5D",
+  "com_OrgID" : "<->BBSZ0HD16010407",
+  "com_Enjoyful" : "<->",
+  "cam_ObjectID" : "<->",
+  "ccm_EditStatus" : "<->0",
+  "csm_AuthType" : "<->AuthCheckB",
+  "cam_EditStatus" : "<->0",
+  "conodeParentID" : "<->BBSZ0HD16010407",
+  "com_ObjectID" : "<->",
+  "ccm_PostCode" : "<->518002",
+  "com_Region" : "<->755",
+  "cam_NotifyValue" : "<->0",
+  "com_TrainLevel" : "<->",
+  "com_IPAddress" : "<->10.243.213.226",
+  "csm_CretLevel" : "<->",
+  "ccm_HomePage" : "<->",
+  "ccm_OfficeTel" : "<->",
+  "recType" : "<->",
+  "ccm_CertID" : "<->460027********203*",
+  "com_HomeAddress" : "<->",
+  "ccm_Password" : "<->",
+  "ccm_Foreigner" : "<->0",
+  "csm_Credit" : "<->0",
+  "cam_GroupAcctID" : "<->",
+  "ccm_NetServGrade" : "<->",
+  "csm_EditStatus" : "<->0",
+  "cam_IsDefault" : "<->0",
+  "com_Enable_gprs" : "<->0",
+  "csm_Password" : "<->MjAwNDI3",
+  "com_Gprs_endtime" : "<->0",
+  "cam_ControlScheme" : "<->0",
+  "ccm_VipType" : "<->VC0000",
+  "csm_EntityID" : "<->7554054349760",
+  "cam_EntityName" : "<->%CD%F5*%C8%F4",
+  "com_ServNum" : "<->",
+  "com_Character" : "<->",
+  "csm_SubsProduct" : "<->%5B%5D",
+  "csm_StartDate" : "<->2012-04-02+17%3A30%3A00",
+  "cam_Region" : "<->755",
+  "csm_RandomNum" : "<->",
+  "csnotGotone" : "<->false",
+  "codirect" : "<->false",
+  "com_NativeHome" : "<->",
+  "csm_AreaID" : "<->",
+  "conodeID" : "<->Bpschyxs",
+  "cam_CreateDateDisplay" : "<->2012-04-02",
+  "ccm_Status" : "<->stcmNml",
+  "csm_CreateDate" : "<->******",
+  "csm_OwnerOrgID" : "<->BBSZ07900",
+  "ccm_CustAddrArray" : "<->%5B%5D",
+  "csm_AccountOid" : "<->7554052430180",
+  "comenuId" : "<->123456",
+  "cootherParam" : "<->OPRT10",
+  "com_IsMarray" : "<->0",
+  "com_Mac" : "<->",
+  "ccm_MobileTel" : "<->",
+  "com_ContactPhone" : "<->18718674448",
+  "com_SkillLevel" : "<->",
+  "ccdirect" : "<->false",
+  "ccm_EntityName" : "<->%CD%F5*%C8%F4",
+  "cam_NotifyType" : "<->",
+  "ccm_CurrentCustMgr" : "<->"
+}
+Diff params {
+  "currentTabID" : "BOSS^13602565600^100110121062~13602565600<->"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "100110121062",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5E100110121062%7E13602565600",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, */*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/nguniteview/bossviewhome.jsp
+http://10.252.150.157/nguniteview/layout/toolbar.jsp?ownerType=1&modelId=1&cssFlag=default&skinId=1&layoutId=1
+Diff headers {
+  "Accept" : "image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, */*<->*/*",
+  "x-requested-with" : "<->XMLHttpRequest",
+  "Content-Length" : "4149<->19",
+  "Content-Type" : "application/x-www-form-urlencoded<->application/x-www-form-urlencoded;charset=UTF-8"
+}
+Diff cookies { }
+Diff body {
+  "ccm_VipTypeStateDate" : "<->",
+  "com_PriSocietyRelation" : "<->",
+  "ccnotRegister" : "false<->",
+  "com_AssessRec" : "<->",
+  "com_Status" : "1<->",
+  "com_Start_time" : "0<->",
+  "com_WorkDate" : "<->",
+  "cam_NotifyValueDisplay" : "0.00<->",
+  "com_Gprs_starttime" : "0<->",
+  "com_Sex" : "<->",
+  "com_JobLive" : "<->",
+  "ccm_IsEncrypt" : "1<->",
+  "height" : "<->14",
+  "com_Healthy" : "<->",
+  "com_InvVersion" : "<->",
+  "com_BloodType" : "<->",
+  "com_hr_status" : "1<->",
+  "cam_StatusDate" : "2012-04-02+17%3A30%3A00<->",
+  "com_Manager" : "0<->",
+  "cadirect" : "false<->",
+  "cam_SettleAccount" : "<->",
+  "csm_Brand" : "BrandGotone<->",
+  "ccm_RegStatus" : "1<->",
+  "com_OperType" : "OPRT10<->",
+  "com_Password" : "FEFBFF4E0D4170A9AB3ABB738F8FD841<->",
+  "com_RoamOrgID" : "<->",
+  "cam_Status" : "stcmNml<->",
+  "com_TouchNum" : "<->",
+  "ccm_Email" : "<->",
+  "com_BirthDay" : "<->",
+  "ccm_IsFaceChk" : "0<->",
+  "coentityID" : "Bpschyxs<->",
+  "com_NowPostID" : "<->",
+  "csdirect" : "false<->",
+  "ccm_CustType" : "PersonCustomer<->",
+  "cam_RandomNum" : "<->",
+  "cam_CustBillArray" : "%5B%5D<->",
+  "ccm_HomeTel" : "<->",
+  "csm_StopKey" : "00000000<->",
+  "com_OnDuty" : "0<->",
+  "ccm_OwnerAreaID" : "<->",
+  "cam_CustID" : "7554051594511<->",
+  "cam_InvPrintType" : "<->",
+  "ccm_ObjectID" : "<->",
+  "com_CertID" : "<->",
+  "csm_ProductID" : "0<->",
+  "csm_ServNumber" : "13602565600<->",
+  "cam_UrgeInfos" : "%5B%5D<->",
+  "com_Check_mac" : "0<->",
+  "csm_Region" : "755<->",
+  "com_areaID" : "<->",
+  "ccregister" : "true<->",
+  "com_Level" : "<->",
+  "ccm_Notes" : "<->",
+  "com_PassChangeDate" : "2016-10-14+15%3A26%3A31<->",
+  "ccm_LinkAddr" : "********<->",
+  "com_MenuID" : "123456<->",
+  "cam_AccountType" : "actpCmn<->",
+  "com_graduateDate" : "<->",
+  "ccm_StatusDate" : "2012-04-02+17%3A49%3A43<->",
+  "csm_StatusDate" : "******<->",
+  "ccm_ShortName" : "<->",
+  "ccm_CertAddr" : "********<->",
+  "servNumber" : "13602565600<->",
+  "cochecked" : "false<->",
+  "csm_ObjectID" : "<->",
+  "transmit" : "layoutAction.do%3Fmethod%3DshowLayout%26layoutId%3D1%26viewId%3D0<->",
+  "csm_SettleDay" : "1<->",
+  "ccm_IsMergeBill" : "0<->",
+  "com_Restrict_time" : "0<->",
+  "ccm_RandomNum" : "<->",
+  "csm_RegisterOrgID" : "BBSZ07900<->",
+  "csm_BelongRegion" : "0<->",
+  "com_TotalLevel" : "<->",
+  "com_End_time" : "24<->",
+  "com_StatusDate" : "2017-04-08+11%3A35%3A41<->",
+  "ccm_Address" : "********<->",
+  "ccm_LinkMan" : "%CD%F5*%C8%F4<->",
+  "csm_Enum" : "89860060191409808408<->",
+  "com_ComityLevel" : "<->",
+  "cam_EntrustTel" : "13602565600<->",
+  "com_PolityFace" : "<->",
+  "ccm_CreateDate" : "2012-04-02+17%3A30%3A00<->",
+  "cam_CreateDate" : "2012-04-02+17%3A30%3A00<->",
+  "com_FamilyDes" : "<->",
+  "ccm_LinkPhone" : "13602565600<->",
+  "csm_TargetRegion" : "0<->",
+  "ccm_EntityID" : "7554051594511<->",
+  "ccm_OrgID" : "BBSZ07900<->",
+  "com_EducationLevel" : "<->",
+  "com_Operator_type" : "0<->",
+  "cam_OrgID" : "BBSZ07900<->",
+  "com_RandomNum" : "<->",
+  "com_CreateDate" : "2016-01-08+09%3A46%3A15<->",
+  "cam_PrePayType" : "pptpPost<->",
+  "csm_MobileType" : "mbtpNml<->",
+  "conodeName" : "%C9%EE**%C6%BA%C9%BD%D0%C2%C7%F8%B4%B4%BA%A3%D4%B4%CD%A8%D1%B6%CF%FA%CA%DB%B5%EA<->",
+  "remotemac" : "D0-17-C2-87-32-19<->",
+  "stopKeyValue" : "%D5%FD%B3%A3%CA%B9%D3%C3<->",
+  "ccm_CustClass1" : "CustClass111<->",
+  "ccm_CustClass2" : "CustClass201<->",
+  "csm_InvalidDate" : "2037-01-01+00%3A00%3A00<->",
+  "ccm_CreditLevel" : "crdtNormal<->",
+  "ccm_CustBillArray" : "%5B%5D<->",
+  "com_EntityName" : "%C9%EE**%C6%BA%C9%BD%D0%C2%C7%F8%B4%B4%BA%A3%D4%B4%CD%A8%D1%B6%CF%FA%CA%DB%B5%EA<->",
+  "ccm_ResponseCustMgr" : "<->",
+  "csm_Status" : "US10<->",
+  "coendUsingTime" : "2099-10-11+00%3A00%3A00<->",
+  "ccm_CertType" : "IdCard<->",
+  "cam_PayChannelArray" : "%5B%5D<->",
+  "csm_EntityName" : "%CD%F5*%C8%F4<->",
+  "csm_IsDefaultTelNum" : "1<->",
+  "csm_Imsi" : "460002506614107<->",
+  "com_MacAddress" : "00-FF-D8-99-86-89<->",
+  "com_EditStatus" : "0<->",
+  "ccm_InLevel" : "1<->",
+  "ccm_starLevel" : "4<->",
+  "com_EntityID" : "Bpschyxs<->",
+  "costartUsingTime" : "1970-01-01+00%3A00%3A00<->",
+  "cam_OverDraft" : "0<->",
+  "com_ShareStore" : "<->",
+  "com_QueueID" : "<->",
+  "ccm_National" : "China<->",
+  "csm_CustomerOid" : "7554051594511<->",
+  "com_Note" : "SZ-GHQD-20170310006<->",
+  "cam_Notes" : "<->",
+  "com_StarLevel" : "<->",
+  "ccm_Region" : "755<->",
+  "csgotone" : "true<->",
+  "cam_EntityID" : "7554052430180<->",
+  "csm_PayMode" : "1010<->",
+  "ccm_TownID" : "<->",
+  "cam_BillInvoiceMailArray" : "%5B%5D<->",
+  "com_OrgID" : "BBSZ0HD16010407<->",
+  "com_Enjoyful" : "<->",
+  "cam_ObjectID" : "<->",
+  "ccm_EditStatus" : "0<->",
+  "csm_AuthType" : "AuthCheckB<->",
+  "cam_EditStatus" : "0<->",
+  "width" : "<->120",
+  "conodeParentID" : "BBSZ0HD16010407<->",
+  "com_ObjectID" : "<->",
+  "ccm_PostCode" : "518002<->",
+  "com_Region" : "755<->",
+  "cam_NotifyValue" : "0<->",
+  "com_TrainLevel" : "<->",
+  "com_IPAddress" : "10.243.213.226<->",
+  "csm_CretLevel" : "<->",
+  "ccm_HomePage" : "<->",
+  "ccm_OfficeTel" : "<->",
+  "recType" : "<->",
+  "ccm_CertID" : "460027********203*<->",
+  "com_HomeAddress" : "<->",
+  "ccm_Password" : "<->",
+  "ccm_Foreigner" : "0<->",
+  "csm_Credit" : "0<->",
+  "cam_GroupAcctID" : "<->",
+  "ccm_NetServGrade" : "<->",
+  "csm_EditStatus" : "0<->",
+  "cam_IsDefault" : "0<->",
+  "com_Enable_gprs" : "0<->",
+  "csm_Password" : "MjAwNDI3<->",
+  "com_Gprs_endtime" : "0<->",
+  "cam_ControlScheme" : "0<->",
+  "ccm_VipType" : "VC0000<->",
+  "csm_EntityID" : "7554054349760<->",
+  "cam_EntityName" : "%CD%F5*%C8%F4<->",
+  "com_ServNum" : "<->",
+  "com_Character" : "<->",
+  "csm_SubsProduct" : "%5B%5D<->",
+  "csm_StartDate" : "2012-04-02+17%3A30%3A00<->",
+  "cam_Region" : "755<->",
+  "csm_RandomNum" : "<->",
+  "csnotGotone" : "false<->",
+  "codirect" : "false<->",
+  "com_NativeHome" : "<->",
+  "csm_AreaID" : "<->",
+  "conodeID" : "Bpschyxs<->",
+  "cam_CreateDateDisplay" : "2012-04-02<->",
+  "ccm_Status" : "stcmNml<->",
+  "csm_CreateDate" : "******<->",
+  "csm_OwnerOrgID" : "BBSZ07900<->",
+  "ccm_CustAddrArray" : "%5B%5D<->",
+  "csm_AccountOid" : "7554052430180<->",
+  "comenuId" : "123456<->",
+  "cootherParam" : "OPRT10<->",
+  "com_IsMarray" : "0<->",
+  "com_Mac" : "<->",
+  "ccm_MobileTel" : "<->",
+  "com_ContactPhone" : "18718674448<->",
+  "com_SkillLevel" : "<->",
+  "ccdirect" : "false<->",
+  "ccm_EntityName" : "%CD%F5*%C8%F4<->",
+  "cam_NotifyType" : "<->",
+  "ccm_CurrentCustMgr" : "<->"
+}
+Diff params {
+  "ownerType" : "<->1",
+  "cssFlag" : "<->default",
+  "modelId" : "<->1",
+  "skinId" : "<->1",
+  "layoutId" : "<->1"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "100110121062",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5E100110121062%7E13602565600",
+  "IPAddr" : "10.243.213.226",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "LIFE_TIME" : "1492443430817_120",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/nguniteview/layout/toolbar.jsp?ownerType=1&modelId=1&cssFlag=default&skinId=1&layoutId=1
+http://10.252.150.157/nguniteview/layout/title.jsp?ownerType=1&layoutId=1&cssFlag=default
+Diff headers {
+  "Content-Length" : "19<->20"
+}
+Diff cookies { }
+Diff body {
+  "width" : "120<->1049"
+}
+Diff params {
+  "modelId" : "1<->",
+  "skinId" : "1<->"
+}
+Same all {
+  "ownerType" : "1",
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "100110121062",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5E100110121062%7E13602565600",
+  "Content-Type" : "application/x-www-form-urlencoded;charset=UTF-8",
+  "height" : "14",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "LIFE_TIME" : "1492443430817_120",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "layoutId" : "1",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "cssFlag" : "default",
+  "x-requested-with" : "XMLHttpRequest",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/nguniteview/layout/title.jsp?ownerType=1&layoutId=1&cssFlag=default
+http://10.252.150.157/nguniteview/layoutAction.do?method=showView&ownerType=1&viewId=200
+Diff headers { }
+Diff cookies { }
+Diff body { }
+Diff params {
+  "cssFlag" : "default<->",
+  "viewId" : "<->200",
+  "method" : "<->showView",
+  "layoutId" : "1<->"
+}
+Same all {
+  "ownerType" : "1",
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "100110121062",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "Content-Length" : "20",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5E100110121062%7E13602565600",
+  "Content-Type" : "application/x-www-form-urlencoded;charset=UTF-8",
+  "height" : "14",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "LIFE_TIME" : "1492443430817_120",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "x-requested-with" : "XMLHttpRequest",
+  "width" : "1049",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/nguniteview/layoutAction.do?method=showView&ownerType=1&viewId=200
+http://10.252.150.157/nguniteview/layoutAction.do?method=showView&ownerType=1&viewId=39
+Diff headers {
+  "Content-Length" : "20<->19"
+}
+Diff cookies { }
+Diff body {
+  "width" : "1049<->733"
+}
+Diff params {
+  "viewId" : "200<->39"
+}
+Same all {
+  "ownerType" : "1",
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "100110121062",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5E100110121062%7E13602565600",
+  "Content-Type" : "application/x-www-form-urlencoded;charset=UTF-8",
+  "height" : "14",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "method" : "showView",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "LIFE_TIME" : "1492443430817_120",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "x-requested-with" : "XMLHttpRequest",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/nguniteview/layoutAction.do?method=showView&ownerType=1&viewId=39
+http://10.252.150.157/nguniteview/layoutAction.do?method=showView&ownerType=1&viewId=78
+Diff headers { }
+Diff cookies { }
+Diff body {
+  "width" : "733<->311"
+}
+Diff params {
+  "viewId" : "39<->78"
+}
+Same all {
+  "ownerType" : "1",
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "100110121062",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "Content-Length" : "19",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5E100110121062%7E13602565600",
+  "Content-Type" : "application/x-www-form-urlencoded;charset=UTF-8",
+  "height" : "14",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "method" : "showView",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "LIFE_TIME" : "1492443430817_120",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "x-requested-with" : "XMLHttpRequest",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/nguniteview/layoutAction.do?method=showView&ownerType=1&viewId=78
+http://10.252.150.157/nguniteview/queyViewGroupInfoAction.do?ownerType=1&method=queryViewGroupInfo&top=true
+Diff headers {
+  "Content-Length" : "19<->18"
+}
+Diff cookies { }
+Diff body {
+  "width" : "311<->120",
+  "height" : "14<->1"
+}
+Diff params {
+  "viewId" : "78<->",
+  "method" : "showView<->queryViewGroupInfo",
+  "top" : "<->true"
+}
+Same all {
+  "ownerType" : "1",
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "100110121062",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5E100110121062%7E13602565600",
+  "Content-Type" : "application/x-www-form-urlencoded;charset=UTF-8",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "LIFE_TIME" : "1492443430817_120",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "x-requested-with" : "XMLHttpRequest",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/nguniteview/queyViewGroupInfoAction.do?ownerType=1&method=queryViewGroupInfo&top=true
+http://10.252.150.157/nguniteview/queyViewGroupInfoAction.do?ownerType=1&method=queryViewGroupInfo
+Diff headers { }
+Diff cookies { }
+Diff body { }
+Diff params {
+  "top" : "true<->"
+}
+Same all {
+  "ownerType" : "1",
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "100110121062",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "Content-Length" : "18",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5E100110121062%7E13602565600",
+  "Content-Type" : "application/x-www-form-urlencoded;charset=UTF-8",
+  "height" : "1",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "method" : "queryViewGroupInfo",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "LIFE_TIME" : "1492443430817_120",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "x-requested-with" : "XMLHttpRequest",
+  "width" : "120",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/nguniteview/queyViewGroupInfoAction.do?ownerType=1&method=queryViewGroupInfo
+http://10.252.150.157/ngcustcare/common/treasuryMode/checkProvFeeMenu.action?menuid=CS_100010011003
+Diff headers {
+  "x-requested-with" : "XMLHttpRequest<->",
+  "Content-Length" : "18<->0",
+  "Content-Type" : "application/x-www-form-urlencoded;charset=UTF-8<->"
+}
+Diff cookies {
+  "LIFE_TIME" : "1492443430817_120<->1492443432711_120"
+}
+Diff body {
+  "width" : "120<->",
+  "height" : "1<->"
+}
+Diff params {
+  "ownerType" : "1<->",
+  "method" : "queryViewGroupInfo<->",
+  "menuid" : "<->CS_100010011003"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "100110121062",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5E100110121062%7E13602565600",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/common/treasuryMode/checkProvFeeMenu.action?menuid=CS_100010011003
+http://10.252.150.157/ngcustcare/custlogin/chkNeedPreFacePhoto.action?menuId=CS_100010011003
+Diff headers { }
+Diff cookies {
+  "LIFE_TIME" : "1492443432711_120<->1492443433360_120"
+}
+Diff body { }
+Diff params {
+  "menuid" : "CS_100010011003<->",
+  "menuId" : "<->CS_100010011003"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "100110121062",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "Content-Length" : "0",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5E100110121062%7E13602565600",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/custlogin/chkNeedPreFacePhoto.action?menuId=CS_100010011003
+http://10.252.150.157/ngcustcare/unitequery/capesquery/capesQueryAction!recordingMenuClick.action?menuid=CS_100010011003
+Diff headers { }
+Diff cookies {
+  "LIFE_TIME" : "1492443433360_120<->1492443433477_120"
+}
+Diff body { }
+Diff params {
+  "menuId" : "CS_100010011003<->",
+  "menuid" : "<->CS_100010011003"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "100110121062",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "Content-Length" : "0",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5E100110121062%7E13602565600",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/unitequery/capesquery/capesQueryAction!recordingMenuClick.action?menuid=CS_100010011003
+http://10.252.150.157/ngcustcare/backreception/commonFunctional/commonFunctionalAction!checkLimitedMenu.action?menuid=CS_100010011003
+Diff headers { }
+Diff cookies {
+  "LIFE_TIME" : "1492443433477_120<->1492443433758_120"
+}
+Diff body { }
+Diff params { }
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "100110121062",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "Content-Length" : "0",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5E100110121062%7E13602565600",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "menuid" : "CS_100010011003",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/backreception/commonFunctional/commonFunctionalAction!checkLimitedMenu.action?menuid=CS_100010011003
+http://10.252.150.157/ngcustcare/backreception/commonFunctional/commonFunctionalAction!getCurrAuthTypeMode.action?
+Diff headers { }
+Diff cookies {
+  "LIFE_TIME" : "1492443433758_120<->1492443433876_120"
+}
+Diff body { }
+Diff params {
+  "menuid" : "CS_100010011003<->"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "100110121062",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "Content-Length" : "0",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5E100110121062%7E13602565600",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/backreception/commonFunctional/commonFunctionalAction!getCurrAuthTypeMode.action?
+http://10.252.150.157/ngcustcare/custlogin/checkLuckNoAuthType.action?menuId=CS_100010011003
+Diff headers { }
+Diff cookies {
+  "LIFE_TIME" : "1492443433876_120<->1492443434119_120"
+}
+Diff body { }
+Diff params {
+  "menuId" : "<->CS_100010011003"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "100110121062",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "Content-Length" : "0",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5E100110121062%7E13602565600",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/custlogin/checkLuckNoAuthType.action?menuId=CS_100010011003
+http://10.252.150.157/ngcustcare/custlogin/needAuthMenu.action?menuid=CS_100010011003
+Diff headers { }
+Diff cookies {
+  "LIFE_TIME" : "1492443434119_120<->1492443434383_120"
+}
+Diff body { }
+Diff params {
+  "menuId" : "CS_100010011003<->",
+  "menuid" : "<->CS_100010011003"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "100110121062",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "Content-Length" : "0",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5E100110121062%7E13602565600",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/custlogin/needAuthMenu.action?menuid=CS_100010011003
+http://10.252.150.157/ngcustcare/custlogin/compareAuthtype.action?menuid=CS_100010011003&parame=false&userid=
+Diff headers { }
+Diff cookies {
+  "LIFE_TIME" : "1492443434383_120<->1492443434762_120"
+}
+Diff body { }
+Diff params {
+  "parame" : "<->false",
+  "userid" : "<->"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "100110121062",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "Content-Length" : "0",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5E100110121062%7E13602565600",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "menuid" : "CS_100010011003",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/custlogin/compareAuthtype.action?menuid=CS_100010011003&parame=false&userid=
+http://10.252.150.157/ngcustcare/product/changeProduct.action?currentTabID=BOSS^13602565600^CS_100010011003~13602565600
+Diff headers {
+  "Accept" : "*/*<->image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, */*",
+  "Pragma" : "no-cache<->",
+  "Content-Length" : "0<->"
+}
+Diff cookies {
+  "com.huawei.boss.CURRENT_MENUID" : "100110121062<->CS_100010011003",
+  "LIFE_TIME" : "1492443434762_120<->1492443434882_120",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5E100110121062%7E13602565600<->BOSS%5E13602565600%5ECS_100010011003%7E13602565600"
+}
+Diff body { }
+Diff params {
+  "parame" : "false<->",
+  "menuid" : "CS_100010011003<->",
+  "userid" : "<->",
+  "currentTabID" : "<->BOSS^13602565600^CS_100010011003~13602565600"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "IPAddr" : "10.243.213.226",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/product/changeProduct.action?currentTabID=BOSS^13602565600^CS_100010011003~13602565600
+http://10.252.150.157/ngcustcare/product/productChangeAction!userProduct.action?BASEPRODID=0&RECTYPE=ChangeProduct&subsId=7554054349760&KDSubRecType=
+Diff headers { }
+Diff cookies {
+  "LIFE_TIME" : "1492443434882_120<->1492443435012_120"
+}
+Diff body { }
+Diff params {
+  "subsId" : "<->7554054349760",
+  "BASEPRODID" : "<->0",
+  "KDSubRecType" : "<->",
+  "currentTabID" : "BOSS^13602565600^CS_100010011003~13602565600<->",
+  "RECTYPE" : "<->ChangeProduct"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "CS_100010011003",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5ECS_100010011003%7E13602565600",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, */*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/product/productChangeAction!userProduct.action?BASEPRODID=0&RECTYPE=ChangeProduct&subsId=7554054349760&KDSubRecType=
+http://10.252.150.157/ngcustcare/custsvc/common/recordBusiMonitor.action
+Diff headers {
+  "Accept" : "image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, */*<->*/*",
+  "x-requested-with" : "<->XMLHttpRequest",
+  "Pragma" : "<->no-cache",
+  "Content-Length" : "<->0"
+}
+Diff cookies {
+  "LIFE_TIME" : "1492443435012_120<->1492443436311_120"
+}
+Diff body { }
+Diff params {
+  "subsId" : "7554054349760<->",
+  "BASEPRODID" : "0<->",
+  "KDSubRecType" : "<->",
+  "RECTYPE" : "ChangeProduct<->"
+}
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "CS_100010011003",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5ECS_100010011003%7E13602565600",
+  "IPAddr" : "10.243.213.226",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/custsvc/common/recordBusiMonitor.action
+http://10.252.150.157/ngcustcare/remoteCall.action
+Diff headers {
+  "Cache-Control" : "<->no-cache",
+  "x-requested-with" : "XMLHttpRequest<->",
+  "Content-Length" : "0<->263",
+  "Content-Type" : "<->application/x-www-form-urlencoded"
+}
+Diff cookies {
+  "LIFE_TIME" : "1492443436311_120<->1492443438429_120"
+}
+Diff body {
+  "remoteCallXml" : "<->@260@263xml@232version@261@2341@2460@234@232encoding@261@234UTF@2458@234@263@262@260huawei@295call@262@260i@262product@247targetcustsale@247@242@260@247i@262@260e@262checkIsActivityPopPage@260@247e@262@260p@262@260@247p@262@260@247huawei@295call@262"
+}
+Diff params { }
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "CS_100010011003",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5ECS_100010011003%7E13602565600",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/remoteCall.action
+http://10.252.150.157/ngcustcare/product/targetcustsale/initActivityPop.action
+Diff headers {
+  "Cache-Control" : "no-cache<->",
+  "Referer" : "http<->",
+  "Pragma" : "no-cache<->",
+  "Content-Length" : "263<->",
+  "Content-Type" : "application/x-www-form-urlencoded<->"
+}
+Diff cookies {
+  "LIFE_TIME" : "1492443438429_120<->1492443438615_120"
+}
+Diff body {
+  "remoteCallXml" : "@260@263xml@232version@261@2341@2460@234@232encoding@261@234UTF@2458@234@263@262@260huawei@295call@262@260i@262product@247targetcustsale@247@242@260@247i@262@260e@262checkIsActivityPopPage@260@247e@262@260p@262@260@247p@262@260@247huawei@295call@262<->"
+}
+Diff params { }
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "CS_100010011003",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5ECS_100010011003%7E13602565600",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/product/targetcustsale/initActivityPop.action
+http://10.252.150.157/ngsysadmin/remoteCall.action
+Diff headers {
+  "Cache-Control" : "<->no-cache",
+  "Referer" : "<->http",
+  "Pragma" : "<->no-cache",
+  "Content-Length" : "<->423",
+  "Content-Type" : "<->application/x-www-form-urlencoded"
+}
+Diff cookies {
+  "LIFE_TIME" : "1492443438615_120<->1492443438650_120"
+}
+Diff body {
+  "remoteCallXml" : "<->@260@263xml@232version@261@2341@2460@234@232encoding@261@234UTF@2458@234@263@262@260huawei@295call@262@260i@262common@247page@247@242@260@247i@262@260e@262getPgaeControlList@260@247e@262@260p@262@260m@262@260n@2620@260@247n@262@260t@262s@260@247t@262@260v@262@260@233@291CDATA@291@247ngcustcare@247product@247changeProduct@246action@293@293@262@260@247v@262@260@247m@262@260@247p@262@260@247huawei@295call@262"
+}
+Diff params { }
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "CS_100010011003",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5ECS_100010011003%7E13602565600",
+  "IPAddr" : "10.243.213.226",
+  "Accept" : "*/*",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngsysadmin/remoteCall.action
+http://10.252.150.157/ngcustcare/remoteCall.action
+Diff headers {
+  "Accept" : "*/*<->text/plain, */*; q=0.01",
+  "Cache-Control" : "no-cache<->",
+  "x-requested-with" : "<->XMLHttpRequest",
+  "Content-Length" : "423<->447"
+}
+Diff cookies {
+  "LIFE_TIME" : "1492443438650_120<->1492443438768_120"
+}
+Diff body {
+  "remoteCallXml" : "@260@263xml@232version@261@2341@2460@234@232encoding@261@234UTF@2458@234@263@262@260huawei@295call@262@260i@262common@247page@247@242@260@247i@262@260e@262getPgaeControlList@260@247e@262@260p@262@260m@262@260n@2620@260@247n@262@260t@262s@260@247t@262@260v@262@260@233@291CDATA@291@247ngcustcare@247product@247changeProduct@246action@293@293@262@260@247v@262@260@247m@262@260@247p@262@260@247huawei@295call@262<->@260@263xml@232version@261@2341@2460@234@232encoding@261@234UTF@2458@234@263@262@260huawei@295call@262@260i@262product@247targetcustsale@247@242@260@247i@262@260e@262getActivityPopMarketing@260@247e@262@260p@262@260m@262@260n@2620@260@247n@262@260t@262s@260@247t@262@260v@26210@260@247v@262@260@247m@262@260m@262@260n@2621@260@247n@262@260t@262s@260@247t@262@260v@2621@260@247v@262@260@247m@262@260@247p@262@260@247huawei@295call@262"
+}
+Diff params { }
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "CS_100010011003",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5ECS_100010011003%7E13602565600",
+  "Content-Type" : "application/x-www-form-urlencoded",
+  "IPAddr" : "10.243.213.226",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngcustcare/remoteCall.action
+http://10.252.150.157/ngsysadmin/remoteCall.action
+Diff headers {
+  "Accept" : "text/plain, */*; q=0.01<->*/*",
+  "Cache-Control" : "<->no-cache",
+  "x-requested-with" : "XMLHttpRequest<->",
+  "Content-Length" : "447<->443"
+}
+Diff cookies { }
+Diff body {
+  "remoteCallXml" : "@260@263xml@232version@261@2341@2460@234@232encoding@261@234UTF@2458@234@263@262@260huawei@295call@262@260i@262product@247targetcustsale@247@242@260@247i@262@260e@262getActivityPopMarketing@260@247e@262@260p@262@260m@262@260n@2620@260@247n@262@260t@262s@260@247t@262@260v@26210@260@247v@262@260@247m@262@260m@262@260n@2621@260@247n@262@260t@262s@260@247t@262@260v@2621@260@247v@262@260@247m@262@260@247p@262@260@247huawei@295call@262<->@260@263xml@232version@261@2341@2460@234@232encoding@261@234UTF@2458@234@263@262@260huawei@295call@262@260i@262common@247page@247@242@260@247i@262@260e@262getPgaeControlList@260@247e@262@260p@262@260m@262@260n@2620@260@247n@262@260t@262s@260@247t@262@260v@262@260@233@291CDATA@291@247ngcustcare@247product@247targetcustsale@247initActivityPop@246action@293@293@262@260@247v@262@260@247m@262@260@247p@262@260@247huawei@295call@262"
+}
+Diff params { }
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "CS_100010011003",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5ECS_100010011003%7E13602565600",
+  "Content-Type" : "application/x-www-form-urlencoded",
+  "IPAddr" : "10.243.213.226",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "LIFE_TIME" : "1492443438768_120",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}
+--------------------compare request------------------------
+Diff between:
+http://10.252.150.157/ngsysadmin/remoteCall.action
+http://10.252.150.157/ngcustcare/remoteCall.action
+Diff headers {
+  "Accept" : "*/*<->text/plain, */*; q=0.01",
+  "Cache-Control" : "no-cache<->",
+  "x-requested-with" : "<->XMLHttpRequest",
+  "Content-Length" : "443<->371"
+}
+Diff cookies {
+  "LIFE_TIME" : "1492443438768_120<->1492443439118_120"
+}
+Diff body {
+  "remoteCallXml" : "@260@263xml@232version@261@2341@2460@234@232encoding@261@234UTF@2458@234@263@262@260huawei@295call@262@260i@262common@247page@247@242@260@247i@262@260e@262getPgaeControlList@260@247e@262@260p@262@260m@262@260n@2620@260@247n@262@260t@262s@260@247t@262@260v@262@260@233@291CDATA@291@247ngcustcare@247product@247targetcustsale@247initActivityPop@246action@293@293@262@260@247v@262@260@247m@262@260@247p@262@260@247huawei@295call@262<->@260@263xml@232version@261@2341@2460@234@232encoding@261@234UTF@2458@234@263@262@260huawei@295call@262@260i@262remoteCall@260@247i@262@260e@262getSystemDict@260@247e@262@260p@262@260m@262@260n@2620@260@247n@262@260t@262s@260@247t@262@260v@262@260@233@291CDATA@291TOUCH@295FEEDBACK@293@293@262@260@247v@262@260@247m@262@260@247p@262@260@247huawei@295call@262"
+}
+Diff params { }
+Same all {
+  "loginTicketCookie" : "D079F9B7793F0B2B0203E88D1C0DD84D751FE93B0DF86A38",
+  "User-Agent" : "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
+  "JSESSIONID" : "0000ut9CIs09xVTQ_xIX4zXJCPc:1ar31o907:1ar350j49:1ara3v0hb",
+  "LOGIN_OUT_USE_LOGINID" : "AA8567CFA0E90C83BF2ED74933A822B5A0E680E3AA691C1D8B2D65C64191F4FA06BBF483C29D0AE060418314CE1273BAB15BBD3C9CF508F479E9BDF02348888A5CBFC5626085C298EB1DA4B80EFDD92E",
+  "Accept-Encoding" : "gzip, deflate",
+  "DNT" : "1",
+  "compareCookie" : "89129798D8D8617E8D9125B39388FC1A",
+  "dtcqsyslocation" : "FEC497828E8EC12206BE9D9062C6E47005EEBDFFE35CAAB2458442457D802975",
+  "staffInfoCookie" : "Bpschyxs@@@BBSZ0HD16010407@@@755",
+  "com.huawei.boss.CURRENT_MENUID" : "CS_100010011003",
+  "BIGipServercrm_crm_sz" : "2627140618.14596.0000",
+  "com.huawei.boss.CONTACTID" : "undefined",
+  "com.huawei.boss.CURRENT_TAB" : "BOSS%5E13602565600%5ECS_100010011003%7E13602565600",
+  "Content-Type" : "application/x-www-form-urlencoded",
+  "IPAddr" : "10.243.213.226",
+  "loginCookie" : "3708EDDFABC18AC253ABB714868BAC86E14AE13248C4EB1715908E66EEC26C4E86CD7B9540EC759F34630E2517FBB0A348B5A204797FFCF57EBE318BC5EA03DB26CD493A04157C9263ED22CD6AAD00103708EDDFABC18AC26772EBD9D14431CDD62ECC2B6F66E2B9CF7A7F0CE9EB5E75ABBDD91B4DB36C34D2BBA1F6CB027517D7886D698E8F7315639636A970947AB8",
+  "BIGipServercrm_portal_sz" : "2610363402.14340.0000",
+  "BIGipServercrm_comm_sz" : "2610363402.14852.0000",
+  "Referer" : "http",
+  "Connection" : "Keep-Alive",
+  "Host" : "10.252.150.157",
+  "Pragma" : "no-cache",
+  "rootTicket" : "78AB9D34D65A0B67649A5DA6E78675890E56EAE7DA4941D0013C79C40040BC2C1CDCDFAEC0B6CBE3120F491FE0439B9C1A2E8AF8FC3B1434EB1DA4B80EFDD92E",
+  "com.huawei.boss.CURRENT_USER" : "13602565600",
+  "bsacKF" : "NGCRM_BOSS",
+  "sna_cookie" : "62716609F3FB52F9366C626A1474292DD01318F4D5D499789102E58B55C2F80B42223D3A85E371AD76413D5E239DEE62713E0326E579B264",
+  "MACAddr" : "00-FF-D8-99-86-89",
+  "Accept-Language" : "zh-CN",
+  "sDNSName" : "SZ-20160715MMML"
+}

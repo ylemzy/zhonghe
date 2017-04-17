@@ -1,0 +1,76 @@
+HTTP/1.1 200 OK
+Date: Mon, 17 Apr 2017 13:37:18 GMT
+X-Powered-By: Servlet/3.0
+Content-Length: 10452
+Set-Cookie: LIFE_TIME=1492443438650_120; Path=/
+Expires: Thu, 01 Dec 1994 16:00:00 GMT
+Cache-Control: no-cache="set-cookie, set-cookie2"
+Keep-Alive: timeout=10, max=93
+Connection: Keep-Alive
+Content-Type: text/html;charset=UTF-8
+Content-Language: zh-CN
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//w3c//dtd html 4.0 transitional//en"><html>
+
+<head>
+
+	<title>营销活动推送</title>
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<script language=javascript src="http://10.252.150.157/ngcustcare/skins/default/js/ngcommon.js"></script>
+	<script language=javascript src="http://10.252.150.157/ngcustcare/skins/default/js/Public.js"></script>
+	<script type="text/javascript" src='http://10.252.150.157/ngcustcare/skins/default/js/jquery.js'></script>
+	<script language=javascript src="http://10.252.150.157/ngcustcare/skins/default/js/extendString.js"></script>
+	<script language=javascript src="http://10.252.150.157/ngcustcare/skins/default/js/extendDate.js"></script>
+	<script language=javascript src="http://10.252.150.157/ngcustcare/skins/default/js/ngutil.js"></script>
+	<script language=javascript src="http://10.252.150.157/ngcustcare/skins/default/js/exportFile.js"></script>
+	
+	<script language=javascript src="http://10.252.150.157/ngcustcare/skins/default/js/AllDynamicPageUI.js"></script>
+	<script language=javascript src="http://10.252.150.157/ngcustcare/skins/default/js/specdatasetevent/targetActivityPop.js"></script>
+	<link type="text/css" rel="stylesheet" href="http://10.252.150.157/ngcustcare/skins/default/css/ngmain.css" />
+	
+</head>
+
+<script>var dsActivityMain_fields=[];var record=new Object();record["fieldName"]="SELECT";record["fieldType"]="select";record["labelName"]="";record["fieldWidth"]="";record["fieldHeight"]="";record["isMust"]="false";record["groupId"]="";dsActivityMain_fields.push(record);var record=new Object();record["fieldName"]="ACTSTRSTEPID";record["fieldType"]="hidden";record["labelName"]="活动执行策略信息流水号";record["fieldWidth"]="";record["fieldHeight"]="";record["isMust"]="false";record["groupId"]="";dsActivityMain_fields.push(record);var record=new Object();record["fieldName"]="ACTID";record["fieldType"]="hidden";record["labelName"]="营销活动编码";record["fieldWidth"]="";record["fieldHeight"]="";record["isMust"]="false";record["groupId"]="";dsActivityMain_fields.push(record);var record=new Object();record["fieldName"]="ACTNAME";record["fieldType"]="textarea";record["labelName"]="活动名称";record["fieldWidth"]="";record["fieldHeight"]="";record["isMust"]="false";record["groupId"]="";dsActivityMain_fields.push(record);var record=new Object();record["fieldName"]="ACTDESC";record["fieldType"]="text";record["labelName"]="活动描述";record["fieldWidth"]="";record["fieldHeight"]="";record["isMust"]="false";record["groupId"]="";dsActivityMain_fields.push(record);var record=new Object();record["fieldName"]="RESPONSE_CODE";record["fieldType"]="dropdownlist";record["labelName"]="客户态度";record["fieldWidth"]="";record["fieldHeight"]="";record["isMust"]="false";record["groupId"]="TOUCH_FEEDBACK";dsActivityMain_fields.push(record); var dsActivityMain =new Dataset("dsActivityMain",dsActivityMain_fields);</script>
+<script>var dsActivityMainDetail_fields=[];var record=new Object();record["fieldName"]="SELECT";record["fieldType"]="select";record["labelName"]="";record["fieldWidth"]="";record["fieldHeight"]="";record["isMust"]="false";record["groupId"]="";dsActivityMainDetail_fields.push(record);var record=new Object();record["fieldName"]="PRODID";record["fieldType"]="text";record["labelName"]="产品编码";record["fieldWidth"]="";record["fieldHeight"]="";record["isMust"]="false";record["groupId"]="";dsActivityMainDetail_fields.push(record);var record=new Object();record["fieldName"]="PRODNAME";record["fieldType"]="text";record["labelName"]="产品名称";record["fieldWidth"]="";record["fieldHeight"]="";record["isMust"]="false";record["groupId"]="";dsActivityMainDetail_fields.push(record);var record=new Object();record["fieldName"]="YWCONTENT";record["fieldType"]="text";record["labelName"]="推荐内容";record["fieldWidth"]="";record["fieldHeight"]="";record["isMust"]="false";record["groupId"]="";dsActivityMainDetail_fields.push(record); var dsActivityMainDetail =new Dataset("dsActivityMainDetail",dsActivityMainDetail_fields);</script>
+
+<script>var dsActivityBtnSaleCar_fields=[];var record=new Object();record["fieldName"]="btnasavefeedback";record["fieldType"]="button";record["labelName"]="保存反馈";record["fieldWidth"]="";record["fieldHeight"]="";record["isMust"]="false";record["groupId"]="";dsActivityBtnSaleCar_fields.push(record);var record=new Object();record["fieldName"]="btnaddcar";record["fieldType"]="button";record["labelName"]="加入购物车";record["fieldWidth"]="";record["fieldHeight"]="";record["isMust"]="false";record["groupId"]="";dsActivityBtnSaleCar_fields.push(record); var dsActivityBtnSaleCar =new Dataset("dsActivityBtnSaleCar",dsActivityBtnSaleCar_fields);</script>
+
+<script language="Javascript" src="/ngcustcare/metaweb/static/resources/js/Util.js?1273130002000" id="Util_js"></script><script language="Javascript" src="/ngcustcare/metaweb/static/resources/js/mwajax.js?1273130002000" id="mwajax_js"></script><script language="Javascript" src="/ngcustcare/metaweb/static/resources/js/mwutils.js?1274861737000" id="mwutils_js"></script><script language="Javascript" src="/ngcustcare/metaweb/static/resources/js/table/table_operations.js?1273326276000" id="table_operations_js"></script><link id="metaweb_arch_css" rel="stylesheet" type="text/css" href="/ngcustcare/resources/default/css/metaweb_arch.css"></link><link id="metaweb_css"  rel="stylesheet" type="text/css" href="/ngcustcare/resources/default/css/metaweb.css"></link><div id="mw_16146335391760414div"><table id="mw_16146335391760414" class="mw_table"></table></div>
+<body id="mw_16146335391784401" class="ballistic_bg" >
+
+	<script language="Javascript" src="/ngcustcare/metaweb/static/resources/js/isap_ui_form_validation.js?1265799570000" id="isap_ui_form_validation_js"></script><script language="Javascript" src="/ngcustcare/metaweb/static/resources/js/commonValidations.js?1273126955000" id="commonValidations_js"></script><form id="form" class="mw_form" method="post">
+	<div>
+		<div style="width:100%;height:100%;overflow-x:auto"><table style="width:100%;height:100%" class="list_td_bg2color" border="0px" > 
+			<tr style="width:100%;height:100%;border:0px"><td class="list_td_bg2color" style="width:100%;height:100%;border:0px" ><tr style="width:100%;height:100%;border:0px"><td class="list_td_bg2color" style="width:100%;height:100%;border:0px" ><div id="mw_158075div"><table id="title_table_158074" class="mw_table basicinfo_bg" style="cursor: pointer;" );width="100%" border="0" cellspacing="0" cellpadding="0"><tr class="mw_table_row"><td id="mw_158076" class="title_boldtext" width="100%"><LABEL class="mw_label " style="font:12px;bold"><b>营销活动(勾选记录刷新产品明细)</b></LABEL></td><td class="basic_arrow"><img id="title_icon_158074" src="http://10.252.150.157/ngcustcare/skins/default/images/title_arrow_top.gif" width="20" height="20" border="0" style="cursor: hand;" /></td></tr></table></div></td></tr><tr style="width:100%;height:5%;border:0px"><td class="list_td_bg2color" style="width:100%;height:100%;border:0px" ><div id="div_158077"></div><tr style="width:100%;height:5%;border:0px"><td class="list_td_bg2color" style="width:100%;height:100%;border:0px" ><div id="div_158078"></div>
+			    <script>var datagrid=new DataGrid("dsActivityMain","ui_158078");var uiDatagridHtml=datagrid.createEmptyDataGridWithPag();$("#div_158078").html(uiDatagridHtml);</script>
+			</td></tr><script>function hidden_158074(hiddenFlag){showHiddenColumn2("title_icon_158074","div_158078","/ngcustcare",hiddenFlag);} var _it=document.getElementById("title_table_158074");if(typeof(_it)!="undefined" && _it!=null){_it.onclick=hidden_158074;}</script>
+			<tr style="width:100%;height:100%;border:0px"><td class="list_td_bg2color" style="width:100%;height:100%;border:0px" ><tr style="width:100%;height:100%;border:0px"><td class="list_td_bg2color" style="width:100%;height:100%;border:0px" ><div id="mw_158080div"><table id="title_table_158079" class="mw_table basicinfo_bg" style="cursor: pointer;" );width="100%" border="0" cellspacing="0" cellpadding="0"><tr class="mw_table_row"><td id="mw_158081" class="title_boldtext" width="100%"><LABEL class="mw_label " style="font:12px;bold"><b>产品明细</b></LABEL></td><td class="basic_arrow"><img id="title_icon_158079" src="http://10.252.150.157/ngcustcare/skins/default/images/title_arrow_top.gif" width="20" height="20" border="0" style="cursor: hand;" /></td></tr></table></div></td></tr><tr style="width:100%;height:5%;border:0px"><td class="list_td_bg2color" style="width:100%;height:100%;border:0px" ><div id="div_158082"></div>
+			    <script>var datagrid=new DataGrid("dsActivityMainDetail","ui_158082");var uiDatagridHtml=datagrid.createEmptyDataGridWithPag('SELECT,PRODID,PRODNAME,YWCONTENT');$("#div_158082").html(uiDatagridHtml);</script>
+			</td></tr><script>function hidden_158079(hiddenFlag){showHiddenColumn2("title_icon_158079","div_158082","/ngcustcare",hiddenFlag);} var _it=document.getElementById("title_table_158079");if(typeof(_it)!="undefined" && _it!=null){_it.onclick=hidden_158079;}</script>
+		</table></div>
+	</div>
+	
+	<div>
+		<div style="width:100%;height:100%;overflow-x:auto"><table style="width:100%;height:100%" class="list_td_bg2color" border="0px" > 
+			<tr style="width:100%;height:5%;border:0px"><td class="list_td_bg2color" style="width:100%;height:100%;border:0px" ><div id="div_158086"></div>
+				<script>var uiForm=new Form("dsActivityBtnSaleCar","ui_158087",5);var uiFormHtml=uiForm.addFields('empty,btnasavefeedback,btnaddcar,empty');$("#div_158086").html(uiFormHtml);</script>
+			</td></tr><script>function hidden_158083(hiddenFlag){showHiddenColumn2("title_icon_158083","div_158086","/ngcustcare",hiddenFlag);} var _it=document.getElementById("title_table_158083");if(typeof(_it)!="undefined" && _it!=null){_it.onclick=hidden_158083;}</script>
+		</table></div>
+	</div>
+	</form>	
+<script>if(navigator.appName!='Netscape'&& null==window.onunload){var formunload = window.onunload;window.onunload = function(){try{var f = document.body.getElementsByTagName('form');for(var i=0;i<f.length;i++){f[i];}}catch(e){}if(formunload)formunload()};}</script>
+</body>
+
+<script type="text/javascript">
+var servNumber='13602565600';
+</script>
+
+
+</html>

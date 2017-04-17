@@ -1,0 +1,605 @@
+HTTP/1.1 200 OK
+Date: Mon, 17 Apr 2017 13:37:12 GMT
+X-Powered-By: Servlet/3.0
+Content-Length: 18536
+Keep-Alive: timeout=10, max=97
+Connection: Keep-Alive
+Content-Type: text/html; charset=GBK
+Content-Language: zh-CN
+
+
+
+
+
+ <table border=0 bToolBar=1 width=100% height=100%  cellspacing=0 cellpadding=0  class="tbar_tb" >
+      <tr>
+          <td  class="tbar_search"  colspan=2>
+              <input type=text onFocus="if(this.className == 'tbar_search_input_disabled'){this.className='tbar_search_input';this.value='';}" class="tbar_search_input_disabled" onkeydown="keyDown(this)" id="viewName" value="  <搜索视图>" name="viewName" size=13 maxlength=20 ><img src="skin/default/tbar_search.gif" onclick="queryView(this)" align="absmiddle" style="cursor:hand">   
+         </td>
+      </tr>
+      <tr >
+         <td  colspan=2 class="tbar_result" >
+             <div class="tbar_result_div" id="dom_tbar_result">
+                搜索视图：请输入视图名称或元素名称，支持模糊。搜索结果可点击打开。
+            </div>
+         </td>
+      </tr>
+      <tr>
+            <td class="tbar_menu_title">
+                <img src="skin/default/tbar_menu_title_ico.gif" align="absmiddle">&nbsp;我的视图
+            </td> 
+            <td class="tbar_menu_title_ico" nowrap>
+            </td>
+      </tr>
+      <tr>
+            <td colspan=2  class="tbar_menu_content" id="dom_tbar_menu" >                
+                
+            </td> 
+      </tr>
+      <tr>
+          <td class="tbar_menu_content2" colspan=2 id="skinSetToolbar" height=60>
+          
+          <table width=100% cellspacing=0 cellpadding=0  class=tbar_menu_body>
+            <tr>
+            <td colspan=3 id="dom_tbar_menu2" >                
+                
+            </td> 
+            </tr>
+            <tr>
+            <td class=tbar_bottom2><img src="skin/default/changeskin.gif"/></td>
+            <td class=tbar_bottom  onclick="showSkinDlg(this)">更换皮肤</td>
+            <td class=tbar_bottom>&nbsp;&nbsp;</td>
+           </tr>
+          </table></td>
+      </tr>
+ </table>
+ 
+ <script language="javascript">
+
+     function menu_mouse(tdobj, bover, bchild, isFix)
+     {
+        if(bchild)
+        {            
+            tdobj.className = bover ? "tbar_menu_hot1" : "tbar_menunormal1"; 
+            tdobj.previousSibling.className = bover ? "tbar_menu_hot1_left" : "tbar_menunormal1_left";  
+        }
+        else
+        {
+            var y3 = document.body.scrollHeight;
+            var children = tdobj.children;
+            var tdiv = null;
+            var fixleft = 0;
+            if (isFix) {
+              fixleft = tdobj.nextSibling.offsetWidth;
+            }
+            for(var i=0; i<children.length; i++)
+            {
+                var child = children[i];
+                if(child.tagName == "DIV")
+                {
+                    tdiv = child;
+                    break;
+                }   
+            }
+            if(tdiv != null )
+            {
+                if (tdiv.style.display != "none" && bover) 
+                {
+                  return;
+                }
+              	var dh = document.body.clientHeight;
+              	var tdw =  tdobj.clientWidth; 
+              	var tdh =  tdobj.clientHeight;
+              	var pos = DLG.getXYinBody(tdobj);
+              	tdiv.style.posTop = 0;
+              	tdiv.style.posLeft = tdw + fixleft;  
+                tdiv.style.display = bover ? "block" : "none";
+                if(bover)
+                {
+              		var divh = tdiv.clientHeight;
+              		var posy = pos.y;
+              		var resth = dh - posy;
+              		if(resth < divh && posy > divh )
+              		{
+              			tdiv.style.posTop = -divh + tdh;
+              		}
+              		else if(resth > divh)
+              		{
+              			tdiv.style.posTop = 0;
+              		}
+              		else if(resth < divh && dh < divh)
+              		{
+              			tdiv.style.posTop = -posy;
+              		}
+              		else if(resth < divh && dh > divh)
+              		{
+              			tdiv.style.posTop = resth - divh;
+              		}
+                }
+            }  
+            
+            if (!isFix) {
+              tdobj.className = bover ? "tbar_menu_hot" : "tbar_menunormal"; 
+              tdobj.previousSibling.className = bover ? "tbar_menu_hot_left" : "tbar_menunormal_left";  
+            } 
+        }
+     }
+     
+     
+     function menu_mousefunc(tdobj,bover,bchild, menuobj, isFix)
+     {
+        return function()
+        {
+           menu_mouse(tdobj, bover, bchild, isFix);    
+        }   
+     }
+     
+     function result_expandfunc(ulobj)
+     {
+        return function()
+        {
+            result_expand(ulobj);
+        }   
+     }
+     function result_expand(ulobj)
+     {
+         ulobj.style.display = ulobj.style.display == "none" ? "" : "none";
+     }
+     
+     function setWarnWord(sou, keyword)
+     {
+         var str = "<font class='tbar_font_warn'>" + keyword + "</font>";
+         var re = new RegExp(keyword,"ig");
+         sou = sou.replace(re, str);
+         return sou;
+     }
+     
+     function clearWarnWord(v)
+     {
+     	if(!v)
+     		return null;
+     	v = v.replace("<font class='tbar_font_warn'>", "");
+     	v = v.replace("</font>");
+     	return v;
+     }
+     
+     function menu_Openfunc(menuObj, viewObj)
+     {
+     
+     	return function()
+     	{
+     	    if (viewObj.viewId==1537)
+     	    {
+     	      DLG.business(this,'ACT060107','综合查询','integration.jsp?targetUrl=/cs/fee/querybyno/list.jsp','2');
+     	    }
+     	    else
+     	    {
+     	      menu_Open(menuObj, viewObj);
+     	    }
+     		
+     	}
+     }
+     
+     function menu_Open(menuObj, viewObj)
+     {
+     	var arrTdObj = DLG.getLinkFillTdDomObj(menuObj);
+     	var v = menuObj.innerText;
+     	if(v)
+     	{
+     		v = v.replace(/^\s*/,"");
+     		v = v.replace(/\s*$/,"");
+     	}
+     	var url = "http://10.252.150.157/nguniteview/layoutAction.do?method=showView&ownerType=1&viewId=" + viewObj.viewId;
+     	var tdobj = null;
+     	var tagObj = null;
+
+     	for(var i=0; i<arrTdObj.length; i++)
+     	{
+     		var tdobj = arrTdObj[i];
+     		tagObj = PLCLSID.getDomObj4ClsId(tdobj, PLCLSID.VTAG);
+     		
+     		
+     		if (viewObj.ispic=='0' || viewObj.ispic == '1')
+     		{
+	     		if (viewObj.ispic=='0' && DLG.isObjInFillId(tagObj,'f3'))
+	     		{
+	     		  break;
+	     		}
+	     		if (viewObj.ispic=='1' && DLG.isObjInFillId(tagObj,'f4'))
+	     		{
+	     		  break;
+	     		}
+     		}
+     		else
+     		{
+     		    if (DLG.isObjInFillId(tagObj,'f3'))
+     		    {
+     		      break;
+     		    }
+     		}
+     	}
+
+     	if(tagObj != null)
+     	{
+     		tagObj = PLCLSID.getObj4DomObj(tagObj);
+     	 
+     	 var p_panelObj = tagObj.winObj.panelObj;
+     	 var allTds = p_panelObj.getAllFillTd();
+     	 for (var i = 0; i < allTds.length ; i++) {
+     	    if (allTds[i].bCustom == 1) {
+     	      var p_vid = allTds[i].winObj.domObj.viewId;
+     	      if (viewObj.viewId == p_vid) {
+     	        var p_td = p_panelObj.getRootPanel().getTdDomObjByFillId(allTds[i].fillId);
+     	        VIEWMOVE.setWarnDiv(p_td);
+     	        return;
+     	      }
+     	    }
+     	 }
+       	var blnHaveTag = false;
+       	var warnTag    = null;
+       	for(var i=0; i<arrTdObj.length; i++)
+       	{
+       	  var tdobj = arrTdObj[i];
+     		  tObj = PLCLSID.getDomObj4ClsId(tdobj, PLCLSID.VTAG);
+       		if (tObj && !blnHaveTag) {
+       		  var tag = PLCLSID.getObj4DomObj(tObj);
+       		  blnHaveTag = tag.isExistTag(v);
+       		  if (blnHaveTag) {
+       		    warnTag = tag;
+       		    break;
+       		  }
+       		}
+       	}
+       	
+     		if(blnHaveTag)
+     		{
+     			warnTag.showHideTag(true, v);
+     			VIEWMOVE.setWarnDiv(warnTag.domObj);
+     		}
+     		else
+     		{
+     			tagObj.appendTag(v, url, viewObj.viewId);
+     			var tagTb = tagObj.getTagTb(v);
+     			if(tagTb)
+     				tagTb.viewId = viewObj.viewId;
+     		}
+     	}	
+     }
+     
+ </script>
+  
+ <script language="javascript">
+    
+var tbar_menu = dom_tbar_menu;    
+var tbar_menu2 = dom_tbar_menu2;    
+var tbar_result = dom_tbar_result;
+var basePath = "http://10.252.150.157/nguniteview/";
+var baseImgPath = "skin/default/";
+var imgArray = new Array(baseImgPath + "maxview.gif", baseImgPath + "maxorder.gif");
+
+var queryAjaxObj = new ViewAjax();
+queryAjaxObj.pDomObj = tbar_result;
+queryAjaxObj.handleAjax =  function(data, domObj, div, url)
+{
+	data = toJson(data);
+	if(data.length == 0)
+		queryAjaxObj.pDomObj.innerHTML="没有符合条件的数据";
+  else if (data.status && data.status == "error") {
+    VIEWALERT.tip(data.message, null, null, null, null, domObj);
+    queryAjaxObj.pDomObj.innerHTML = data.message;
+  }
+	else {
+		makeResult(data);
+	}
+}
+
+var menuAjaxObj = new ViewAjax();
+menuAjaxObj.pDomObj = tbar_menu;
+menuAjaxObj.handleAjax =  function(data, domObj, div, url)
+{
+	
+	data = toJson(data);
+	makeMenu(data);
+}
+
+
+menuAjaxObj.url = "http://10.252.150.157/nguniteview/queyViewGroupInfoAction.do?ownerType=1&method=queryViewGroupInfo";
+menuAjaxObj.setRefresh(false);
+menuAjaxObj.request(null, false, null);
+
+var menuAjaxObj2 = new ViewAjax();
+menuAjaxObj2.pDomObj = tbar_menu2;
+menuAjaxObj2.handleAjax =  function(data, domObj, div, url)
+{
+	
+	data = toJson(data);
+	makeMenu2(data);
+}
+
+
+menuAjaxObj2.url = "http://10.252.150.157/nguniteview/queyViewGroupInfoAction.do?ownerType=1&method=queryViewGroupInfo&top=true";
+menuAjaxObj2.setRefresh(false);
+menuAjaxObj2.request(null, false, null);
+
+function queryView(obj)
+{
+	var viewName = "";
+	var pobj = obj.parentNode;
+	var tobj = null;
+	for(var i=0; i<pobj.children.length; i++)
+	{
+		tobj = pobj.children[i];
+		if(tobj.id == "viewName")
+		{
+			break;
+		}
+	}
+	if(tobj.id == "viewName")
+	{		
+		viewName = trim(tobj.value);
+		if(viewName.length < 1 || viewName == "<搜索视图>")
+		{
+			VIEWALERT.tip("请输入关键字！", null, null,null, null, obj);
+			return;
+		}
+		if (!checkTextLength($("#viewName"), 1, 60, "视图名称必须小于60个字符！")) {
+      return;
+    }
+		queryAjaxObj.url = "http://10.252.150.157/nguniteview/queryViewInfoAction.do?ownerType=1&method=queryViewInfoByName" ;
+		var data = {viewName: encodeURI(viewName)};
+		queryAjaxObj.setRefresh(false);
+		queryAjaxObj.request(null, false, data);
+	}
+}
+
+
+
+function makeResult(res)
+{
+    var keyword = viewName.value;
+    var tul = document.createElement("UL");
+    tul.className = "tbar_result_div_ul";
+    var imgstart = "<img align='absbottom' src='skin/default/tbar_result_div_ul2_s.gif'>";
+    var imgend = "<img align='absbottom'  src='skin/default/tbar_result_div_ul2_e.gif'>";
+    var imgm = "<img align='absbottom'  src='skin/default/tbar_result_div_ul2_m.gif'>";
+
+    for(var i=0; i<res.length; i++)
+    {
+        var anr = res[i];
+        var tli = document.createElement("LI");
+        var tspan = document.createElement("SPAN");
+        tspan.innerHTML = "&nbsp;" + setWarnWord(anr.viewName, keyword);
+        tli.appendChild(tspan);
+        tspan.onclick = menu_Openfunc(tspan, anr);
+        tul.appendChild(tli);   
+        var imgsrc = imgstart;     
+        if(anr.topic != null)
+        {
+   
+            var tb = document.createElement("TABLE");
+            tb.cellPadding = 0;
+            tb.cellSpacing = 0;
+            
+            tb.className = "tbar_result_div_tb";
+            tli.appendChild(tb);
+            for(var j=0; j<anr.topic.length; j++)
+            {
+                var anr2 = anr.topic[j];
+                if(j == 0 && anr.topic.length > 1)
+                {
+                	imgsrc = imgstart;
+                }
+                else if(j == (anr.topic.length -1))
+                {
+                	imgsrc = imgend;
+                }
+                else
+                {
+                	imgsrc = imgm;
+                }
+                var tr = tb.insertRow();
+                var td = tr.insertCell();
+                td.noWrap = true;
+                td.innerHTML = imgsrc + "&nbsp;" + setWarnWord(anr2.name, keyword);
+            }
+            tspan.ondblclick = result_expandfunc(tb); 
+        }
+    }
+    tbar_result.innerHTML = "";
+    tbar_result.appendChild(tul);
+    
+}
+
+function keyDown(obj)
+{
+	if (event.keyCode == 13) 
+	{
+		queryView(obj);
+	}
+}
+
+function makeMenu(arr)
+{
+    var tbobj = document.createElement("TABLE");
+    tbobj.className="tbar_menu_body";
+    tbobj.cellSpacing = 0;
+    tbobj.cellPadding = 0;
+    for(var i=0; i<arr.length; i++)
+    {
+        var child = arr[i];
+        var name = child.name;
+        var tr = tbobj.insertRow();
+        var td = tr.insertCell();
+        td.className = "tbar_menunormal_left";
+        var img = document.createElement("IMG");
+        img.src = "skin/default/tbar_menulevel1_ico.gif";
+        td.appendChild(img);
+        td = tr.insertCell();
+        td.className = "tbar_menunormal";
+        td.onmouseover = menu_mousefunc(td, true, false, child);
+        td.onmouseleave = menu_mousefunc(td, false, false, child);        
+        var span = document.createElement("SPAN");
+        span.innerText = name;
+        td.appendChild(span);
+        var tdiv = document.createElement("DIV");
+        tdiv.className = "tbar_menu_div";  
+        tdiv.style.display = "none";
+        tdiv.style.zIndex = 99;
+        td.appendChild(tdiv);
+        
+        if(child.view != null && child.view.length > 0)
+        {
+     
+        	var tbtmp = document.createElement("table");
+        	tdiv.appendChild(tbtmp);
+        	tbtmp.cellSpacing = 0;
+        	tbtmp.cellPadding = 0;
+        	for(var j=0; j<child.view.length ; j++)
+        	{
+        		var v = child.view[j];
+        		if (v.viewId != null && v.viewId != "")
+        	    {
+        		var trtmp = tbtmp.insertRow();
+        		var tdtmp = trtmp.insertCell();
+        		tdtmp.className = "tbar_menunormal1_left";
+        		var imgtmp = document.createElement("img");
+        		imgtmp.src = "skin/default/tbar_menulevel2_ico.gif";
+        		tdtmp.appendChild(imgtmp);
+        		tdtmp = trtmp.insertCell();
+        		tdtmp.className = "tbar_menunormal1"; 
+        		tdtmp.onmouseover=menu_mousefunc(tdtmp, true, true, v);
+        		tdtmp.onmouseleave=menu_mousefunc(tdtmp, false, true, v);
+        		tdtmp.onclick = menu_Openfunc(tdtmp, v);
+        		tdtmp.innerHTML = v.viewName;
+        		}
+        		else
+        		{
+        		var trtmp = tbtmp.insertRow();
+        		var tdtmp = trtmp.insertCell();
+        		tdtmp.colSpan=2;
+        		if (v.viewName=="全省 TOP 5")
+        		{
+        		  tdtmp.className = "menu_title_bg2"; 
+        		}
+        		else
+        		{
+        		  tdtmp.className = "menu_title_bg"; 
+        		}
+        		tdtmp.innerHTML = v.viewName;
+        		}
+        		
+        	}
+        }
+        
+    }
+    tbar_menu.innerHTML = "";
+    tbar_menu.appendChild(tbobj);
+}
+
+
+function makeMenu2(arr)
+{
+    var tbobj = document.createElement("TABLE");
+    tbobj.className="tbar_menu_body";
+    tbobj.cellSpacing = 0;
+    tbobj.cellPadding = 0;
+    for(var i=0; i<arr.length; i++)
+    {
+        var child = arr[i];
+        var name = child.name;
+        var tr = tbobj.insertRow();
+        var td = tr.insertCell();
+        td.className = "tbar_bottom2";
+        var img = document.createElement("IMG");
+        img.src = imgArray[i];
+        td.appendChild(img);
+
+        td = tr.insertCell();
+        td.className = "tbar_bottom";
+        td.onmouseover = menu_mousefunc(td, true, false, child, true);
+        tr.onmouseleave = menu_mousefunc(td, false, false, child, true);        
+        var span = document.createElement("SPAN");
+        span.innerText = name;
+        td.appendChild(span);
+        var td1 = tr.insertCell();
+        td1.className = "tbar_bottom";
+        var img = document.createElement("IMG");
+        img.src = "skin/default/tbar_menu_arrow.gif";
+        td1.appendChild(img);
+        td1.onmouseover = td.onmouseover;
+
+        var tdiv = document.createElement("DIV");
+        tdiv.className = "tbar_menu_div";  
+        tdiv.style.display = "none";
+        tdiv.style.zIndex = 99;
+        td.appendChild(tdiv);
+        
+        if(child.view != null && child.view.length > 0)
+        {
+     
+        	var tbtmp = document.createElement("table");
+        	tdiv.appendChild(tbtmp);
+        	tbtmp.cellSpacing = 0;
+        	tbtmp.cellPadding = 0;
+        	for(var j=0; j<child.view.length ; j++)
+        	{
+        		var v = child.view[j];
+        		if (v.viewId != null && v.viewId != "")
+        	    {
+        		var trtmp = tbtmp.insertRow();
+        		var tdtmp = trtmp.insertCell();
+        		tdtmp.className = "tbar_menunormal1_left";
+        		var imgtmp = document.createElement("img");
+        		imgtmp.src = "skin/default/tbar_menulevel2_ico.gif";
+        		tdtmp.appendChild(imgtmp);
+        		tdtmp = trtmp.insertCell();
+        		tdtmp.className = "tbar_menunormal1"; 
+        		tdtmp.onmouseover=menu_mousefunc(tdtmp, true, true, v);
+        		tdtmp.onmouseleave=menu_mousefunc(tdtmp, false, true, v);
+        		tdtmp.onclick = menu_Openfunc(tdtmp, v);
+        		tdtmp.innerHTML = v.viewName;
+        		}
+        		else
+        		{
+        		var trtmp = tbtmp.insertRow();
+        		var tdtmp = trtmp.insertCell();
+        		tdtmp.colSpan=2;
+        		if (v.viewName=="全省 TOP 5")
+        		{
+        		  tdtmp.className = "menu_title_bg2"; 
+        		}
+        		else
+        		{
+        		  tdtmp.className = "menu_title_bg"; 
+        		}
+        		tdtmp.innerHTML = v.viewName;
+        		}
+        		
+        	}
+        }
+        
+    }
+    tbar_menu2.innerHTML = "";
+    tbar_menu2.appendChild(tbobj);
+}
+
+               
+function showSkinDlg(domObj)
+{
+	var pObj = domObj;
+	while(pObj && pObj.bPanel != 1)
+		pObj = pObj.parentNode;
+	if(pObj && pObj.bPanel == 1)
+	{
+		panelObj = pObj.panelObj;
+		panelObj = panelObj.getRootPanel();
+		var modelId = panelObj.skinJsName.modelId;
+		var layoutId = panelObj.skinJsName.layoutId;
+		var skinId = panelObj.skinJsName.skinId;
+		var cssFlag = panelObj.skinJsName.cssFlag;
+		var url = "layout/changeskin.jsp?ownerType=1&modelId="+ modelId +"&layoutId=" + layoutId + "&skinId=" + skinId + "&cssFlag=" + cssFlag;
+		VIEWMODEL.tip(domObj, url, {width:500, height:340 , title:"更换皮肤"});
+	}
+}
+
+ </script>

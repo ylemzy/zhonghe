@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+Date: Mon, 17 Apr 2017 13:37:12 GMT
+X-Powered-By: Servlet/3.0
+Content-Length: 906
+Keep-Alive: timeout=10, max=99
+Connection: Keep-Alive
+Content-Type: text/html; charset=GBK
+Content-Language: zh-CN
+
+<table width=100%  class="fv_tb" cellspacing=0 cellpadding=0> 
+<tr class=fv_tb_tr><th width=20%>帐户编号</th><td width=31%><span >********</span></td><th width=20%>帐户名称</th><td width=31%><span >王*若</span></td></tr> 
+<tr class=fv_tb_tr><th width=20%>发票邮寄类型</th><td width=31%><span >&nbsp;</span></td><th width=20%>邮寄方式</th><td width=31%><span >&nbsp;</span></td></tr> 
+<tr class=fv_tb_tr><th width=20%>邮寄地址</th><td width=31%><span >&nbsp;</span></td><th width=20%>邮政编码</th><td width=31%><span >&nbsp;</span></td></tr> 
+<tr class=fv_tb_tr><th width=20%>付费模式</th><td width=31%><span >B100</span></td><th width=20%>邮寄Email</th><td width=31%><span >********</span></td></tr> 
+<tr class=fv_tb_tr><th width=20%>信控状态</th><td width=31%><span >正常</span></td><th width=20%>月结日</th><td width=31%><span >每月1日</span></td></tr> 
+<tr><td colspan="4"></td></tr> 
+</table> 

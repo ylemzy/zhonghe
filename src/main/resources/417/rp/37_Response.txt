@@ -1,0 +1,369 @@
+HTTP/1.1 200 OK
+Date: Mon, 17 Apr 2017 13:37:11 GMT
+X-Powered-By: Servlet/3.0
+Content-Length: 19531
+Keep-Alive: timeout=10, max=99
+Connection: Keep-Alive
+Content-Type: text/html;charset=GBK
+Content-Language: zh-CN
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html >
+<head>
+      <title>
+        客户统一视图 个人全景模板
+      </title>
+      	  <meta http-equiv="pragma" content="no-cache">
+        	<meta http-equiv="cache-control" content="no-cache">
+        	<meta http-equiv="expires" content="0">
+        	
+        	<base href="http://10.252.150.157/nguniteview/">
+    	<link href="skin/default/errmsg.css" rel="stylesheet" type="text/css">
+    	<link href="skin/default/panel.css" rel="stylesheet" type="text/css">
+    	<link href="skin/default/viewtag.css" rel="stylesheet" type="text/css">
+    	<link href="skin/default/formview.css" rel="stylesheet" type="text/css">
+    	<link href="skin/default/alink.css" rel="stylesheet" type="text/css">
+    	<link href="skin/default/listview.css" rel="stylesheet" type="text/css">
+    	<link href="skin/default/toolbar.css" rel="stylesheet" type="text/css">
+    	<link href="skin/default/other.css" rel="stylesheet" type="text/css">
+    	<link href="skin/default/title.css" rel="stylesheet" type="text/css">
+    	<link href="skin/default/dlgcss.css" rel="stylesheet" type="text/css">
+    	
+    	<link href="view/charts/Style.css" rel="stylesheet" type="text/css">
+    	
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.json.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript" src="js/layout/viewcache.js"></script>
+        <script type="text/javascript" src="js/layout/common.js"></script>
+        <script type="text/javascript" src="js/layout/plclsid.js"></script>
+        <script type="text/javascript" src="js/layout/viewmove.js"></script>
+        <script type="text/javascript" src="js/layout/viewevent.js"></script>
+        <script type="text/javascript" src="js/layout/viewtitle.js"></script>
+        <script type="text/javascript" src="js/layout/viewcontent.js"></script>
+        <script type="text/javascript" src="js/layout/viewwin.js"></script>
+        <script type="text/javascript" src="js/layout/viewmodel.js"></script>
+        <script type="text/javascript" src="js/layout/viewdialog.js"></script>
+        <script type="text/javascript" src="js/layout/viewajax.js"></script>
+        <script type="text/javascript" src="js/layout/panel.js"></script>
+        <script type="text/javascript" src="js/layout/viewtag.js"></script>
+        <script type="text/javascript" src="js/layout/toolbar.js"></script>
+        <script type="text/javascript" src="js/layout/retmsg.js"></script>
+        <script type="text/javascript" src="js/layout/viewprompt.js"></script>
+        <script type="text/javascript" src="js/layout/viewalert.js"></script>
+        <script type="text/javascript" src="js/layout/viewconfirm.js"></script>
+    	
+    	<script type="text/javascript" src="view/charts/FusionCharts.js"></script>
+		
+      <style>
+            body,td{font-size:12px}
+            body{padding-top:1px}
+      </style>  
+</head>
+
+<body>
+
+<table bPanel=1 id=TB_2  height=100% name=TB_2 class="pl_tb_0gap"  cellspacing=0 cellpadding=0 >
+     <tr  id=TB_2_R1 name=TB_2_R1>       
+         
+         <td nowrap width=120px  height=100%  id=TB_2_R1C2 name=TB_2_R1C2  valign=top linkFillids="f3,f4"> 
+             <div class=pl_td_div_normal>
+                 
+                 <table winUrl="layout/toolbar.jsp?ownerType=1&modelId=1&cssFlag=default&skinId=1&layoutId=1" bWin=1 width=100%  height=100%   id=DIV_9_1 name=DIV_9_1 cellspacing=0 cellpadding=0 >
+                       <tr bTitle=1 id=DIV_9_1_TITLE style="display:none">
+                       	<td class="win_title">
+	                        <table cellpadding=0 cellSpacing=0 border=0 width=100% >
+	                            <tr>
+	                             <td  class=win_title_border_left   nowrap ></td> 
+	                             <td  align=left width='99%'   nowrap class=win_title_left >
+	                                 工具栏
+	                             </td>    
+	                             <td  nowrap  class='win_title_right'  >
+	                                  <img title='缩小' alt='缩小'  border='0' id=DIV_9_1_SMALL  name='DIV_9_1_SMALL' src='skin/default/win_title_opened.gif'>
+	                             </td>
+	                             <td  class=win_title_border_right   nowrap ></td>
+	                             </tr>
+	                          </table> 
+	                       </td>
+                       </tr>                 
+                       <tr>
+                         <td  bContent=1 colspan=4 id=DIV_9_1_CONTENT valign=top > 
+                             <div class="win_c_div"  id=DIV_9_1_DIV name=DIV_9_1_DIV>
+                             </div>
+                         </td>
+                       </tr>
+                       <tr><td height=100%></td>
+                       </tr>
+                 </table>   
+             </div>
+         </td>                              
+         <td nowrap id=TB_2_R1C3   name=TB_2_R1C3 valign=top >
+             
+             <div class=pl_td_div_normal  >
+                  <table bWin=1 width=100% id=DIV_19_1 name=DIV_19_1 cellspacing=0 cellpadding=0 >
+                       <tr bTitle=1 id=DIV_19_1_TITLE style="display:none">
+                       		<td class="win_title">
+	                        	<table cellpadding=0 cellSpacing=0 border=0 width=100% >
+	                               <tr>
+		                             <td  class=win_title_border_left   nowrap ></td>  
+		                             <td  align=left width='99%'   nowrap class=win_title_left >
+		                                 视图3
+		                             </td>    
+		                             <td  nowrap  class='win_title_right'  >
+		                                  <img title='缩小' alt='缩小'  border='0' id=DIV_19_1_SMALL  name='DIV_19_1_SMALL' src='skin/default/win_title_opened.gif'>
+		                             </td>
+		                             <td  class=win_title_border_right   nowrap ></td>
+		                            </tr>
+		                         </table>
+		                     </td> 
+                       </tr>                 
+                       <tr>
+                         <td  bContent=1 colspan=4 id=DIV_19_1_CONTENT valign=top  height=100% >   
+                         <div class="win_c_div"  id=DIV_19_1_DIV name=DIV_19_1_DIV>
+                             <table bPanel=1 id=TB_3 name=TB_3 class="pl_tb_0gap"  cellspacing=0 cellpadding=0 border=0>                                                    
+                                 <tr  id=TB_3_R1 name=TB_3_R1> 
+	                                 <td nowrap  colspan=2  id=TB_3_R3C1 name=TB_3_R3C1 valign=top  linkFillids="f3,f4">                                                            
+	                                 	<div class="pl_td_div_normal" style="padding:0 0 0 5">
+		                                 	<table bWin=1 winUrl="layout/title.jsp?ownerType=1&layoutId=1&cssFlag=default" width=100% id=DIV_10_1 name=DIV_10_1 cellspacing=0 cellpadding=0 border=0>
+	                                                   <tr bTitle=1 id=DIV_10_1_TITLE style="display:none;">
+	                                                     <td class="win_title">
+	                                                   		<table cellpadding=0 cellSpacing=0 border=0 width=100% >
+	                                                   			<tr>
+				                                                     <td  class=win_title_border_left   nowrap ></td> 
+				                                                     <td  align=left nowrap class=win_title_left >
+				                                                         导航栏
+				                                                     </td>    
+				                                                     <td   nowrap  class='win_title_right' >
+				                                                          <img title='缩小' alt='缩小'  border='0' id=DIV_10_1_SMALL  name='DIV_10_1_SMALL' src='skin/default/win_title_closed.gif'>
+				                                                     </td>
+				                                                     <td  class=win_title_border_right     nowrap ></td>
+				                                                     </tr>
+				                                             </table>
+				                                          </td> 
+	                                                   </tr>                 
+	                                                   <tr>
+	                                                     <td bContent=1  colspan=4  id=DIV_10_1_CONTENT valign=top  height=100% >   
+	                                                         <div  id=DIV_10_1_DIV name=DIV_10_1_DIV class="win_c_div">
+                             								 
+                             								 </div>                                                                     
+	                                                     </td>
+	                                                   </tr>
+	                                             </table>
+	                                 	</div>
+	                                 </td>
+                                 </tr>
+                                 <tr  id=TB_3_R2 name=TB_3_R2>                                                                                            
+                                     <td nowrap  colspan=2  id=TB_3_R2C1 name=TB_3_R2C1 valign=top bFill=1 fillId=f1>                                                            
+                                         <div class="pl_td_div_normal"  style="padding:0 0 0 5">
+                                             
+                                         </div>
+                                     </td>                                   
+                                     <td nowrap  id=TB_3_R2C2 name=TB_3_R2C2 valign=top  style="display:none"></td>
+                                 </tr>
+                                  <tr  id=TB_3_R3 name=TB_3_R3>                                                                                            
+                                     <td nowrap  colspan=2  id=TB_3_R3C1 name=TB_3_R3C1 valign=top >                                                            
+                                         <div class="pl_td_div_normal"  style="padding:5 0 0 0">
+			                                  <table bWin=1 width=100% id=DIV_21_1 name=DIV_21_1 cellspacing=0 cellpadding=0 >
+						                       <tr bTitle=1 id=DIV_21_1_TITLE style="display:none">
+						                             <td class="win_title">
+	                                                   	<table cellpadding=0 cellSpacing=0 border=0 width=100% >
+	                                                   		<tr>
+								                             <td  class=win_title_border_left   nowrap ></td>  
+								                             <td  align=left width='99%'   nowrap class=win_title_left >
+								                                 视图3
+								                             </td>    
+								                             <td  nowrap  class='win_title_right'  >
+								                                  <img title='缩小' alt='缩小'  border='0' id=DIV_21_1_SMALL  name='DIV_21_1_SMALL' src='skin/default/win_title_opened.gif'>
+								                             </td>
+								                             <td  class=win_title_border_right   nowrap ></td>
+								                             </tr>
+								                       </table>
+								                  </td> 
+						                       </tr>                 
+						                       <tr>
+						                         <td bContent=1 colspan=4 id=DIV_21_1_CONTENT valign=top  height=100% >  
+						                         	<div class="win_c_div" id=DIV_21_1_DIV name=DIV_21_1_DIV>                                  
+							                            <table bPanel=1 id=TB_4 name=TB_4 class="pl_tb_spec"
+																			cellspacing=0 cellpadding=0 border=0>
+																			<tr id=TB_4_R1 name=TB_4_R1>
+																				<td nowrap id=TB_4_R1C1 name=TB_4_R1C1 valign=top
+																					bFill=0>
+																					<div class="pl_td_div_model" >
+																						
+<table bWin=1 width=100% id=DIV_left_1 name=DIV_left_1 cellspacing=0 cellpadding=0>
+	<tr bTitle=1 id=DIV_left_1_TITLE style="display:none">
+		<td class="win_title">
+			<table cellpadding=0 cellSpacing=0 border=0 width=100%>
+				<tr>
+					<td class=win_title_border_left nowrap></td>
+					<td align=left width='99%' nowrap class=win_title_left>
+						视图left1
+					</td>
+					<td nowrap class='win_title_right'>
+						<img title='缩小' alt='缩小' border='0' id=DIV_left_1_SMALL name='DIV_19_1_SMALL' src='skin/default/win_title_opened.gif'>
+					</td>
+					<td class=win_title_border_right nowrap></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td bContent=1 colspan=4 id=DDIV_left_1_CONTENT valign=top height=100%>
+			<div class="win_c_div" id=DIV_left_1_DIV name=DIV_left_1_DIV>
+				<table bPanel=1 bContainer=1 id=TB_10 name=TB_10 class="pl_tb_move" cellspacing=0 cellpadding=0 border=0>
+					<tr id=TB_10_R1 name=TB_10_R1>
+						<td nowrap id=TB_10_R1C1 name=TB_10_R1C1 valign=top bFill=1 fillId=f3>
+							<div class="pl_td_div_model"
+								style="padding:0 0 0 5">
+
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</td>
+	</tr>
+</table>
+		
+																					</div>
+																				</td>
+																				<td nowrap id=TB_4_R1C2 name=TB_4_R1C2 valign=top
+																					bFill=0 width="30%">
+																					<div class="pl_td_div_model" >
+																					
+<table bWin=1 width=100% id=DIV_right_1 name=DIV_right_1 cellspacing=0 cellpadding=0>
+	<tr bTitle=1 id=DIV_right_1_TITLE style="display:none">
+		<td class="win_title">
+			<table cellpadding=0 cellSpacing=0 border=0 width=100%>
+				<tr>
+					<td class=win_title_border_left nowrap></td>
+					<td align=left width='99%' nowrap class=win_title_left>
+						视图left1
+					</td>
+					<td nowrap class='win_title_right'>
+						<img title='缩小' alt='缩小' border='0' id=DIV_right_1_SMALL name='DIV_19_1_SMALL' src='skin/default/win_title_opened.gif'>
+					</td>
+					<td class=win_title_border_right nowrap></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td bContent=1 colspan=4 id=DDIV_right_1_CONTENT valign=top height=100%>
+			<div class="win_c_div" id=DIV_right_1_DIV name=DIV_right_1_DIV>
+				<table bPanel=1 bContainer=1 id=TB_20 name=TB_20 class="pl_tb_move" cellspacing=0 cellpadding=0 border=0>
+					<tr id=TB_20_R1 name=TB_20_R1>
+						<td nowrap id=TB_20_R1C1 name=TB_20_R1C1 valign=top bFill=1 fillId=f4>
+							<div class="pl_td_div_model" style="padding:0 0 0 5">
+
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</td>
+	</tr>
+</table>
+
+																					</div>
+																				</td>
+																			</tr>
+																		</table> 
+						                              </div> 
+			                                 	</td>
+			                                 </tr>
+			                                 </table>
+		                                 </div>
+                                     </td>                                   
+                                     <td nowrap  id=TB_3_R2C2 name=TB_3_R2C2 valign=top  style="display:none"></td>
+                                 </tr>
+                             </table>
+                         </div>
+                         </td>
+                       </tr>
+                  </table>
+             </div>
+         </td>
+         </tr>  
+         <tr  id=TB_2_R2 name=TB_2_R2  style="display:none" >
+             <td nowrap width=100% height=100% id=TB_2_R2C1 colspan=3 name=TB_2_R2C1 valign=top bFill=1 fillId=f2>
+                 <div class=pl_td_div_scroll >
+                    
+                    <table bWin=1  width=100% id=DIV_151_1 name=DIV_151_1 cellspacing=0 cellpadding=0 border=0>
+                        <tr bTitle=1 id=DIV_151_1_TITLE style="display:none">
+                        <td class="win_title">
+	                        <table cellpadding=0 cellSpacing=0 border=0 width=100% >
+	                              <tr>
+		                        <td  class=win_title_border_left   nowrap ></td> 
+		                        <td  align=left width='99%'   nowrap class=win_title_left > 其他标签的内容 </td>
+		                        <td   nowrap  class='win_title_right'  ><img title='缩小' alt='缩小'  border='0' id=DIV_111_1_SMALL  name='DIV_111_1_SMALL' src='skin/default/win_title_closed.gif'> </td>
+		                        <td  class=win_title_border_right   nowrap ></td>
+		                        </tr>
+		                    </table>
+		                 </td> 
+                      </tr>
+                      <tr>
+                        <td bContent=1 colspan=4  id=DIV_151_1_CONTENT valign=top  height=100% >
+                        	<div class="win_c_div" id=DIV_151_1_DIV name=DIV_151_1_DIV>
+                             </div>
+                        </td>
+                    </tr>
+                </table> 
+                    
+                 </div>
+             </td>
+             <td nowrap  id=TB_2_R2C2 name=TB_2_R2C2 valign=top style="display:none"> </td>
+        </tr>     
+</table>
+<script language='javascript' >
+var fillJsName={f3:[{layoutId:'1',groupId:'1',modelId:'1',viewId:'39',seatName:'f3',isSelected:'1',tagPos:'1',showStyle:'MTAG',personal:'1',viewName:'客户基本信息'},{layoutId:'1',groupId:'1',modelId:'1',viewId:'20067',seatName:'f3',isSelected:'0',tagPos:'6',showStyle:'MTAG',personal:'1',viewName:'客户星级得分明细'}],f1:[{layoutId:'1',groupId:'1',modelId:'1',viewId:'200',seatName:'f1',isSelected:'1',tagPos:'1',showStyle:'NTWIN',personal:'1',viewName:'基本资料'}],f4:[{layoutId:'1',groupId:'1',modelId:'1',viewId:'78',seatName:'f4',isSelected:'1',tagPos:'1',showStyle:'MTAG',personal:'1',viewName:'帐户基本信息'}]}; var skinJsName = {modelId:'1',layoutId:'1',groupId:'1',cssFlag:'default', skinId:'1'};
+</script>
+
+<script language="javascript">
+    
+    var urlPrefix = "http://10.252.150.157/nguniteview/layoutAction.do?method=showView&ownerType=1&viewId=";    
+    var panel = new ViewPanel(TB_2, null,fillJsName, skinJsName, urlPrefix);
+    
+    var vjs = '{"views":[]}';
+    panel.autoBuildMoveView(toJson(vjs), false);
+    
+    var TD_TOOLBAR = TB_2_R1C2;    
+    function toolbarShow(imgobj)
+    {
+        var display = TD_TOOLBAR.style.display;        
+        var src =  imgobj.src;  
+        if(display == "none")
+        {
+            src = src.replace("_open","_close");
+            TD_TOOLBAR.style.display = "";
+        }
+        else
+        {
+           src = src.replace("_close","_open");  
+           TD_TOOLBAR.style.display = "none";   
+        }
+        imgobj.src = src;
+    }
+    
+    function keepSession(){
+    	$.ajax({
+		   type: "POST",
+		   url: "\layoutAction.do",
+		   data: "method=keepSession",
+		   success: function(msg){
+	   		}
+	});
+    }
+    $(function(){
+    	setInterval("keepSession()",1200000);
+    });
+    
+</script>
+
+          
+                        
+</body>

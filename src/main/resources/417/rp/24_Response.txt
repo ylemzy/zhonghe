@@ -1,0 +1,175 @@
+HTTP/1.1 200 OK
+Date: Mon, 17 Apr 2017 13:37:09 GMT
+X-Powered-By: Servlet/3.0
+Set-Cookie: LIFE_TIME=1492443429764_120; Path=/
+Expires: Thu, 01 Dec 1994 16:00:00 GMT
+Cache-Control: no-cache="set-cookie, set-cookie2"
+Keep-Alive: timeout=10, max=99
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html;charset=UTF-8
+Content-Language: zh-CN
+
+400
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<base href="http://10.252.150.157:80/csp/">
+		<title>middleRightForNG</title>
+		<script type="text/javascript" src="js/bsf/mainMenu_cp.js"></script>
+		<script type="text/javascript" src="js/bsf/mif/_Collection_cp.js"></script> 
+		
+		<script type="text/javascript" src="/csp/js/bsf/mif/_TabSet_cp.js"></script> 
+		<script type="text/javascript" src="js/bsf/DECODE.js"></script>
+		<script type="text/javascript">
+	    
+		var showFlag = '1';	
+	    var tabCount = "8";
+	    
+        function getHeight(){
+        	return window.top.document.body.offsetHeight-140;
+        }
+        
+        function getWidth(){
+        	return document.getElementById("middle_right_workspaceBOSS^13602565600").offsetWidth;
+        }
+        function aLoad()
+        {  
+            window.focus();
+            var oTabSet = new TabSet("middle_right_workspaceBOSS^13602565600",getHeight,getWidth,"/csp/resources/default/p
+948
+");
+          
+            oTabSet.tabCount = tabCount;
+            var oFlag = true;
+            var showIconFlag = true;
+            var needAuth = true;
+            
+            if(null!= "true")
+            {
+            	oFlag = false;
+            }
+           
+            if(null!= "true")
+            {
+            	showIconFlag = false;
+            }
+           
+            if(undefined!= "true")
+            {
+            	needAuth = false;
+            }
+            
+            top.regObject("BOSS^13602565600",oTabSet);
+				
+	          if("BOSS^13602565600^100110121062~13602565600".indexOf("^GrpCustUnitViewNG_WEB~")>0 ||"BOSS^13602565600^100110121062~13602565600".indexOf("^GrpCustUnitViewNG_WEB~")>0||"BOSS^13602565600^100110121062~13602565600".indexOf("^FamilyCustViewNG_WEB~")>0)
+	          {
+	           		oTabSet.closeFlag = true;
+	          }
+
+            oTabSet._appendTab("BOSS^13602565600^100110121062~13602565600",decodeURI("%E4%B8%AA%E4%BA%BA%E5%AE%A2%E6%88%B7%E7%BB%9F%E4%B8%80%E8%A7%86%E5%9B%BE"),unescape("/ngcustcare/uniteview/uviewtwo/uvDisper.action"),"images/tag_icon_02.gif",oFlag,showIconFlag,"13602565600","undefined",needAuth);
+           	oTabSet.closeFlag = false;
+
+           	oTabSet.addCloseEvent("BOSS^13602565600^100110121062~13602565600",top.removeTabForNGCRM);
+        } 
+	function advancesearch(tabSetId)
+	{
+		var url = "/ngcustcare/unitequery/reserveShipQuery/initialize/main.action?type='nguv'";
+		var style = "dialogHeight: 500px; dialogWidth: 800px; edge: Raised; center: Yes; help: No; resizable: no; status: No;";
+		var returnValue = window.showModalDialog(url,window,style);
+		if(returnValue != null && returnValue != "")
+		{
+			var selectObject = new GObject(returnValue);
+			onMultiUserChangeEvent(tabSetId,selectObject);
+		}
+	} 
+	function GObject(val)
+	{
+		this.value = val;
+	}
+	</script>
+<style>
+body,div,td {
+	padding: 0px;
+	margin: 0px;
+	font-size: 12px;
+	font-family: "Tahoma","Arial","宋体";
+	line-height: 150%;
+	color:#000000;
+}
+.ballistic_bg {
+	background-color: #EBF0F4;
+}
+.tab05_title_bg {
+	background-color: #AAB9CA;
+	background-position: bottom;
+}
+.tree_splitline {
+	background-color: #96ADBC;
+	border-right: 1px solid #96ADBC;
+}
+.tab05_title_text_off {
+	background-image: url(/csp/resources/default/images/tab06_title_middle_off.jpg
+b2
+);
+	padding: 5px 0px 0px 4px;
+	color: #000000;
+	white-space: nowrap;
+}
+.tab05_title_text_on {
+	background-image: url(/csp/resources/default/images/tab06_title_middle_on.jpg
+b5
+);
+	padding: 5px 0px 0px 4px;
+	color: #000000;
+	white-space: nowrap;
+}
+.tab05_title_text_over {
+	background-image: url(/csp/resources/default/images/tab06_title_middle_off.jpg
+363
+);
+	padding: 5px 0px 0px 4px;
+	color: #000000;
+	white-space: nowrap;
+}
+.button_61px {
+	width: 61px;
+	height: 22px;
+	border:1px solid #BABCC1;
+	padding: 0px 0px 0px 0px;
+	filter:progid:DXImageTransform.Microsoft.Gradient(enabled='true',startColorStr='#FFFFFF', endColorStr='#E6E8E7');
+	color: #000000;
+	cursor: hand;
+	margin-right:7px;
+}
+.button_61px_over {
+	width: 61px;
+	height: 22px;
+	border:1px solid #BABCC1;
+	padding: 0px 0px 0px 0px;
+	filter:progid:DXImageTransform.Microsoft.Gradient(enabled='true',startColorStr='#D6E8F5', endColorStr='#EAF5F8');
+	color: #000000;
+	cursor: hand;
+	margin-right:7px;
+}
+</style>
+	</head>
+	<body onload="aLoad()" class="ballistic_bg">
+		<div id="middle_right_workspaceBOSS^13602565600"
+			style="position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden;">
+		</div>
+
+	</body>
+</html>
+
+0
+
