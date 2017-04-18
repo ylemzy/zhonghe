@@ -10,8 +10,8 @@ import static org.junit.Assert.*;
 public class BatchRequestCompareTest {
 
     BatchRequestCompare compare = new BatchRequestCompare(
-            "C:\\Users\\Administrator\\Desktop\\com\\zhonghe\\src\\main\\resources\\a",
-            "C:\\Users\\Administrator\\Desktop\\com\\zhonghe\\src\\main\\resources\\b");
+            "C:\\Users\\Administrator\\Desktop\\com\\zhonghe\\src\\main\\resources\\leftConnection",
+            "C:\\Users\\Administrator\\Desktop\\com\\zhonghe\\src\\main\\resources\\rightConnection");
 
     @Test
     public void compare() throws Exception {

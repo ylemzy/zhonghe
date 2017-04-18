@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
  */
 public class BatchRequestLoaderTest {
 
-    BatchRequestLoader batchRequestLoader = new BatchRequestLoader("C:\\Users\\Administrator\\Desktop\\com\\zhonghe\\src\\main\\resources\\a");
+    BatchRequestLoader batchRequestLoader = new BatchRequestLoader("C:\\Users\\Administrator\\Desktop\\com\\zhonghe\\src\\main\\resources\\leftConnection");
 
     @Test
     public void load() throws Exception {

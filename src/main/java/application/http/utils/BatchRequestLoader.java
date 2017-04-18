@@ -20,7 +20,6 @@ public class BatchRequestLoader {
 
     private Map<String, RequestLoader> data = new HashMap<>();
 
-
     public String getDirName() {
         return dirName;
     }

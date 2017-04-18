@@ -1,9 +1,6 @@
 package application.http.utils;
 
-import application.fetch.Request;
 import application.http.HttpHeaders;
-import application.http.utils.CookieMaker;
-import application.uil.JsonHelper;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
@@ -11,14 +8,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
-import org.jsoup.helper.HttpConnection;
-import org.springframework.http.HttpMethod;
 import org.springframework.util.Assert;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.charset.Charset;
 import java.util.List;
 
 /**

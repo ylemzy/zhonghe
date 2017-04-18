@@ -4,7 +4,9 @@ import application.uil.JsonHelper;
 import org.apache.commons.lang.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.elasticsearch.cluster.Diff;
 import org.jsoup.Connection;
+import org.jsoup.Jsoup;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -18,12 +20,50 @@ public class RequestCompare {
 
     private static final Logger logger = LogManager.getLogger();
 
-    Connection a;
-    Connection b;
+    Connection leftConnection;
+    Connection rightConnection;
 
-    public RequestCompare(Connection a, Connection b){
-        this.a = a;
-        this.b = b;
+    TemplateParam paramLeft;
+    TemplateParam paramRight;
+    TemplateParam third;
+    DiffValue diffValue = new DiffValue();
+
+
+    enum CompareType{
+        BOTH_EMPTY,
+        LEFT_EMPTY,
+        RIGHT_EMPTY,
+        EQUAL,
+        NO_EQUAL
+    }
+
+    public RequestCompare(Connection leftConnection, Connection rightConnection){
+        this.leftConnection = leftConnection;
+        this.rightConnection = rightConnection;
+    }
+
+    public TemplateParam getParamLeft() {
+        return paramLeft;
+    }
+
+    public void setParamLeft(TemplateParam paramLeft) {
+        this.paramLeft = paramLeft;
+    }
+
+    public TemplateParam getParamRight() {
+        return paramRight;
+    }
+
+    public void setParamRight(TemplateParam paramRight) {
+        this.paramRight = paramRight;
+    }
+
+    public TemplateParam getThird() {
+        return third;
+    }
+
+    public void setThird(TemplateParam third) {
+        this.third = third;
     }
 
     Map<String, String> theSame = new HashMap<>();
@@ -33,19 +73,19 @@ public class RequestCompare {
     Map<String, String> diffBody = new HashMap();
     Map<String, String> diffParams = new HashMap();
 
-    private int compare(String value1, String value2) {
+    private CompareType compare(String value1, String value2) {
 
         if (value1 == null && value2 == null) {
-            return 0;
+            return CompareType.BOTH_EMPTY;
         } else if (value1 == null) {
-            return 2;
+            return CompareType.LEFT_EMPTY;
         } else if (value2 == null) {
-            return 3;
+            return CompareType.RIGHT_EMPTY;
         } else {
             if (value1.equals(value2)) {
-                return 0;
+                return CompareType.EQUAL;
             }
-            return 1;
+            return CompareType.NO_EQUAL;
         }
     }
 
@@ -53,16 +93,22 @@ public class RequestCompare {
         return StringUtils.trimToEmpty(value1) + "<->" + StringUtils.trimToEmpty(value2);
     }
 
+
+
     private void compareAndSave(String key, String value1, String value2, Map<String, String> diffMap, Map<String, String> sameMap) {
-        int res = compare(value1, value2);
+        CompareType res = compare(value1, value2);
         switch (res) {
-            case 0:
+            case EQUAL:
+            case BOTH_EMPTY:
                 sameMap.put(key, value1);
                 break;
-            case 1:
-            case 2:
-            case 3:
+            case LEFT_EMPTY:
+                paramLeft.makeNewValue(key, value1, third, diffValue);
+            case RIGHT_EMPTY:
+                paramRight.makeNewValue(key, value2, third, diffValue);
+            case NO_EQUAL:
                 diffMap.put(key, whenDiffTheValue(value1, value2));
+                paramLeft.makeNewValue(key, value1, third, diffValue);
             default:
                 break;
         }
@@ -79,30 +125,30 @@ public class RequestCompare {
     }
 
     public void compareHeaders() {
-        compareMap(a.request().headers(),
-                b.request().headers(),
+        compareMap(leftConnection.request().headers(),
+                rightConnection.request().headers(),
                 diffHeaders,
                 theSame);
     }
 
     public void compareCookies() {
-        compareMap(a.request().cookies(),
-                b.request().cookies(),
+        compareMap(leftConnection.request().cookies(),
+                rightConnection.request().cookies(),
                 diffCookies,
                 theSame);
     }
 
     public void compareBody(){
-        FormDataMaker f1 = FormDataMaker.make(a.request().requestBody());
-        FormDataMaker f2 = FormDataMaker.make(b.request().requestBody());
+        FormDataMaker f1 = FormDataMaker.make(leftConnection.request().requestBody());
+        FormDataMaker f2 = FormDataMaker.make(rightConnection.request().requestBody());
         compareMap(f1.data(),
                 f2.data(),
                 diffBody,
                 theSame);
     }
     public void compareParams(){
-        UrlMaker u1 = UrlMaker.make(a.request().url().toString());
-        UrlMaker u2 = UrlMaker.make(b.request().url().toString());
+        UrlMaker u1 = UrlMaker.make(leftConnection.request().url().toString());
+        UrlMaker u2 = UrlMaker.make(rightConnection.request().url().toString());
         compareMap(u1.params(),
                 u2.params(),
                 diffParams,
@@ -117,11 +163,51 @@ public class RequestCompare {
         return log();
     }
 
+    public DiffValue getDiffValue(){
+        return this.diffValue;
+    }
+
+    public Connection getDiffConnect(){
+        makeParam(leftConnection);
+        makeBody(leftConnection);
+        makeCookies(leftConnection);
+        return leftConnection;
+    }
+
+    private void makeParam(Connection connection){
+        UrlMaker make = UrlMaker.make(connection.request().url().toString());
+        diffValue.forEach((k, v) ->{
+            if (make.params.containsKey(k)){
+                make.param(k, v);
+            }
+        });
+        connection.url(make.getUrl());
+    }
+
+    private void makeBody(Connection connection){
+        FormDataMaker form = FormDataMaker.make(connection.request().requestBody());
+        diffValue.forEach((k, v) ->{
+            if (form.data().containsKey(k)){
+                form.data(k, v);
+            }
+        });
+        connection.requestBody(form.rawData());
+    }
+
+    private void makeCookies(Connection connection){
+        Map<String, String> cookies = connection.request().cookies();
+        diffValue.forEach((k, v) ->{
+            if (cookies.containsKey(k)){
+                connection.cookie(k, v);
+            }
+        });
+    }
+
     public String log(){
 
         StringBuffer buffer = new StringBuffer();
         buffer.append("--------------------compare request------------------------\n");
-        buffer.append("Diff between:\n" + a.request().url() + "\n" +  b.request().url()).append("\n");
+        buffer.append("Diff between:\n" + leftConnection.request().url() + "\n" +  rightConnection.request().url()).append("\n");
         buffer.append("Diff headers " + JsonHelper.toJSON(diffHeaders)).append("\n");
         buffer.append("Diff cookies " + JsonHelper.toJSON(diffCookies)).append("\n");
         buffer.append("Diff body " + JsonHelper.toJSON(diffBody)).append("\n");

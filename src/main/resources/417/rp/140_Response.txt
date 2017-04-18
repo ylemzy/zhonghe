@@ -10,4 +10,4 @@ Connection: Keep-Alive
 Content-Type: text/html;charset=UTF-8
 Content-Language: zh-CN
 
-<?xml version="1.0" encoding="UTF-8"?><huawei_call><m><t>a</t><v><v></v></v></m></huawei_call>
+<?xml version="1.0" encoding="UTF-8"?><huawei_call><m><t>leftConnection</t><v><v></v></v></m></huawei_call>

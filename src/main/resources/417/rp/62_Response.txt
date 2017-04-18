@@ -19,14 +19,14 @@ Content-Language: zh-CN
                 <tr >
                   <td  class=win_title_border_left   nowrap ></td> 
                   <td  nowrap class=tt_title_text >
-                      »ù±¾×ÊÁÏ
+                      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                   </td>    
                    
                   <td   nowrap  class=tt_title >
                   		<img src="skin/default/tt_split_v.gif">
                   </td>
                   <td   nowrap onmouseover="showDesktopList(this)" onmouseleave="hideDesktopList(this)" class=tt_title style="position:relative;padding:0 10 0 10">
-                  		<a bGroupNameLink=1 class="tt_title_a" href="javascript:void(0)">ÏµÍ³Ä¬ÈÏ×ÀÃæ</a>&nbsp;<img align="absmiddle" src="skin/default/tt_list_arrow.gif">
+                  		<leftConnection bGroupNameLink=1 class="tt_title_a" href="javascript:void(0)">ÏµÍ³Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</leftConnection>&nbsp;<img align="absmiddle" src="skin/default/tt_list_arrow.gif">
                   		<div class="tt_div" style="display:none">
                   			<table  cellpadding="0" cellspacing="0" class="tt_tb">
 							  <tr>
@@ -35,7 +35,7 @@ Content-Language: zh-CN
 							  
 							  <tr layoutId='1' groupId='' onclick="desktopSelect(this , '1', '')">
 							    <td class="tt_tb_td_chk">&nbsp;<input type=checkbox disabled value=''  checked></td>
-							    <td  onmouseover="listOver(this)" onmouseout="listOut(this)" class="tt_tb_td" nowrap>ÏµÍ³Ä¬ÈÏ×ÀÃæ</td>
+							    <td  onmouseover="listOver(this)" onmouseout="listOut(this)" class="tt_tb_td" nowrap>ÏµÍ³Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</td>
 							  </tr>
 							  
 							  <tr>
@@ -43,15 +43,15 @@ Content-Language: zh-CN
 							  </tr>
 							  <tr bSave=1>
 							    <td class="tt_tb_td_chk">&nbsp;</td>
-							    <td  onclick="saveDesktop(this,'1')"   onmouseover="listOver(this)" onmouseout="listOut(this)" class="tt_tb_td_disabled" nowrap>±£´æÎªµ±Ç°×ÀÃæ</td>
+							    <td  onclick="saveDesktop(this,'1')"   onmouseover="listOver(this)" onmouseout="listOut(this)" class="tt_tb_td_disabled" nowrap>ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½</td>
 							  </tr>
 							  <tr bDelete=1>
 							    <td class="tt_tb_td_chk">&nbsp;</td>
-							    <td onclick="delDesktop(this,'1')"  onmouseover="listOver(this)" onmouseout="listOut(this)" class="tt_tb_td_disabled"  nowrap>É¾³ýµ±Ç°×ÀÃæ</td>
+							    <td onclick="delDesktop(this,'1')"  onmouseover="listOver(this)" onmouseout="listOut(this)" class="tt_tb_td_disabled"  nowrap>É¾ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½</td>
 							  </tr>
 							  <tr bSaveAS=1>
 							    <td class="tt_tb_td_chk">&nbsp;</td>
-							    <td onclick="saveAsDesktop(this,'1')"  onmouseover="listOver(this)" onmouseout="listOut(this)" class="tt_tb_td" nowrap>×ÀÃæÁí´æÎª...</td>
+							    <td onclick="saveAsDesktop(this,'1')"  onmouseover="listOver(this)" onmouseout="listOut(this)" class="tt_tb_td" nowrap>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª...</td>
 							  </tr>
 							  <tr>
 							    <td height="5" colspan="2"></td>
@@ -71,7 +71,7 @@ function toCSMenu(orderid,rectype)
 	var openMenu = top.publicObject["openMenu"];
 	//var url=dispath+"9080/ngcustcare/custsvc/preBussinessInstall/mainInit.action";
 	var url=dispath+"/ngcustcare/custsvc/preBussinessInstall/bussForward/businessConstruct.action?orderid="+orderid+"&rectype="+rectype;
-	var  recName="²úÆ·¿ª»§";				 
+	var  recName="ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½";				 
     var  menuId ="CS_100010021005";
 	openMenu(menuId, recName, url);
 }
@@ -168,7 +168,7 @@ function bldMoveView(td, data, pre, wObj, seatName) {
 		var groupId = chk.value;
 		if(isEmpty(groupId))
 			return;
-		VIEWCONFIRM.tip("È·ÊµÒªÉ¾³ýÂð£¡",delDesk,null,[tdobj, layoutId], null, tdobj);
+		VIEWCONFIRM.tip("È·ÊµÒªÉ¾ï¿½ï¿½ï¿½ï¿½",delDesk,null,[tdobj, layoutId], null, tdobj);
 	}
 	
 	function delDesk(tdobj, layoutId)
@@ -396,7 +396,7 @@ function bldMoveView(td, data, pre, wObj, seatName) {
 					}
 					else
 					{
-						VIEWALERT.tip("ÎÒµÄ×ÀÃæ±£´æÍê±Ï£¡Êý¾ÝÔÚÒ»·ÖÖÓºóÉúÐ§",null,null,null,null, tdobj);
+						VIEWALERT.tip("ï¿½Òµï¿½ï¿½ï¿½ï¿½æ±£ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Óºï¿½ï¿½ï¿½Ð§",null,null,null,null, tdobj);
 					}
 				}
 			
@@ -408,7 +408,7 @@ function bldMoveView(td, data, pre, wObj, seatName) {
 	function saveAsDesktop(tdobj, layoutId)
 	{
 		VIEWPROMPT.setMaxLength(30);
-		VIEWPROMPT.tip(saveAs,null,[tdobj, layoutId],null,"ÇëÊäÈë×ÀÃæÃû³Æ<font color=red> Ãû³Æ×î¶à30¸ö×Ö·û</font>", tdobj);
+		VIEWPROMPT.tip(saveAs,null,[tdobj, layoutId],null,"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½<font color=red> ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½30ï¿½ï¿½ï¿½Ö·ï¿½</font>", tdobj);
 	}
 	
 	function saveAs(tdobj, layoutId, name)
@@ -418,13 +418,13 @@ function bldMoveView(td, data, pre, wObj, seatName) {
 			pobj = pobj.parentNode;
 			
 		name = trim(name);
-		if (!/^[a-zA-Z0-9\u4e00-\u9fa5]+$/.test(name)) {
-		  VIEWALERT.tip("×ÀÃæÃû³ÆÖ»ÔÊÐíºº×Ö¡¢Êý×ÖºÍ×ÖÄ¸£¬ÇëÖØÊÔ£¡",null,null,null,null, tdobj);
+		if (!/^[leftConnection-zA-Z0-9\u4e00-\u9fa5]+$/.test(name)) {
+		  VIEWALERT.tip("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½Ö¡ï¿½ï¿½ï¿½ï¿½Öºï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½",null,null,null,null, tdobj);
 			return;
 		}
 		if(isEmpty(name))
 		{
-			VIEWALERT.tip("Ã»ÓÐÂ¼Èë×ÀÃæÃû³Æ£¬È¡Ïû×ÀÃæÁí´æÎª²Ù×÷£¡",null,null,null,null, tdobj);
+			VIEWALERT.tip("Ã»ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",null,null,null,null, tdobj);
 			return;
 		}	
 		var data = {isSelected:0};
@@ -504,7 +504,7 @@ function bldMoveView(td, data, pre, wObj, seatName) {
 				}
 				else
 				{
-					VIEWALERT.tip("±£´æ³É¹¦£¬Êý¾ÝÔÚÖØÐÂ¼øÈ¨ºóÉúÐ§£¡", null, null, null, null, tdobj);
+					VIEWALERT.tip("ï¿½ï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½È¨ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½", null, null, null, null, tdobj);
 				}
 			}
 
@@ -663,6 +663,6 @@ function bldMoveView(td, data, pre, wObj, seatName) {
 	{
 		var url = "http://10.252.150.157/nguniteview/feedback/survey.jsp?ownerType=1&paperId="+paperId;
 		
-		VIEWMODEL.tip(domObj, url, {width:700,height:400,title:'ÓÃ»§¸ÐÖª',iscroll:'no'});
+		VIEWMODEL.tip(domObj, url, {width:700,height:400,title:'ï¿½Ã»ï¿½ï¿½ï¿½Öª',iscroll:'no'});
 	}
 </script>
