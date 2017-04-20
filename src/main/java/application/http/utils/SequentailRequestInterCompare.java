@@ -12,13 +12,15 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.TreeMap;
 
-public class SequentailRequestReplay {
+public class SequentailRequestInterCompare {
     private static final Logger logger = LogManager.getLogger();
-    SequentialRequestLoader loader;
+    SequentialRequestLoader leftLoader;
+    SequentialRequestLoader rightLoader;
 
 
-    public SequentailRequestReplay(String dir) {
-        loader = new SequentialRequestLoader(dir);
+    public SequentailRequestInterCompare(String leftDir, String rightDir) {
+        leftLoader = new SequentialRequestLoader(leftDir);
+        rightLoader = new SequentialRequestLoader(rightDir);
     }
 
     private void updateConnect(DiffValue diffValue){
@@ -26,8 +28,8 @@ public class SequentailRequestReplay {
     }
 
     public void compare() throws Exception {
-        loader.load();
-        TreeMap<Integer, RequestLoader> data = loader.getData();
+        leftLoader.load();
+        TreeMap<Integer, RequestLoader> data = leftLoader.getData();
 
         data.forEach((k, loader) ->{
             Connection connection = loader.getConnection();
@@ -41,7 +43,7 @@ public class SequentailRequestReplay {
             current = iterator.next();
         }
 
-        File file = new File(loader.getDirName() + "/" + "diff/diff");
+        File file = new File(leftLoader.getDirName() + "/" + "diff/diff");
         file.delete();
         //file.deleteOnExit();
         logger.info("save diff -> {}", file);

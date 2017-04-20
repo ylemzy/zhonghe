@@ -39,7 +39,7 @@ public class Base64Coder {
     static {
         int i = 0;
         for (char c = 'A'; c <= 'Z'; c++) map1[i++] = c;
-        for (char c = 'leftConnection'; c <= 'z'; c++) map1[i++] = c;
+        for (char c = 'a'; c <= 'z'; c++) map1[i++] = c;
         for (char c = '0'; c <= '9'; c++) map1[i++] = c;
         map1[i++] = '+';
         map1[i++] = '/';

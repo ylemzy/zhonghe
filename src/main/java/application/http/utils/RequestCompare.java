@@ -4,9 +4,7 @@ import application.uil.JsonHelper;
 import org.apache.commons.lang.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.elasticsearch.cluster.Diff;
 import org.jsoup.Connection;
-import org.jsoup.Jsoup;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -27,7 +25,6 @@ public class RequestCompare {
     TemplateParam paramRight;
     TemplateParam third;
     DiffValue diffValue = new DiffValue();
-
 
     enum CompareType{
         BOTH_EMPTY,
@@ -93,8 +90,6 @@ public class RequestCompare {
         return StringUtils.trimToEmpty(value1) + "<->" + StringUtils.trimToEmpty(value2);
     }
 
-
-
     private void compareAndSave(String key, String value1, String value2, Map<String, String> diffMap, Map<String, String> sameMap) {
         CompareType res = compare(value1, value2);
         switch (res) {
@@ -103,12 +98,12 @@ public class RequestCompare {
                 sameMap.put(key, value1);
                 break;
             case LEFT_EMPTY:
-                paramLeft.makeNewValue(key, value1, third, diffValue);
+                paramLeft.replaceValueByThird(key, value1, third, diffValue);
             case RIGHT_EMPTY:
-                paramRight.makeNewValue(key, value2, third, diffValue);
+                paramRight.replaceValueByThird(key, value2, third, diffValue);
             case NO_EQUAL:
                 diffMap.put(key, whenDiffTheValue(value1, value2));
-                paramLeft.makeNewValue(key, value1, third, diffValue);
+                paramLeft.replaceValueByThird(key, value1, third, diffValue);
             default:
                 break;
         }
@@ -146,6 +141,7 @@ public class RequestCompare {
                 diffBody,
                 theSame);
     }
+
     public void compareParams(){
         UrlMaker u1 = UrlMaker.make(leftConnection.request().url().toString());
         UrlMaker u2 = UrlMaker.make(rightConnection.request().url().toString());
