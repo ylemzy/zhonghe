@@ -23,7 +23,10 @@ public class UrlMaker {
     }
 
     public String getUrl(){
-        String url = uri + "?";
+
+        if (params.size() <= 0){
+            return uri;
+        }
 
         StringBuffer buffer = new StringBuffer();
         params.forEach( (k, v)->{
@@ -32,7 +35,7 @@ public class UrlMaker {
         if (buffer.length() > 0){
             buffer.setLength(buffer.length() - 1);
         }
-        return url + buffer.toString();
+        return uri + "?" + buffer.toString();
     }
 
     public String getUri() {

@@ -29,10 +29,10 @@ public class SequentialRequestLoader {
         this.dirName = dir;
     }
 
-    public void load() throws Exception {
+    public SequentialRequestLoader load() throws Exception {
         File dir = new File(dirName);
         if (!dir.exists())
-            return;
+            return this;
 
 
         File[] files = dir.listFiles();
@@ -44,17 +44,18 @@ public class SequentialRequestLoader {
                 continue;
 
             RequestLoader requestLoader = RequestLoader.makeByFile(file.getAbsolutePath());
-            requestLoader.parse();
             String name = file.getName();
             String replace = name.replace("_Request.txt", "");
 
             Integer key = Integer.valueOf(replace);
             data.put(key, requestLoader);
         }
-
+        return this;
     }
 
     public TreeMap<Integer, RequestLoader> getData() {
         return data;
     }
+
+
 }

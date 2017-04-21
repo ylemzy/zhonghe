@@ -27,9 +27,12 @@ public class RequestLoader {
 
     private Type type;
 
+    private List<String> requestText = null;
+
     enum Type{
         RESOURCE,
-        FILE
+        FILE,
+        TEXT
     }
 
     public RequestLoader(String resourceName, Type type) {
@@ -37,28 +40,35 @@ public class RequestLoader {
         this.type = type;
     }
 
-    public static RequestLoader make(String resourceName) throws IOException {
+    public RequestLoader(List<String> requestText){
+        this.requestText = requestText;
+        this.type = Type.TEXT;
+    }
+
+
+    public static RequestLoader make(String resourceName){
         return new RequestLoader(resourceName, Type.RESOURCE);
     }
 
-    public static RequestLoader makeByFile(String fileName) throws IOException {
+    public static RequestLoader makeByFile(String fileName){
         return new RequestLoader(fileName, Type.FILE);
     }
 
+    public static RequestLoader makeByText(List<String> requestText){
+        return new RequestLoader(requestText);
+    }
+
     public Connection parse() throws Exception {
-        List<String> strings;
-        if (type == Type.RESOURCE){
-            InputStream stream = RequestLoader.class.getResourceAsStream("/" + resourceName);
-            strings = IOUtils.readLines(stream, "utf-8");
-        }else{
-            strings = FileUtils.readLines(new File(resourceName), "utf-8");
+
+        if (type != Type.TEXT){
+            load();
         }
 
-        parseRequest(strings.get(0));
+        parseRequest(requestText.get(0));
 
-        for (int i = 1; i < strings.size(); ++i) {
-            if (!parseHeader(strings.get(i))) {
-                parseBody(strings.get(i));
+        for (int i = 1; i < requestText.size(); ++i) {
+            if (!parseHeader(requestText.get(i))) {
+                parseBody(requestText.get(i));
             }
         }
 
@@ -72,12 +82,22 @@ public class RequestLoader {
         return connection;
     }
 
+    public RequestLoader load() throws Exception {
+        if (type == Type.RESOURCE){
+            InputStream stream = RequestLoader.class.getResourceAsStream("/" + resourceName);
+            requestText = IOUtils.readLines(stream, "utf-8");
+        }else{
+            requestText = FileUtils.readLines(new File(resourceName), "utf-8");
+        }
+        return this;
+    }
+
     Connection.Method parseMethod(String method) {
         return Connection.Method.valueOf(method);
     }
 
 
-    void parseRequest(String content) throws Exception {
+    void parseRequest(final String content) throws Exception {
         String[] split = content.split(" ");
         Assert.isTrue(split.length >= 2);
 
@@ -88,7 +108,7 @@ public class RequestLoader {
         connection = Jsoup.connect(split[1]).method(method);
     }
 
-    boolean parseHeader(String content) {
+    boolean parseHeader(final String content) {
 
         if (content.startsWith(HttpHeaders.COOKIE + ":")) {
             connection.cookies(CookieMaker.make(content.substring(HttpHeaders.COOKIE.length() + 1)).data());
@@ -104,7 +124,7 @@ public class RequestLoader {
         return true;
     }
 
-    void parseBody(String content) {
+    void parseBody(final String content) {
         if (StringUtils.isBlank(content))
             return;
         connection.requestBody(content);
@@ -116,5 +136,10 @@ public class RequestLoader {
 
     public String getUrl(){
         return UrlMaker.make(connection.request().url().toString()).getUri();
+    }
+
+
+    public List<String> getRequestText() {
+        return requestText;
     }
 }
