@@ -88,7 +88,7 @@ public class ZhongheRequest {
 
 
     public void getMainProID() throws Exception{
-        Connection connection = RequestLoader.make("getMainProID").parse();
+        Connection connection = RequestLoader.makeByResource("getMainProID").parse();
         String url = UrlMaker.make(connection.request().url().toString()).param("servNumber", this.serveNumber).getUrl();
         connection.url(url);
         updateCookies(connection);
@@ -97,7 +97,7 @@ public class ZhongheRequest {
     }
 
     public void idCardActionCheck() throws Exception{
-        Connection connection = RequestLoader.make("idCardActionCheck").parse();
+        Connection connection = RequestLoader.makeByResource("idCardActionCheck").parse();
         updateCookies(connection);
         clearFormData().putFormData("certId", certID).addFormDataTo(connection);
         Connection.Response response = connection.execute();
@@ -105,7 +105,7 @@ public class ZhongheRequest {
     }
 
     public void clearUserSession() throws Exception{
-        Connection connection = RequestLoader.make("clearUserSession").parse();
+        Connection connection = RequestLoader.makeByResource("clearUserSession").parse();
         String url = UrlMaker.make(connection.request().url().toString()).param("tabid", this.currentTabID).getUrl();
         connection.url(url);
         updateCookies(connection);
@@ -120,7 +120,7 @@ public class ZhongheRequest {
      * @throws Exception
      */
     public void qryCustInfo(String serveNumber, String certID) throws Exception {
-        Connection connection = RequestLoader.make("qryCustInfo").parse();
+        Connection connection = RequestLoader.makeByResource("qryCustInfo").parse();
         updateCookies(connection);
 
         clearFormData().putFormData("serveNumber", serveNumber).putFormData("certID", certID).addFormDataTo(connection);
@@ -131,14 +131,14 @@ public class ZhongheRequest {
     }
 
     public void checkProvFeeMenu() throws Exception {
-        Connection connection = RequestLoader.make("checkProvFeeMenu").parse();
+        Connection connection = RequestLoader.makeByResource("checkProvFeeMenu").parse();
         updateCookies(connection);
         Connection.Response response = connection.execute();
         updateAndLog(connection.request(), response);
     }
 
     public void uvDisper() throws Exception {
-        Connection connection = RequestLoader.make("uvDisper").parse();
+        Connection connection = RequestLoader.makeByResource("uvDisper").parse();
 
         setHuaweiCookies();
         updateCookies(connection);
@@ -151,7 +151,7 @@ public class ZhongheRequest {
     }
 
     public void bossviewhome() throws Exception {
-        Connection connection = RequestLoader.make("bossviewhome").parse();
+        Connection connection = RequestLoader.makeByResource("bossviewhome").parse();
         updateCookies(connection);
         addFormDataTo(connection);
         Connection.Response response = connection.execute();
@@ -159,7 +159,7 @@ public class ZhongheRequest {
     }
 
     public void layoutAction200() throws Exception {
-        Connection connection = RequestLoader.make("layoutAction200").parse();
+        Connection connection = RequestLoader.makeByResource("layoutAction200").parse();
         connection.timeout((int)TimeUnit.SECONDS.toMillis(10));
         updateCookies(connection);
         Connection.Response response = connection.execute();
@@ -167,7 +167,7 @@ public class ZhongheRequest {
     }
 
     public void layoutAction39() throws Exception {
-        Connection connection = RequestLoader.make("layoutAction39").parse();
+        Connection connection = RequestLoader.makeByResource("layoutAction39").parse();
         connection.timeout((int)TimeUnit.SECONDS.toMillis(10));
         updateCookies(connection);
         Connection.Response response = connection.execute();
@@ -178,7 +178,7 @@ public class ZhongheRequest {
     }
 
     public void layoutAction78() throws Exception {
-        Connection connection = RequestLoader.make("layoutAction78").parse();
+        Connection connection = RequestLoader.makeByResource("layoutAction78").parse();
         connection.timeout((int)TimeUnit.SECONDS.toMillis(10));
         updateCookies(connection);
         Connection.Response response = connection.execute();

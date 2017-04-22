@@ -1,11 +1,17 @@
 package application.http.utils;
 
+import application.uil.JsonHelper;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.*;
 
 /**
  * Created by J on 4/21/2017.
  */
 public class TextSubstitutes {
+
+    private static final Logger logger = LogManager.getLogger();
 
     List<String> requestText;
 
@@ -47,5 +53,13 @@ public class TextSubstitutes {
         }
 
         return request;
+    }
+
+    public void log(){
+        requestText.forEach(row->{
+            logger.info("requestText {}", row);
+        });
+
+        logger.info("substituteDom {}", JsonHelper.toJSON(substituteDom));
     }
 }

@@ -28,8 +28,8 @@ public class SequentailRequestInterCompare {
     }
 
   /*  public RequestLoader findBy(String url){
-        UrlMaker make = UrlMaker.make(url);
-        String uri = make.getUri();
+        UrlMaker makeByResource = UrlMaker.makeByResource(url);
+        String uri = makeByResource.getUri();
 
     }*/
 

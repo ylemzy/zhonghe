@@ -46,7 +46,7 @@ public class RequestLoader {
     }
 
 
-    public static RequestLoader make(String resourceName){
+    public static RequestLoader makeByResource(String resourceName){
         return new RequestLoader(resourceName, Type.RESOURCE);
     }
 
@@ -73,7 +73,7 @@ public class RequestLoader {
         }
 
         //logger.info("URL:{}", JsonHelper.toJSON(connection.request().url()));
-        //logger.info("URI:{}", UrlMaker.make(connection.request().url().toString()).getUri());
+        //logger.info("URI:{}", UrlMaker.makeByResource(connection.request().url().toString()).getUri());
         /* logger.info("Method:{}", JsonHelper.toJSON(connection.request().method()));
         logger.info("Headers :{}", JsonHelper.toJSON(connection.request().headers()));
         logger.info("Cookie :{}", JsonHelper.toJSON(connection.request().cookies()));
@@ -84,7 +84,7 @@ public class RequestLoader {
 
     public RequestLoader load() throws Exception {
         if (type == Type.RESOURCE){
-            InputStream stream = RequestLoader.class.getResourceAsStream("/" + resourceName);
+            InputStream stream = RequestLoader.class.getResourceAsStream(resourceName);
             requestText = IOUtils.readLines(stream, "utf-8");
         }else{
             requestText = FileUtils.readLines(new File(resourceName), "utf-8");
