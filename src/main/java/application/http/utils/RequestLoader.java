@@ -87,6 +87,7 @@ public class RequestLoader {
             InputStream stream = RequestLoader.class.getResourceAsStream(resourceName);
             requestText = IOUtils.readLines(stream, "utf-8");
         }else{
+            logger.info("load from {}", resourceName);
             requestText = FileUtils.readLines(new File(resourceName), "utf-8");
         }
         return this;

@@ -33,7 +33,7 @@ public class SequentailSubstitutesTest {
 
         SequentailExecutor sequentailExecutor = new SequentailExecutor(substitue);
 
-        RequestLoader requestLoader = RequestLoader.makeByResource("");
+        RequestLoader requestLoader = RequestLoader.makeByResource("/420/17_Request.txt");
         sequentailExecutor.execute(requestLoader.load().parse());
     }
 

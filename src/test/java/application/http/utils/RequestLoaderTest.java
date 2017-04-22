@@ -8,6 +8,14 @@ import org.junit.Test;
  */
 public class RequestLoaderTest {
 
+    @Test
+    public void test() throws Exception {
+        RequestLoader requestLoader = RequestLoader.makeByResource("/420/rq1/2_Request.txt");
+        Connection parse = requestLoader.load().parse();
+        parse.method(Connection.Method.POST);
+        Connection.Response execute = parse.execute();
+    }
+
 /*
     @Test
     public void ruoView() throws Exception {

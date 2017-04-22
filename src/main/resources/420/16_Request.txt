@@ -1,0 +1,12 @@
+GET http://10.252.150.157/csp/bsf/from4ALogin.action?iamcaspticket=FkG5Jm2MXLspfwK5X%2BKEHvIKmg1YXwf8xrm8O2jvF6DLfvXd5F2ZUZT7PK4a0vh3OpLeS5HtKNk0%0A%2BdhzxTcVHTMzGntsht5NyRv872PuuGkX2nt4spVU9ouCNNOWUKNjD8D3oPtjeCH%2BeGUroM%2FCexaR%0AwyPLVskrh5HOEzdZ2HXtccZX0sdkaQ%3D%3D&mac=00-FF-D8-99-86-89&ip=10.252.134.58 HTTP/1.1
+Accept: text/html, application/xhtml+xml, */*
+Connection: Keep-Alive
+Accept-Language: zh-CN
+User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)
+Pragma: no-cache
+Accept-Encoding: gzip, deflate
+Host: 10.252.150.157
+DNT: 1
+Cookie: JSESSIONID=0000L-KCHUEMjByCq33ZHZFM3JJ:1arakdp4d:1ar350htr:1arakosf9
+Cache-Control: no-cache
+

@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.jsoup.Connection;
 
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -41,7 +42,17 @@ public class SequentailExecutor {
         Iterator<Map.Entry<Integer, RequestLoader>> iterator = sequentailLoader.entrySet().iterator();
         while (iterator.hasNext()){
             Map.Entry<Integer, RequestLoader> next = iterator.next();
-            previousConn = execute(next.getValue(), previousConn);
+            try{
+                previousConn = execute(next.getValue(), previousConn);
+            }catch (Exception e){
+                List<String> requestText = next.getValue().getRequestText();
+                requestText.forEach(row ->{
+                    logger.error(row);
+                });
+
+                throw e;
+            }
+
         }
     }
 
@@ -55,7 +66,8 @@ public class SequentailExecutor {
 
     public Connection execute(RequestLoader loader, Connection previousConn) throws Exception {
 
-        Connection parse = loader.load().parse();
+        Connection parse = loader.parse();
+        logger.info("execute {}", loader.getUrl());
         Connection.Request request = previousConn.request();
         if (request != null){
             parse.cookies(removeIrreplaceableCookies(request));
@@ -66,9 +78,16 @@ public class SequentailExecutor {
             parse.cookies(response.cookies());
         }
 
-        Connection.Response execute = previousConn.execute();
+        Connection.Response execute = parse.execute();
 
+        UrlMaker make = UrlMaker.make(loader.getUrl());
+        if (make.getUrl().contains("uvDisper")){
+            logger.info("uvDisper = {}", execute.body());
+        }
 
+        if (make.getUrl().contains("bossviewhome")){
+            logger.info("bossviewhome = {}", execute.body());
+        }
         return parse;
     }
 }
