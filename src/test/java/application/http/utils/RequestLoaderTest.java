@@ -1,7 +1,10 @@
 package application.http.utils;
 
 import org.jsoup.Connection;
+import org.jsoup.Jsoup;
 import org.junit.Test;
+
+import java.io.IOException;
 
 /**
  * Created by J on 4/14/2017.
@@ -13,7 +16,19 @@ public class RequestLoaderTest {
         RequestLoader requestLoader = RequestLoader.makeByResource("/420/rq1/2_Request.txt");
         Connection parse = requestLoader.load().parse();
         parse.method(Connection.Method.POST);
+
         Connection.Response execute = parse.execute();
+        System.out.println(execute.statusMessage() + execute.body());
+    }
+
+
+    @Test
+    public void test2() throws IOException {
+        //Jsoup.connect("http://10.252.150.157/ngcustcare/custsvc/xmlData/getServNumDictData.action")
+        Jsoup.connect("http://10.252.150.157/ngcustcare/custlogin/initAuthSecuityConfig.action")
+                .method(Connection.Method.POST)
+                .requestBody("groupId=CMMobileNumberDefine")
+                .post();
     }
 
 /*

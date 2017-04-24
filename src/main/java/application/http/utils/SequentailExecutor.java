@@ -1,13 +1,16 @@
 package application.http.utils;
 
+import application.uil.JsonHelper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jsoup.Connection;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.io.IOException;
+import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by J on 4/22/2017.
@@ -17,22 +20,16 @@ public class SequentailExecutor {
 
     TreeMap<Integer, RequestLoader> sequentailLoader;
 
-    final static String[] replaceableCookies = {
+    ConnectionFilter connectionFilter = new ConnectionFilter();
+
+/*    final static String[] replaceableCookies = {
             "sna_cookie",
             "JSESSIONID",
             "rootTicket",
             "loginCookie",
             "staffInfoCookie",
             "IPAddr"
-    };
-
-    final static String[] irreplaceableCookies = {
-            "com.huawei.boss.CURRENT_MENUID",
-            "com.huawei.boss.CURRENT_TAB",
-            "com.huawei.boss.CURRENT_USER",
-            "com.huawei.boss.CONTACTID",
-    };
-
+    };*/
 
     public SequentailExecutor(TreeMap<Integer, RequestLoader> sequentailLoader) {
         this.sequentailLoader = sequentailLoader;
@@ -56,38 +53,93 @@ public class SequentailExecutor {
         }
     }
 
-    private Map<String, String> removeIrreplaceableCookies(Connection.Request request){
-        Map<String, String> cookies = request.cookies();
-        for (String irreplaceableCookie : irreplaceableCookies) {
-            cookies.remove(irreplaceableCookie);
-        }
-        return cookies;
-    }
 
     public Connection execute(RequestLoader loader, Connection previousConn) throws Exception {
 
-        Connection parse = loader.parse();
-        logger.info("execute {}", loader.getUrl());
-        Connection.Request request = previousConn.request();
-        if (request != null){
-            parse.cookies(removeIrreplaceableCookies(request));
+        connectionFilter.initCookies(previousConn.request());
+        Connection connection = loader.parse();
+
+        String url = loader.getUrl();
+        logger.info("--> execute {}", url);
+        connectionFilter.beforeFilter(connection.request());
+        Connection.Response response = connection.timeout((int)TimeUnit.SECONDS.toMillis(10)).execute();
+        connectionFilter.afterFilter(response);
+
+        logger.info("--> finish {}", url);
+        return connection;
+    }
+
+
+    private static class ConnectionFilter{
+        final static String[] irreplaceableCookies = {
+                "com.huawei.boss.CURRENT_MENUID",
+                "com.huawei.boss.CURRENT_TAB",
+                "com.huawei.boss.CURRENT_USER",
+                "com.huawei.boss.CONTACTID",
+        };
+
+        static Map<String, String> formData = new HashMap<>();
+
+        static Map<String, String> cookies = new HashMap<>();
+
+
+        public ConnectionFilter initCookies(Connection.Request request){
+            cookies.putAll(removeIrreplaceableCookies(request));
+            return this;
         }
 
-        Connection.Response response = previousConn.response();
-        if (response != null){
-            parse.cookies(response.cookies());
+        public ConnectionFilter beforeFilter(Connection.Request request){
+
+            request.cookies().putAll(cookies);
+
+            if (request.url().getPath().contains("bossviewhome.jsp")){
+                loadLastFormData(request);
+            }
+
+            return this;
         }
 
-        Connection.Response execute = parse.execute();
+        public ConnectionFilter afterFilter(Connection.Response response) throws IOException {
 
-        UrlMaker make = UrlMaker.make(loader.getUrl());
-        if (make.getUrl().contains("uvDisper")){
-            logger.info("uvDisper = {}", execute.body());
+            cookies.putAll(response.cookies());
+            formData.clear();
+
+            if (response.url().getPath().contains("uvDisper.action")){
+                Document document = response.parse();
+                Elements input = document.getElementsByTag("input");
+                for (Element element : input) {
+                    formData.put(element.attr("name"), element.attr("value"));
+                }
+                logger.info("uvDisper.action -> \n{}", JsonHelper.toJSON(formData));
+            }
+
+            log("layoutAction.do?method=showView&ownerType=1&viewId=200", response);
+            log("layoutAction.do?method=showView&ownerType=1&viewId=39", response);
+            //log("layoutAction.do?method=showView&ownerType=1&viewId=39", response);
+
+            return this;
         }
 
-        if (make.getUrl().contains("bossviewhome")){
-            logger.info("bossviewhome = {}", execute.body());
+        private void loadLastFormData(Connection.Request request){
+            FormDataMaker data = FormDataMaker.make(formData);
+            request.requestBody(data.rawData());
+            logger.info("request form:{}", JsonHelper.toJSON(data.data()));
         }
-        return parse;
+
+        private Map<String, String> removeIrreplaceableCookies(Connection.Request request){
+            Map<String, String> cookies = request.cookies();
+            for (String irreplaceableCookie : irreplaceableCookies) {
+                cookies.remove(irreplaceableCookie);
+            }
+            return cookies;
+        }
+
+        private void log(String urlSubKeyword, Connection.Response response){
+            if (response.url().toString().contains(urlSubKeyword)){
+                logger.info("{} -> \n{}",
+                        urlSubKeyword,
+                        JsonHelper.toJSON(response.body()));
+            }
+        }
     }
 }

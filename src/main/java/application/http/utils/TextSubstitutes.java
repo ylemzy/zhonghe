@@ -15,6 +15,14 @@ public class TextSubstitutes {
 
     List<String> requestText;
 
+    public Map<String, String> getSubstituteDom() {
+        return substituteDom;
+    }
+
+    public void setSubstituteDom(Map<String, String> substituteDom) {
+        this.substituteDom = substituteDom;
+    }
+
     Map<String, String> substituteDom = new HashMap<>();//key of substituted value, sign of substituted key,
 
     public TextSubstitutes(List<String> requestText) {
@@ -54,6 +62,7 @@ public class TextSubstitutes {
 
         return request;
     }
+
 
     public void log(){
         requestText.forEach(row->{

@@ -128,6 +128,7 @@ public class RequestLoader {
     void parseBody(final String content) {
         if (StringUtils.isBlank(content))
             return;
+        connection.header("x-requested-with", "XMLHttpRequest");
         connection.requestBody(content);
     }
 
@@ -136,7 +137,8 @@ public class RequestLoader {
     }
 
     public String getUrl(){
-        return UrlMaker.make(connection.request().url().toString()).getUri();
+        return connection.request().url().toString();
+        //return UrlMaker.make(connection.request().url().toString()).getUri();
     }
 
 
