@@ -10,6 +10,4 @@ import org.springframework.stereotype.Component;
 @Component
 public class AppProperties {
 
-    @Value("${batch.size}")
-    public int esBatchSize;
 }
