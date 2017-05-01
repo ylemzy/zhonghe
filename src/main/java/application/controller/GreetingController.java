@@ -33,6 +33,7 @@ public class GreetingController {
     @RequestMapping(value = "/ses", method= RequestMethod.POST)
     public String save(@ModelAttribute(value="ses") Session session, Model model) {
         model.addAttribute("message", "Load ss success!");
+        model.addAttribute("query", new QueryParams());
         SessionManager.setSession(session);
         System.out.println(session.getSession());
         return "message";
