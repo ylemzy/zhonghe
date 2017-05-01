@@ -6,12 +6,6 @@
 </head>
 
 <body>
-    <p th:text="'Message, ' + ${message} + '!'" />
-
-
-    <form th:action="@{/query}" th:object="${query}" th:method="post">
-        <textarea th:field="*{params}"/>
-        <input type="submit"/>
-    </form>
+    <p th:text="'Result, ' + ${result} + '!'" />
 </body>
 </html>

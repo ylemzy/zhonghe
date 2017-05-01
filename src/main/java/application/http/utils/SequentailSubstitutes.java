@@ -1,5 +1,6 @@
 package application.http.utils;
 
+import application.bean.ExecuteResult;
 import application.bean.LoaderManager;
 import application.bean.ParamManager;
 import application.bean.SessionManager;
@@ -52,7 +53,7 @@ public class SequentailSubstitutes {
         return sequentailLoader;
     }
 
-    public void execute(TemplateParam params) throws Exception {
+    public ExecuteResult execute(TemplateParam params) throws Exception {
 
         TreeMap<Integer, RequestLoader> substitue = this.substitue(params);
         SequentailExecutor sequentailExecutor = new SequentailExecutor(substitue);
@@ -62,7 +63,9 @@ public class SequentailSubstitutes {
         }else{
             requestLoader = RequestLoader.makeByText(SessionManager.getSession().toStringList());
         }
-        sequentailExecutor.execute(requestLoader.load().parse());
+        ExecuteResult execute = sequentailExecutor.execute(requestLoader.load().parse());
+        execute.setTemplateParam(params);
+        return execute;
     }
 
 }

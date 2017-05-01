@@ -1,5 +1,6 @@
 package application.http.utils;
 
+import application.bean.ExecuteResult;
 import application.uil.JsonHelper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -35,7 +36,9 @@ public class SequentailExecutor {
         this.sequentailLoader = sequentailLoader;
     }
 
-    public void execute(Connection previousConn) throws Exception {
+    public ExecuteResult execute(Connection previousConn) throws Exception {
+        ExecuteResult executeResult = new ExecuteResult();
+        //executeResult.setTemplateParam();
         Iterator<Map.Entry<Integer, RequestLoader>> iterator = sequentailLoader.entrySet().iterator();
         while (iterator.hasNext()){
             Map.Entry<Integer, RequestLoader> next = iterator.next();
@@ -51,6 +54,7 @@ public class SequentailExecutor {
             }
 
         }
+        return executeResult;
     }
 
 
