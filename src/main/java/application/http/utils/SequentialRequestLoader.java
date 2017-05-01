@@ -1,9 +1,11 @@
 package application.http.utils;
 
+import application.bean.ResourceManager;
 import application.uil.JsonHelper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.omg.CORBA.INTERNAL;
+import org.springframework.util.ResourceUtils;
 
 import java.io.File;
 import java.util.*;
@@ -27,6 +29,21 @@ public class SequentialRequestLoader {
 
     public SequentialRequestLoader(String dir){
         this.dirName = dir;
+    }
+
+    public SequentialRequestLoader(){
+
+    }
+
+    public SequentialRequestLoader loadByResource(){
+        for (String name : ResourceManager.names) {
+            RequestLoader requestLoader = RequestLoader.makeByResource(ResourceManager.prefix + name);
+            String replace = name.replace("_Request.txt", "");
+
+            Integer key = Integer.valueOf(replace);
+            data.put(key, requestLoader);
+        }
+        return this;
     }
 
     public SequentialRequestLoader load() throws Exception {

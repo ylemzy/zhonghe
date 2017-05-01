@@ -1,7 +1,11 @@
 package application.http.utils;
 
+import application.bean.ParamManager;
+import application.bean.SequentailManager;
+import application.uil.JsonHelper;
 import org.junit.Test;
 
+import java.io.File;
 import java.util.TreeMap;
 
 /**
@@ -17,6 +21,25 @@ public class SequentailSubstitutesTest {
     TemplateParam templateParam = new TemplateParam();
 
     TemplateParam templateParam2 = new TemplateParam();
+
+    @Test
+    public void getSequentailName(){
+        File dir = new File("C:\\Users\\J\\Desktop\\data_compare\\zhonghe\\src\\main\\resources\\420\\rq1");
+        if (!dir.exists())
+            return;
+
+        File[] files = dir.listFiles();
+        System.out.println(JsonHelper.toJSON(files));
+
+
+        for (File file : files) {
+            if (file.isDirectory())
+                continue;
+
+            System.out.println("\"" + file.getName() + "\",");
+        }
+
+    }
 
     public void init(){
         templateParam.put("number", "13602565600");
@@ -49,6 +72,7 @@ public class SequentailSubstitutesTest {
     @Test
     public void substitue() throws Exception {
 
+        //SequentailManager.getSequentailSubstitutes().execute(templateParam2);
     }
 
 }

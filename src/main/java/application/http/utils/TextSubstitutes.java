@@ -44,6 +44,7 @@ public class TextSubstitutes {
         substituteDom.put(key, sign);
     }
 
+    //替换参数，生成真实request
     public List<String> substitute(TemplateParam params) {
 
         List<String> request = new ArrayList<>();

@@ -1,6 +1,7 @@
 package application.controller;
 
 import application.bean.Session;
+import application.bean.SessionManager;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -24,9 +25,10 @@ public class GreetingController {
 
 
     @RequestMapping(value = "/ses", method= RequestMethod.POST)
-    public String save(@ModelAttribute(value="ses") Session message, Model model) {
+    public String save(@ModelAttribute(value="ses") Session session, Model model) {
         model.addAttribute("message", "Load ss success!");
-        System.out.println(message.getSession());
+        SessionManager.setSession(session);
+        System.out.println(session.getSession());
         return "message";
     }
 }
