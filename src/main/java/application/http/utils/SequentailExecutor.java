@@ -1,6 +1,8 @@
 package application.http.utils;
 
 import application.bean.ExecuteResult;
+import application.fetch.User1;
+import application.fetch.User2;
 import application.uil.JsonHelper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -119,6 +121,12 @@ public class SequentailExecutor {
 
             log("layoutAction.do?method=showView&ownerType=1&viewId=200", response);
             log("layoutAction.do?method=showView&ownerType=1&viewId=39", response);
+
+            if (response.url().toString().contains("viewId=200")){
+                User1 user1 = InfoUtil.toUser1(response);
+            }else if (response.url().toString().contains("viewId=39")){
+                InfoUtil.toUser2(response, "");
+            }
             //log("layoutAction.do?method=showView&ownerType=1&viewId=39", response);
 
             return this;
@@ -143,7 +151,49 @@ public class SequentailExecutor {
                 logger.info("{} -> \n{}",
                         urlSubKeyword,
                         JsonHelper.toJSON(response.body()));
+
+                try {
+                    Document parse = response.parse();
+                    Elements th = parse.getElementsByTag("th");
+                    Elements td = parse.getElementsByTag("td");
+                    for (int i = 0; i < th.size(); ++i){
+                        logger.info("{}:{}", th.get(i).text(), td.get(i).text());
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
             }
+        }
+    }
+
+    static class InfoUtil{
+        private static Map<String, String> toMap(Connection.Response response) throws IOException {
+            Document parse = response.parse();
+            Elements th = parse.getElementsByTag("th");
+            Elements td = parse.getElementsByTag("td");
+            HashMap<String, String> res = new HashMap<>();
+            for (int i = 0; i < th.size(); ++i){
+                res.put(th.get(i).text(), td.get(i).text());
+            }
+            return res;
+        }
+
+
+        public static User1 toUser1(Connection.Response response) throws IOException {
+            Map<String, String> stringStringMap = toMap(response);
+            User1 user1 = new User1();
+            user1.setId(stringStringMap.get("服务号码"));
+            user1.setText(JsonHelper.toJSON(stringStringMap));
+            return user1;
+        }
+
+        public static User2 toUser2(Connection.Response response, String id) throws IOException {
+            Map<String, String> stringStringMap = toMap(response);
+            User2 user2 = new User2();
+            user2.setId(id);
+            user2.setText(JsonHelper.toJSON(stringStringMap));
+            return user2;
         }
     }
 }
