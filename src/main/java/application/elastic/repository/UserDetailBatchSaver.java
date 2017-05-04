@@ -1,0 +1,13 @@
+package application.elastic.repository;
+
+import application.elastic.base.BatchSaver;
+import application.fetch.News;
+import application.fetch.UserDetail;
+import org.springframework.stereotype.Service;
+
+/**
+ * Created by huangzebin on 2017/3/3.
+ */
+@Service
+public class UserDetailBatchSaver extends BatchSaver<UserDetailRepository, UserDetail> {
+}

@@ -1,8 +1,8 @@
 package application.http.utils;
 
 import application.bean.ExecuteResult;
-import application.fetch.User1;
-import application.fetch.User2;
+import application.fetch.User;
+import application.fetch.UserDetail;
 import application.uil.JsonHelper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -123,7 +123,7 @@ public class SequentailExecutor {
             log("layoutAction.do?method=showView&ownerType=1&viewId=39", response);
 
             if (response.url().toString().contains("viewId=200")){
-                User1 user1 = InfoUtil.toUser1(response);
+                User user = InfoUtil.toUser1(response);
             }else if (response.url().toString().contains("viewId=39")){
                 InfoUtil.toUser2(response, "");
             }
@@ -180,20 +180,20 @@ public class SequentailExecutor {
         }
 
 
-        public static User1 toUser1(Connection.Response response) throws IOException {
+        public static User toUser1(Connection.Response response) throws IOException {
             Map<String, String> stringStringMap = toMap(response);
-            User1 user1 = new User1();
-            user1.setId(stringStringMap.get("服务号码"));
-            user1.setText(JsonHelper.toJSON(stringStringMap));
-            return user1;
+            User user = new User();
+            user.setId(stringStringMap.get("服务号码"));
+            user.setText(JsonHelper.toJSON(stringStringMap));
+            return user;
         }
 
-        public static User2 toUser2(Connection.Response response, String id) throws IOException {
+        public static UserDetail toUser2(Connection.Response response, String id) throws IOException {
             Map<String, String> stringStringMap = toMap(response);
-            User2 user2 = new User2();
-            user2.setId(id);
-            user2.setText(JsonHelper.toJSON(stringStringMap));
-            return user2;
+            UserDetail userDetail = new UserDetail();
+            userDetail.setId(id);
+            userDetail.setText(JsonHelper.toJSON(stringStringMap));
+            return userDetail;
         }
     }
 }
