@@ -9,9 +9,17 @@
     <p th:text="'Message, ' + ${message} + '!'" />
 
 
-    <form th:action="@{/query}" th:object="${query}" th:method="post">
-        <textarea th:field="*{params}"/>
+    <form  th:action="@{/query}" th:object="${query}" th:method="post">
+        <textarea  th:rows="30" th:cols="80" placeholder="添加服务号和身份证,按行分开, 可以多个"  th:field="*{params}"/>
         <input type="submit"/>
     </form>
 </body>
+
+<style type="text/css">
+    textarea::-webkit-input-placeholder::after {
+        display: block;
+        content: "Line 2\A Line 3";
+    }
+</style>
+
 </html>

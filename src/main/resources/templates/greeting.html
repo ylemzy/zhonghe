@@ -2,14 +2,26 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Getting Started: Serving Web Content</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 
 <body>
-    <p th:text="'Hello, ' + ${name} + '!'" />
-    <form th:action="@{/ses}" th:object="${ses}" th:method="post">
-        <textarea th:field="*{session}"/>
-        <input type="submit"/>
-    </form>
+<p th:text="'Hello, ' + ${name} + '!'"/>
+<form th:action="@{/ses}" th:object="${ses}" th:method="post">
+    <textarea rows="30" cols="80" placeholder="添加request文本" th:field="*{session}"/>
+    <input type="submit"/>
+</form>
 </body>
+
+<!--<style type="text/css">
+    #text1::-webkit-input-placeholder::after {
+        display: block;
+        content: "Line 2\A Line 3";
+    }
+
+    #text2::-webkit-input-placeholder::before {
+        color: #666;
+        content: "Line 1\A Line 2\A Line 3\A";
+    }
+</style>-->
 </html>
