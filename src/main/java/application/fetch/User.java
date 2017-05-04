@@ -6,10 +6,10 @@ import org.springframework.data.elasticsearch.annotations.Document;
 /**
  * Created by Administrator on 2017/5/3.
  */
-@Document(indexName = "user", type = "1")
 public class User {
-    @Id
+
     String id;
+
     String text;
 
     public String getId() {

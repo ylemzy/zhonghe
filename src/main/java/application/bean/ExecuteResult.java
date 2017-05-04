@@ -3,11 +3,17 @@ package application.bean;
 import application.fetch.User;
 import application.fetch.UserDetail;
 import application.http.utils.TemplateParam;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.elasticsearch.annotations.Document;
 
 /**
  * Created by J on 5/1/2017.
  */
+@Document(indexName = "result", type = "1")
 public class ExecuteResult {
+
+    @Id
+    String id;
 
     TemplateParam templateParam;
 

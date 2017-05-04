@@ -65,6 +65,8 @@ public class SequentailSubstitutes {
         }
         ExecuteResult execute = sequentailExecutor.execute(requestLoader.load().parse());
         execute.setTemplateParam(params);
+        execute.getUser().setId(params.get("number"));
+        execute.getUserDetail().setId(params.get("number"));
         return execute;
     }
 

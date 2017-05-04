@@ -1,9 +1,10 @@
 package application.controller;
 
 import application.bean.*;
-import application.fetch.Template;
+import application.elastic.repository.UserBatchSaver;
 import application.http.utils.TemplateParam;
 import application.uil.JsonHelper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.Assert;
@@ -20,6 +21,10 @@ import java.util.List;
  */
 @Controller
 public class GreetingController {
+
+
+    @Autowired
+    UserBatchSaver userBatchSaver;
 
 
     @RequestMapping("/greeting")
@@ -47,7 +52,9 @@ public class GreetingController {
         for (int i = 0; i < templateParams.size(); ++i){
             ExecuteResult execute = SequentailManager.getSequentailSubstitutes().execute(templateParams.get(i));
             results.add(execute);
+            userBatchSaver.save(execute);
         }
+
         model.addAttribute("result", JsonHelper.toJSON(results));
         return "result";
     }

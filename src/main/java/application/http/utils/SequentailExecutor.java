@@ -46,6 +46,14 @@ public class SequentailExecutor {
             Map.Entry<Integer, RequestLoader> next = iterator.next();
             try{
                 previousConn = execute(next.getValue(), previousConn);
+
+                if (previousConn.request().url().toString().contains("viewId=200")){
+                    User user = InfoUtil.toUser(previousConn.response());
+                    executeResult.setUser(user);
+                }else if (previousConn.request().url().toString().contains("viewId=39")){
+                    UserDetail userDetail = InfoUtil.toUserDetail(previousConn.response());
+                    executeResult.setUserDetail(userDetail);
+                }
             }catch (Exception e){
                 List<String> requestText = next.getValue().getRequestText();
                 requestText.forEach(row ->{
@@ -121,12 +129,6 @@ public class SequentailExecutor {
 
             log("layoutAction.do?method=showView&ownerType=1&viewId=200", response);
             log("layoutAction.do?method=showView&ownerType=1&viewId=39", response);
-
-            if (response.url().toString().contains("viewId=200")){
-                User user = InfoUtil.toUser1(response);
-            }else if (response.url().toString().contains("viewId=39")){
-                InfoUtil.toUser2(response, "");
-            }
             //log("layoutAction.do?method=showView&ownerType=1&viewId=39", response);
 
             return this;
@@ -180,18 +182,16 @@ public class SequentailExecutor {
         }
 
 
-        public static User toUser1(Connection.Response response) throws IOException {
+        public static User toUser(Connection.Response response) throws IOException {
             Map<String, String> stringStringMap = toMap(response);
             User user = new User();
-            user.setId(stringStringMap.get("服务号码"));
             user.setText(JsonHelper.toJSON(stringStringMap));
             return user;
         }
 
-        public static UserDetail toUser2(Connection.Response response, String id) throws IOException {
+        public static UserDetail toUserDetail(Connection.Response response) throws IOException {
             Map<String, String> stringStringMap = toMap(response);
             UserDetail userDetail = new UserDetail();
-            userDetail.setId(id);
             userDetail.setText(JsonHelper.toJSON(stringStringMap));
             return userDetail;
         }
