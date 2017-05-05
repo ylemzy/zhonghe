@@ -44,4 +44,12 @@ public class ExecuteResult {
     public void setUserDetail(UserDetail userDetail) {
         this.userDetail = userDetail;
     }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 }
