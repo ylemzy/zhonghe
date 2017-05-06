@@ -109,6 +109,13 @@
                  </excludes>-->
                 <filtering>true</filtering>
             </resource>
+            <!--<resource>
+                <directory>repo</directory>
+                <targetPath>BOOT-INF/lib/</targetPath>
+                <includes>
+                    <include>**/*.jar</include>
+                </includes>
+            </resource>-->
         </resources>
 
         <plugins>
@@ -154,9 +161,32 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <descriptors>
+                        <descriptor>
+                            ${basedir}/src/assembly/assembly.xml
+                        </descriptor>
+                    </descriptors>
+                    <outputDirectory>
+                        ${project.build.directory}
+                    </outputDirectory>
+                    <appendAssemblyId>false</appendAssemblyId>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
 
-        <finalName>dam-${active}-${version}</finalName>
+        <finalName>${artifactId}-${active}-${version}</finalName>
     </build>
 
     <profiles>
@@ -164,7 +194,7 @@
             <id>local</id>
             <properties>
                 <active>local</active>
-                <conf.directory>${project.build.directory}/conf/</conf.directory>
+                <wrapper.platform>win-wrapper</wrapper.platform>
             </properties>
             <activation>
                 <activeByDefault>true</activeByDefault>
@@ -174,7 +204,14 @@
             <id>dev</id>
             <properties>
                 <active>dev</active>
-                <conf.directory>${project.build.directory}/conf/</conf.directory>
+                <wrapper.platform>linux-wrapper</wrapper.platform>
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <active>prod</active>
+                <wrapper.platform>linux-wrapper</wrapper.platform>
             </properties>
         </profile>
     </profiles>
