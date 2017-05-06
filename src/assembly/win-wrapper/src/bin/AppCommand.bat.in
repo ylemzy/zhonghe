@@ -2,7 +2,7 @@
 setlocal
 
 rem
-rem Copyright (c) 1999, 2016 Tanuki Software, Ltd.
+rem Copyright (c) 1999, 2017 Tanuki Software, Ltd.
 rem http://www.tanukisoftware.com
 rem All rights reserved.
 rem
@@ -16,7 +16,7 @@ rem
 
 rem -----------------------------------------------------------------------------
 rem These settings can be modified to fit the needs of your application
-rem Optimized for use with version 3.5.30-st of the Wrapper.
+rem Optimized for use with version 3.5.32 of the Wrapper.
 
 rem The base name for the Wrapper binary.
 set _WRAPPER_BASE=wrapper
@@ -141,12 +141,6 @@ if [%_COMMAND%]==[console] (
     ) else (
         %_WRAPPER_EXE% -it "%_WRAPPER_CONF%" -- %_PARAMETERS%
     )
-) else if [%_COMMAND%]==[update] (
-    if [%_PASS_THROUGH%]==[] (
-        %_WRAPPER_EXE% -u "%_WRAPPER_CONF%" %_PARAMETERS%
-    ) else (
-        %_WRAPPER_EXE% -u "%_WRAPPER_CONF%" -- %_PARAMETERS%
-    )
 ) else if [%_COMMAND%]==[pause] (
     %_WRAPPER_EXE% -a "%_WRAPPER_CONF%"
 ) else if [%_COMMAND%]==[resume] (
@@ -175,9 +169,9 @@ if not [%_COMMAND%]==[] (
     echo.
 )
 if [%_PASS_THROUGH%]==[] ( 
-    echo Usage: %0 [ console : setup : teardown : start : pause : resume : stop : restart : install : installstart : update : remove : status ]
+    echo Usage: %0 [ console : setup : teardown : start : pause : resume : stop : restart : install : installstart : remove : status ]
 ) else (
-    echo Usage: %0 [ console {JavaAppArgs} : setup : teardown : start : pause : resume : stop : restart : install {JavaAppArgs} : installstart {JavaAppArgs} : update {JavaAppArgs} : remove : status ]
+    echo Usage: %0 [ console {JavaAppArgs} : setup : teardown : start : pause : resume : stop : restart : install {JavaAppArgs} : installstart {JavaAppArgs} : remove : status ]
 )
 pause
 goto :eof

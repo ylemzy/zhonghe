@@ -1,6 +1,6 @@
 -----------------------------------------------------------------------------
-Java Service Wrapper Standard Edition 3.5.30-st
-Copyright (C) 1999-2016 Tanuki Software, Ltd. All Rights Reserved.
+Java Service Wrapper Community Edition 3.5.32
+Copyright (C) 1999-2017 Tanuki Software, Ltd. All Rights Reserved.
 http://wrapper.tanukisoftware.com
 -----------------------------------------------------------------------------
 
@@ -82,6 +82,8 @@ Java Service Wrapperのスタンダード版やプロフェッショナル版には、時間制限つきの
 
 永久ライセンスを購入されるには：
   => http://wrapper.tanukisoftware.com/doc/japanese/accountLicenses.jsp
+
+Java Service Wrapperコミュニティー版にはライセンスキーは不要です。
 
 既にライセンスを購入済みの方は、サイトにログインして、ライセンス管理ページで
 ライセンスキーを生成することができます。
@@ -170,4 +172,4 @@ Java Service Wrapperスタンダード版あるいはプロフェッショナル版の機能を
 
 
 -----------------------------------------------------------------------------
-Copyright (C) 1999-2016 Tanuki Software, Ltd. All Rights Reserved.
+Copyright (C) 1999-2017 Tanuki Software, Ltd. All Rights Reserved.

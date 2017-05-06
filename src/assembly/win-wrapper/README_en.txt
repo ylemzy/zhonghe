@@ -1,6 +1,6 @@
 -----------------------------------------------------------------------------
-Java Service Wrapper Standard Edition 3.5.30-st
-Copyright (C) 1999-2016 Tanuki Software, Ltd. All Rights Reserved.
+Java Service Wrapper Community Edition 3.5.32
+Copyright (C) 1999-2017 Tanuki Software, Ltd. All Rights Reserved.
 http://wrapper.tanukisoftware.com
 -----------------------------------------------------------------------------
 
@@ -82,6 +82,8 @@ at the following URL:
 Permantent licenses can also be purchased at the following URL:
   => http://wrapper.tanukisoftware.com/doc/english/accountLicenses.jsp
 
+The Community Edition does not require a license key.
+
 If you have already purchased a license, you can generate and download your
 license key by logging on and viewing your License Management Page.
 For Server Licenses:
@@ -159,4 +161,4 @@ online:
 
 
 -----------------------------------------------------------------------------
-Copyright (C) 1999-2016 Tanuki Software, Ltd. All Rights Reserved.
+Copyright (C) 1999-2017 Tanuki Software, Ltd. All Rights Reserved.
