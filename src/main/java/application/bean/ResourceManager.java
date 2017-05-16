@@ -10,6 +10,31 @@ public class ResourceManager {
 
     public final static String prefix = "/420/rq1/";
 
+    public final static String vip_prefix = "/vip/rq/";
+
+    public final static String[] vip_names = {
+            "1_Request.txt",
+            "2_Request.txt",
+            "3_Request.txt",
+            "7_Request.txt",
+            "10_Request.txt",
+            "18_Request.txt",
+            "19_Request.txt",
+            "20_Request.txt",
+            "21_Request.txt",
+            "22_Request.txt",
+            "23_Request.txt",
+            "24_Request.txt",
+            "25_Request.txt",
+            "26_Request.txt",
+            "27_Request.txt",
+            "28_Request.txt",
+            "29_Request.txt",
+            "30_Request.txt",
+            "31_Request.txt",
+            "32_Request.txt",
+    };
+
     public final static String[] names = {
             "10_Request.txt",
             "113_Request.txt",

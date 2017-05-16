@@ -8,6 +8,7 @@ import application.http.utils.UrlInfo;
  */
 public class SequentailManager {
     static SequentailSubstitutes sequentailSubstitutes;
+
     static {
         sequentailSubstitutes  = new SequentailSubstitutes();
         UrlInfo.addUrlKeyword("getMainProID");
@@ -19,7 +20,23 @@ public class SequentailManager {
         }
     }
 
+    static SequentailSubstitutes sequentailSubstitutes2;
+    static {
+        sequentailSubstitutes2  = new SequentailSubstitutes();
+        //UrlInfo.addUrlKeyword("getMainProID");
+        try {
+            sequentailSubstitutes.prepareSubstituesList(LoaderManager.loadByResource(2), ParamManager.getParam2());
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     public static SequentailSubstitutes getSequentailSubstitutes() {
         return sequentailSubstitutes;
+    }
+
+    public static SequentailSubstitutes getSequentailSubstitutes2() {
+        return sequentailSubstitutes2;
     }
 }

@@ -23,4 +23,21 @@ public class ParamManager {
     public static TemplateParam getParam() {
         return param;
     }
+
+
+    public static TemplateParam param2;
+
+    static {
+        param2 = new TemplateParam();
+
+        param2.put("number", "13602565600");
+
+        /*templateParam2.put("number", "13510033371");
+        templateParam2.put("idCard", "441402198702260434");*/
+
+    }
+
+    public static TemplateParam getParam2() {
+        return param2;
+    }
 }

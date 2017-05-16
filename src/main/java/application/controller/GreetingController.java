@@ -44,9 +44,24 @@ public class GreetingController {
         return "message";
     }
 
-    @RequestMapping(value = "/query", method= RequestMethod.POST)
-    public String save(@ModelAttribute(value="query")QueryParams query, Model model) throws Exception {
+/*    @RequestMapping(value = "/query", method= RequestMethod.POST)
+    public String save(@ModelAttribute(value="query") QueryParams query, Model model) throws Exception {
         List<TemplateParam> templateParams = toTemplateParams(query.getParams());
+
+        List<ExecuteResult> results = new ArrayList<>();
+        for (int i = 0; i < templateParams.size(); ++i){
+            ExecuteResult execute = SequentailManager.getSequentailSubstitutes().execute(templateParams.get(i));
+            results.add(execute);
+            userBatchSaver.save(execute);
+        }
+
+        model.addAttribute("result", JsonHelper.toJSON(results));
+        return "result";
+    }*/
+
+    @RequestMapping(value = "/query", method= RequestMethod.POST)
+    public String queryAuto(@ModelAttribute(value="query") QueryParams query, Model model) throws Exception {
+        List<TemplateParam> templateParams = toTemplateParams2(query.getParams());
 
         List<ExecuteResult> results = new ArrayList<>();
         for (int i = 0; i < templateParams.size(); ++i){
@@ -59,7 +74,7 @@ public class GreetingController {
         return "result";
     }
 
-    private List<TemplateParam> toTemplateParams(String query){
+/*    private List<TemplateParam> toTemplateParams(String query){
         String[] split = query.split("\n");
         Assert.isTrue(split.length % 2 == 0);
 
@@ -71,5 +86,18 @@ public class GreetingController {
             templateParams.add(param);
         }
         return templateParams;
+    }*/
+
+    private List<TemplateParam> toTemplateParams2(String query){
+        String[] split = query.split("\n");
+
+        List<TemplateParam> templateParams = new ArrayList<>();
+        for (int i = 0; i < split.length; ++i){
+            TemplateParam param = new TemplateParam();
+            param.put("number", split[i].trim());
+            templateParams.add(param);
+        }
+        return templateParams;
     }
+
 }

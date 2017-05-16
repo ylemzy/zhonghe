@@ -35,9 +35,32 @@ public class SequentialRequestLoader {
 
     }
 
+    public SequentialRequestLoader loadByResource(int way){
+        switch (way){
+            case 1:
+                return loadByResource();
+            case 2:
+                return loadByResource2();
+            default:
+                return null;
+        }
+    }
+
+
     public SequentialRequestLoader loadByResource(){
         for (String name : ResourceManager.names) {
             RequestLoader requestLoader = RequestLoader.makeByResource(ResourceManager.prefix + name);
+            String replace = name.replace("_Request.txt", "");
+
+            Integer key = Integer.valueOf(replace);
+            data.put(key, requestLoader);
+        }
+        return this;
+    }
+
+    public SequentialRequestLoader loadByResource2(){
+        for (String name : ResourceManager.vip_names) {
+            RequestLoader requestLoader = RequestLoader.makeByResource(ResourceManager.vip_prefix + name);
             String replace = name.replace("_Request.txt", "");
 
             Integer key = Integer.valueOf(replace);

@@ -14,4 +14,9 @@ public class LoaderManager {
         sequentialRequestLoader.loadByResource();
         return sequentialRequestLoader;
     }
+
+    public static SequentialRequestLoader loadByResource(int way) {
+        sequentialRequestLoader.loadByResource(way);
+        return sequentialRequestLoader;
+    }
 }
