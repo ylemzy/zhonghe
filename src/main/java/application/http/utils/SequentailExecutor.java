@@ -42,21 +42,26 @@ public class SequentailExecutor {
         ExecuteResult executeResult = new ExecuteResult();
         //executeResult.setTemplateParam();
         Iterator<Map.Entry<Integer, RequestLoader>> iterator = sequentailLoader.entrySet().iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             Map.Entry<Integer, RequestLoader> next = iterator.next();
-            try{
+            try {
                 previousConn = execute(next.getValue(), previousConn);
 
-                if (previousConn.request().url().toString().contains("viewId=200")){
+              /*  if (previousConn.request().url().toString().contains("viewId=200")){
                     User user = InfoUtil.toUser(previousConn.response());
                     executeResult.setUser(user);
                 }else if (previousConn.request().url().toString().contains("viewId=39")){
                     UserDetail userDetail = InfoUtil.toUserDetail(previousConn.response());
                     executeResult.setUserDetail(userDetail);
+                }*/
+
+                if (previousConn.request().url().toString().contains("personalCharge")) {
+                    UserDetail userDetail = InfoUtil.toUserDetail(previousConn.response());
+                    executeResult.setUserDetail(userDetail);
                 }
-            }catch (Exception e){
+            } catch (Exception e) {
                 List<String> requestText = next.getValue().getRequestText();
-                requestText.forEach(row ->{
+                requestText.forEach(row -> {
                     logger.error(row);
                 });
 
@@ -76,7 +81,7 @@ public class SequentailExecutor {
         String url = loader.getUrl();
         logger.info("--> execute {}", url);
         connectionFilter.beforeFilter(connection.request());
-        Connection.Response response = connection.timeout((int)TimeUnit.SECONDS.toMillis(10)).execute();
+        Connection.Response response = connection.timeout((int) TimeUnit.SECONDS.toMillis(10)).execute();
         connectionFilter.afterFilter(response);
 
         logger.info("--> finish {}", url);
@@ -84,7 +89,7 @@ public class SequentailExecutor {
     }
 
 
-    private static class ConnectionFilter{
+    private static class ConnectionFilter {
         final static String[] irreplaceableCookies = {
                 "com.huawei.boss.CURRENT_MENUID",
                 "com.huawei.boss.CURRENT_TAB",
@@ -97,16 +102,16 @@ public class SequentailExecutor {
         static Map<String, String> cookies = new HashMap<>();
 
 
-        public ConnectionFilter initCookies(Connection.Request request){
+        public ConnectionFilter initCookies(Connection.Request request) {
             cookies.putAll(removeIrreplaceableCookies(request));
             return this;
         }
 
-        public ConnectionFilter beforeFilter(Connection.Request request){
+        public ConnectionFilter beforeFilter(Connection.Request request) {
 
             request.cookies().putAll(cookies);
 
-            if (request.url().getPath().contains("bossviewhome.jsp")){
+            if (request.url().getPath().contains("bossviewhome.jsp")) {
                 loadLastFormData(request);
             }
 
@@ -118,7 +123,7 @@ public class SequentailExecutor {
             cookies.putAll(response.cookies());
             formData.clear();
 
-            if (response.url().getPath().contains("uvDisper.action")){
+            if (response.url().getPath().contains("uvDisper.action")) {
                 Document document = response.parse();
                 Elements input = document.getElementsByTag("input");
                 for (Element element : input) {
@@ -134,13 +139,13 @@ public class SequentailExecutor {
             return this;
         }
 
-        private void loadLastFormData(Connection.Request request){
+        private void loadLastFormData(Connection.Request request) {
             FormDataMaker data = FormDataMaker.make(formData);
             request.requestBody(data.rawData());
             logger.info("request form:{}", JsonHelper.toJSON(data.data()));
         }
 
-        private Map<String, String> removeIrreplaceableCookies(Connection.Request request){
+        private Map<String, String> removeIrreplaceableCookies(Connection.Request request) {
             Map<String, String> cookies = request.cookies();
             for (String irreplaceableCookie : irreplaceableCookies) {
                 cookies.remove(irreplaceableCookie);
@@ -148,8 +153,8 @@ public class SequentailExecutor {
             return cookies;
         }
 
-        private void log(String urlSubKeyword, Connection.Response response){
-            if (response.url().toString().contains(urlSubKeyword)){
+        private void log(String urlSubKeyword, Connection.Response response) {
+            if (response.url().toString().contains(urlSubKeyword)) {
                 logger.info("{} -> \n{}",
                         urlSubKeyword,
                         JsonHelper.toJSON(response.body()));
@@ -158,7 +163,7 @@ public class SequentailExecutor {
                     Document parse = response.parse();
                     Elements th = parse.getElementsByTag("th");
                     Elements td = parse.getElementsByTag("td");
-                    for (int i = 0; i < th.size(); ++i){
+                    for (int i = 0; i < th.size(); ++i) {
                         logger.info("{}:{}", th.get(i).text(), td.get(i).text());
                     }
                 } catch (IOException e) {
@@ -169,14 +174,25 @@ public class SequentailExecutor {
         }
     }
 
-    static class InfoUtil{
+    static class InfoUtil {
         private static Map<String, String> toMap(Connection.Response response) throws IOException {
             Document parse = response.parse();
             Elements th = parse.getElementsByTag("th");
             Elements td = parse.getElementsByTag("td");
             HashMap<String, String> res = new HashMap<>();
-            for (int i = 0; i < th.size(); ++i){
+            for (int i = 0; i < th.size(); ++i) {
                 res.put(th.get(i).text(), td.get(i).text());
+            }
+            return res;
+        }
+
+        private static Map<String, String> toData(Connection.Response response) throws IOException {
+            Document parse = response.parse();
+            Elements td = parse.getElementsByTag("td");
+
+            HashMap<String, String> res = new HashMap<>();
+            for (int i = 0; i + 1 < td.size(); i += 2) {
+                res.put(td.get(i).ownText(), td.get(i + 1).ownText());
             }
             return res;
         }
@@ -190,10 +206,12 @@ public class SequentailExecutor {
         }
 
         public static UserDetail toUserDetail(Connection.Response response) throws IOException {
-            Map<String, String> stringStringMap = toMap(response);
+            Map<String, String> stringStringMap = toData(response);
             UserDetail userDetail = new UserDetail();
             userDetail.setText(JsonHelper.toJSON(stringStringMap));
             return userDetail;
         }
+
+
     }
 }
